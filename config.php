@@ -4,12 +4,16 @@ return [
     'baseUrl' => '',
     'production' => false,
     'collections' => [
-        'how-to' => [
+        'howto' => [
             'path' => 'how-to-{filename}-in-javascript',
             'section' => 'content',
             'question' => function ($page) {
-                return str_replace('-', ' ', $page->getFilename());
+                $question = str_replace('-', ' ', $page->getFilename());
+                return "How to $question in JavaScript";
             },
+            'url' => function ($page) {
+                return 'how-to-'.$page->getFilename().'-in-javascript';
+            }
         ],
     ],
 ];

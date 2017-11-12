@@ -7,7 +7,7 @@ date: 2017-11-11
 ```javascript
 const people = ['John', 'Nicole', 'Jad'];
 
-people.forEach(person => {
+for (const person of people){
     console.log(person);
-});
+}
 ```
