@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
+        @include('_partials.header')
+
         @yield('body')
     </body>
 </html>

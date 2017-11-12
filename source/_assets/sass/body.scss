@@ -1,0 +1,10 @@
+:root{
+  --dark: black;
+  --light: gray;
+}
+
+body{
+  margin: 0;
+  color: var(--dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
