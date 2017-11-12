@@ -1,0 +1,17 @@
+footer{
+    padding: 23px;
+    color: var(--gray-700);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .links{
+        display: flex;
+    }
+    .link{
+        padding: 0 11px;
+    }
+}

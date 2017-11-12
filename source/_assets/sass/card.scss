@@ -1,0 +1,13 @@
+.card{
+    background-color: white;
+    border-radius: 6px;
+    padding: 40px;
+    margin: 40px 0;
+    border: 1px solid var(--gray-200);
+
+    h1, h2, h3, h4, h5, h6{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

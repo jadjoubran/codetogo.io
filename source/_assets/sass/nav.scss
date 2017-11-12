@@ -1,0 +1,18 @@
+nav{
+    background-color: white;
+    padding: 20px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo svg{
+    padding-right: 11px;
+}
