@@ -1,60 +1,49 @@
-let fs = require('fs');
+const fs = require('fs');
+const algoliasearch = require('algoliasearch');
 
-let walkPath = './../source/_howto';
+const path = "./source/_howto";
 
-let walk = function (dir, done) {
-    fs.readdir(dir, function (error, list) {
-        if (error) {
-            return done(error);
-        }
+const initIndex = () => {
+    const client = algoliasearch("7V5EBRZWFF", "8f142e7a74d7fe262bb0d74bf6098c4c");
+    return client.initIndex('test_JS-HOWTO');
+}
 
-        let i = 0;
+const index = initIndex();
+const questions = [];
 
-        (function next () {
-            let file = list[i++];
-
-            if (!file) {
-                return done(null);
-            }
-
-            file = dir + '/' + file;
-
-            fs.stat(file, function (error, stat) {
-
-                if (stat && stat.isDirectory()) {
-                    walk(file, function (error) {
-                        next();
-                    });
-                } else {
-                    // do stuff to file here
-                    console.log(file);
-
-
-                    next();
-                }
-            });
-        })();
-    });
-};
-
-// optional command line params
-//      source for walk path
-process.argv.forEach(function (val, index, array) {
-    if (val.indexOf('source') !== -1) {
-        walkPath = val.split('=')[1];
+fs.readdir(path, function(err, items) {
+    for (const item of items){
+        const question = formatQuestion(stripExtension(cleanPath(item)));
+        const url = formatUrl(stripExtension(item));
+        const objectID = url;
+        questions.push({question, url, objectID});
     }
+    syncQuestions(questions);
 });
 
-console.log('-------------------------------------------------------------');
-console.log('processing...');
-console.log('-------------------------------------------------------------');
+const syncQuestions = (questions) => {
+    index.addObjects(questions, (err, content) => {
+      if (err){
+          console.log('Error :', err);
+          return false;
+      }
+      console.log('Success!');
+      console.log(content);
+  });
+}
 
-walk(walkPath, function(error) {
-    if (error) {
-        throw error;
-    } else {
-        console.log('-------------------------------------------------------------');
-        console.log('finished.');
-        console.log('-------------------------------------------------------------');
-    }
-});
+const stripExtension = (filename) => {
+    return filename.replace(".md", '');
+}
+
+const cleanPath = (filename) => {
+    return filename.replace(/\-/g, ' ');
+}
+
+const formatQuestion = (question) => {
+    return `How to ${question} in JavaScript`;
+}
+
+const formatUrl = (url) => {
+    return `how-to-${url}-in-javascript`;
+}
