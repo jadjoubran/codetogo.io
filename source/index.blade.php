@@ -5,7 +5,7 @@
     <div class="banner">
         <h1>JavaScript code to go</h1>
         <h4>Find updated snippets for common JavaScript use cases</h4>
-        <input type="search" class="autocomplete">
+        <input type="text" id="autocomplete">
     </div>
     <h4>Popular use cases</h4>
 

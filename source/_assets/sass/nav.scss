@@ -2,6 +2,10 @@ nav{
     background-color: white;
     padding: 20px;
 }
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;

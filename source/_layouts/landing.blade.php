@@ -13,6 +13,6 @@
 
     @include('_partials.footer')
 
-    <script async src="/js/all.js"></script>
+    @include('_partials.scripts')
 </body>
 </html>

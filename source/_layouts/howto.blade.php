@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    @include('_partials.header')
+    @include('_partials.header_inner')
 
     <div class="container">
 
@@ -23,6 +23,6 @@
         </div>
     </div>
 
-    <script async src="/js/all.js"></script>
+    @include('_partials.scripts')
 </body>
 </html>
