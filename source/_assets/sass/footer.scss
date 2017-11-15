@@ -1,6 +1,11 @@
 footer{
     padding: 23px;
     color: var(--gray-700);
+
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 .footer-container{

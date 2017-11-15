@@ -18,11 +18,12 @@
             @yield('content')
 
             @if ($page->link)
-            <a href="{{$page->link}}" target="_blank">MDN Docs</a>
+            <a href="{{$page->link}}" target="_blank" rel="noopener">MDN Docs</a>
             @endif
         </div>
     </div>
 
+    @include('_partials.footer')
     @include('_partials.scripts')
 </body>
 </html>
