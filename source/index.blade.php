@@ -5,7 +5,7 @@
     <div class="banner">
         <h1>JavaScript code to go</h1>
         <h4>Find updated snippets for common JavaScript use cases</h4>
-        <input type="text" id="autocomplete">
+        <input type="text" id="autocomplete" placeholder="How to loop through array in JavaScript">
     </div>
     <h4>Popular use cases</h4>
 

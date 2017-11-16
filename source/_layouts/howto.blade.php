@@ -1,9 +1,13 @@
+<?php
+$date = new DateTime;
+$date->setTimestamp($page->date);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{$page->question()}}</title>
+    <title>{{$page->question()}} | Code to Go</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -14,7 +18,7 @@
 
         <div class="card">
             <h2>{{$page->question()}}</h2>
-            <h5>Last updated {{$page->date}}</h5>
+            <h5>Last updated {{$date->format('M d, Y')}}</h5>
             @yield('content')
 
             @if ($page->link)

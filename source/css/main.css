@@ -188,6 +188,7 @@ nav a {
 
 nav .link {
   padding: 0 8px;
+  color: var(--gray-800);
 }
 
 #logo {
@@ -252,41 +253,52 @@ footer a {
   padding: 0 11px;
 }
 
-#autocomplete {
-  padding: 20px 0;
-}
-
 .algolia-autocomplete {
   width: 100%;
+  background-color: var(--gray-200);
 }
 
 .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
   width: 100%;
+  padding: 15px 0;
 }
 
 .algolia-autocomplete .aa-hint {
-  color: #999;
+  color: #C0C9CF;
 }
 
 .algolia-autocomplete .aa-dropdown-menu {
   width: 100%;
-  background-color: #fff;
+  text-align: left;
+  background-color: white;
   border: 1px solid #999;
   border-top: none;
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
   cursor: pointer;
-  padding: 5px 4px;
+  padding: 5px 10px;
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-  background-color: #B2D7FF;
+  background-color: var(--gray-200);
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
   font-weight: bold;
   font-style: normal;
+}
+
+.all a {
+  text-decoration: none;
+}
+
+.all h2 {
+  color: var(--gray-900);
+}
+
+.all h5 {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
