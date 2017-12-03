@@ -11,16 +11,17 @@
 
     @include('_partials.header_inner')
     <div class="container all">
+        <h4 class="page-title">All Use Cases</h4>
 
         @foreach ($howto as $entry)
         <?php
         $date = new DateTime;
         $date->setTimestamp($page->date);
         ?>
-        <a href="/{{ $entry->url() }}" target="_blank">
+        <a href="/{{ $entry->url() }}">
             <div class="card">
-                <h2>{{ $entry->question() }}</h2>
-                <h5>Last updated: {{$date->format('M d, Y')}}</h5>
+                <h3>{{ $entry->question() }}</h3>
+                <h5>Last updated {{$date->format('M d, Y')}}</h5>
             </div>
         </a>
         @endforeach

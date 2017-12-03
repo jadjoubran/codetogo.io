@@ -1,6 +1,7 @@
 nav{
     background-color: white;
     padding: 20px;
+    border-bottom: 1px solid var(--gray-200);
 }
 nav a{
     text-decoration: none;
@@ -20,6 +21,7 @@ nav .link{
 #logo{
     display: flex;
     align-items: center;
+    font-weight: 900;
 }
 
 #logo svg{

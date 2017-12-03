@@ -9,6 +9,9 @@ footer{
 }
 
 .footer-container{
+    border-top: 1px solid var(--gray-200);
+    padding-top: 22px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
