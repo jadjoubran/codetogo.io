@@ -1,7 +1,10 @@
 nav{
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid var(--gray-200);
+}
+.nav-spacer{
+    padding: 10px;
 }
 nav a{
     text-decoration: none;

@@ -3,3 +3,9 @@ pre[class*="language-"] {
     padding: 30px;
     letter-spacing: 0;
 }
+
+pre[class*="language-"],
+code[class*="language-"]{
+    white-space: pre-wrap;
+    word-break: keep-all;
+}

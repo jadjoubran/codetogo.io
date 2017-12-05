@@ -14,7 +14,7 @@ $date->setTimestamp($page->date);
 <body>
     @include('_partials.header_inner')
 
-    <div class="container">
+    <div class="container howto-container">
 
         <div class="card">
             <h2>{{$page->question()}}</h2>

@@ -174,10 +174,20 @@ pre[class*="language-"] {
   letter-spacing: 0;
 }
 
+pre[class*="language-"],
+code[class*="language-"] {
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+
 nav {
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid var(--gray-200);
+}
+
+.nav-spacer {
+  padding: 10px;
 }
 
 nav a {
@@ -284,13 +294,29 @@ footer a {
   border: 0;
 }
 
+.autocomplete-header .algolia-autocomplete {
+  width: calc(100% - 60px);
+  margin-left: 20px;
+}
+
 .algolia-autocomplete .aa-input,
 .algolia-autocomplete .aa-hint {
   width: 100%;
-  padding: 15px 0;
+  padding: 18px 0 18px 48px;
   border: 0;
   font-size: 18px;
-  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.autocomplete-header .algolia-autocomplete .aa-input,
+.autocomplete-header .algolia-autocomplete .aa-hint {
+  padding: 10px 0 10px 48px;
+  font-size: 16px;
+}
+
+.autocomplete-header {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
 }
 
 .algolia-autocomplete .aa-hint {
@@ -339,9 +365,19 @@ footer a {
   margin-top: 45px;
 }
 
+.howto-container {
+  min-height: calc(100vh - 80px - 65px - 86px);
+}
+
 .mdn-container {
   color: var(--gray-800);
   font-size: 14px;
+}
+
+.about-text {
+  color: var(--gray-800);
+  line-height: 34px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */

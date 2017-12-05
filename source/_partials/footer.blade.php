@@ -8,7 +8,9 @@
                 <a href="https://nicolesaidy.com" target="_blank" rel="noopener">Nicole Saidy</a>
             </div>
             <div class="links">
-                <div class="link">About</div>
+                <a href="/about">
+                    <div class="link">About</div>
+                </a>
             </div>
         </div>
     </div>

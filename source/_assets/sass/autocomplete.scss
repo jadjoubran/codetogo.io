@@ -5,13 +5,25 @@
   width: 100%;
   border: 0;
 }
+.autocomplete-header .algolia-autocomplete{
+    width: calc(100% - 60px);
+    margin-left: 20px;
+}
 .algolia-autocomplete .aa-input,
 .algolia-autocomplete .aa-hint {
   width: 100%;
-  padding: 15px 0;
+  padding: 18px 0 18px 48px;
   border: 0;
   font-size: 18px;
-  padding-left: 48px;
+  box-sizing: border-box;
+}
+.autocomplete-header .algolia-autocomplete .aa-input,
+.autocomplete-header .algolia-autocomplete .aa-hint{
+  padding: 10px 0 10px 48px;
+  font-size: 16px;
+}
+.autocomplete-header{
+    flex-grow: 1;
 }
 .algolia-autocomplete .aa-hint {
   color: #C0C9CF;
