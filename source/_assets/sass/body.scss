@@ -44,3 +44,22 @@ h5{
     font-weight: normal;
     color: var(--gray-700);
 }
+
+@media screen and (max-width: 712px){
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}
