@@ -1,0 +1,419 @@
+/* http://prismjs.com/download.html?themes=prism-okaidia */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #e6db74;
+}
+
+.token.keyword {
+  color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+:root {
+  --gray-900: #353B3F;
+  --gray-800: #67737A;
+  --gray-700: #8999A3;
+  --gray-600: #ADB5BA;
+  --gray-500: #C0C9CF;
+  --gray-400: #E7EAEC;
+  --gray-300: #EEF0F1;
+  --gray-200: #F3F4F4;
+  --gray-100: #FAFAFA;
+}
+
+body {
+  margin: 0;
+  color: var(--gray-900);
+  background-color: var(--gray-100);
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.container {
+  max-width: 712px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--gray-800);
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--gray-700);
+}
+
+@media screen and (max-width: 712px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+pre[class*="language-"] {
+  font-size: 18px;
+  padding: 30px;
+  letter-spacing: 0;
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+
+nav {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.nav-spacer {
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+nav .link {
+  padding: 0 8px;
+  color: var(--gray-800);
+}
+
+#logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+#logo svg {
+  padding-right: 11px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 40px;
+  margin: 40px 0;
+  border: 1px solid var(--gray-200);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card h2,
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card h5 {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 712px) {
+  .card {
+    margin: 20px 0;
+    padding: 20px;
+  }
+}
+
+.banner {
+  padding: 130px 0;
+  text-align: center;
+}
+
+.banner .autocomplete {
+  margin-top: 57px;
+}
+
+footer {
+  padding: 23px;
+  color: var(--gray-700);
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-container {
+  border-top: 1px solid var(--gray-200);
+  padding-top: 22px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.footer-container .links {
+  display: -webkit-box;
+  display: flex;
+}
+
+.footer-container .link {
+  padding: 0 11px;
+}
+
+.algolia-autocomplete {
+  width: 100%;
+  border: 0;
+}
+
+.autocomplete-header .algolia-autocomplete {
+  width: calc(100% - 60px);
+  margin-left: 20px;
+}
+
+.algolia-autocomplete .aa-input,
+.algolia-autocomplete .aa-hint {
+  border-radius: 3px;
+  width: 100%;
+  padding: 18px 0 18px 48px;
+  border: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.autocomplete-header .algolia-autocomplete .aa-input,
+.autocomplete-header .algolia-autocomplete .aa-hint {
+  padding: 10px 0 10px 48px;
+  font-size: 16px;
+}
+
+.autocomplete-header {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #C0C9CF;
+  background-color: var(--gray-200) !important;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNSAxNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGU+JiMyMzk7JiMxMjg7JiMxMzA7PC90aXRsZT48ZGVzYz5DcmVhdGVkIHVzaW5nIEZpZ21hPC9kZXNjPjxnIGlkPSJDYW52YXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyOCAtMTM2MCkiPjxnIGlkPSImIzIzOTsmIzEyODsmIzEzMDsiPjx1c2UgeGxpbms6aHJlZj0iI3BhdGgwX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjggMTM1OC44OSkiIGZpbGw9IiM4OTk5QTMiLz48L2c+PC9nPjxkZWZzPjxwYXRoIGlkPSJwYXRoMF9maWxsIiBkPSJNIDEwLjQyNjMgNy43MTQyOUMgMTAuNDI2MyA5LjkxOTY0IDguNjMxNyAxMS43MTQzIDYuNDI2MzQgMTEuNzE0M0MgNC4yMjA5OCAxMS43MTQzIDIuNDI2MzQgOS45MTk2NCAyLjQyNjM0IDcuNzE0MjlDIDIuNDI2MzQgNS41MDg5MyA0LjIyMDk4IDMuNzE0MjkgNi40MjYzNCAzLjcxNDI5QyA4LjYzMTcgMy43MTQyOSAxMC40MjYzIDUuNTA4OTMgMTAuNDI2MyA3LjcxNDI5Wk0gMTQuOTk3OCAxNS4xNDI5QyAxNC45OTc4IDE0LjgzOTMgMTQuODcyOCAxNC41NDQ2IDE0LjY2NzQgMTQuMzM5M0wgMTEuNjA0OSAxMS4yNzY4QyAxMi4zMjgxIDEwLjIzMjEgMTIuNzEyMSA4Ljk4MjE0IDEyLjcxMjEgNy43MTQyOUMgMTIuNzEyMSA0LjI0MTA3IDkuODk5NTUgMS40Mjg1NyA2LjQyNjM0IDEuNDI4NTdDIDIuOTUzMTIgMS40Mjg1NyAwLjE0MDYyNSA0LjI0MTA3IDAuMTQwNjI1IDcuNzE0MjlDIDAuMTQwNjI1IDExLjE4NzUgMi45NTMxMiAxNCA2LjQyNjM0IDE0QyA3LjY5NDIgMTQgOC45NDQyIDEzLjYxNjEgOS45ODg4NCAxMi44OTI5TCAxMy4wNTEzIDE1Ljk0NjRDIDEzLjI1NjcgMTYuMTYwNyAxMy41NTEzIDE2LjI4NTcgMTMuODU0OSAxNi4yODU3QyAxNC40Nzk5IDE2LjI4NTcgMTQuOTk3OCAxNS43Njc5IDE0Ljk5NzggMTUuMTQyOVoiLz48L2RlZnM+PC9zdmc+) !important;
+  background-repeat: no-repeat !important;
+  background-position: 21px center !important;
+}
+
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 6px;
+  border-radius: 3px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: var(--gray-200);
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.all a {
+  text-decoration: none;
+}
+
+.all h3 {
+  color: var(--gray-900);
+}
+
+.all h5 {
+  margin: 0;
+}
+
+.all .page-title {
+  margin-top: 45px;
+}
+
+.howto-container {
+  min-height: calc(100vh - 80px - 65px - 86px);
+}
+
+.mdn-container {
+  color: var(--gray-800);
+  font-size: 14px;
+}
+
+.about-text {
+  color: var(--gray-800);
+  line-height: 34px;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */
