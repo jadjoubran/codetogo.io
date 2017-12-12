@@ -9,6 +9,7 @@
     "yargs": "^4.6.0"
   },
   "scripts": {
-    "sync": "node tasks/algolia-sync.js"
+    "sync": "node tasks/algolia-sync.js",
+    "deploy": "npm run build && git add dist -f && git commit -m 'Build for production' && git subtree push --prefix dist www master"
   }
 }

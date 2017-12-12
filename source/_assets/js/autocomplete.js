@@ -6,7 +6,7 @@ autocomplete('#autocomplete', {
     // autoselectOnBlur: true
 }, [
 {
-    source: autocomplete.sources.hits(index, { hitsPerPage: 5 }),
+    source: autocomplete.sources.hits(index, { hitsPerPage: 50 }),
     displayKey: 'question',
     templates: {
         suggestion: suggestion => {
