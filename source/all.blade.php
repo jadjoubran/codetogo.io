@@ -16,7 +16,7 @@
         @foreach ($howto as $entry)
         <?php
         $date = new DateTime;
-        $date->setTimestamp($page->date);
+        $date->setTimestamp($entry->date);
         ?>
         <a href="/{{ $entry->url() }}">
             <div class="card">
