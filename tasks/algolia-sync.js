@@ -5,7 +5,7 @@ const path = "./source/_howto";
 
 const initIndex = () => {
     const client = algoliasearch("7V5EBRZWFF", "8f142e7a74d7fe262bb0d74bf6098c4c");
-    return client.initIndex('test_JS-HOWTO');
+    return client.initIndex('prod_JS-HOWTO');
 }
 
 const index = initIndex();
