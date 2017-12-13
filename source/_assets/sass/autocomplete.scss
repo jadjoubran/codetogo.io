@@ -51,7 +51,6 @@
   background-position: right 15px top 0;
 }
 .algolia-autocomplete .aa-dropdown-menu {
-  @include algolia();
   width: 100%;
   text-align: left;
   background-color: white;
@@ -60,6 +59,9 @@
   border-radius: 3px;
   max-height: 300px;
   overflow-y: scroll;
+}
+.landing .algolia-autocomplete .aa-dropdown-menu {
+    @include algolia();
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
   cursor: pointer;
