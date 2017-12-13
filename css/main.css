@@ -373,10 +373,6 @@ footer a {
 }
 
 .algolia-autocomplete .aa-dropdown-menu {
-  background-image: url("https://www.algolia.com/static_assets/images/press/downloads/algolia-logo-light.svg");
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-  background-position: right 15px top 0;
   width: 100%;
   text-align: left;
   background-color: white;
@@ -385,6 +381,13 @@ footer a {
   border-radius: 3px;
   max-height: 300px;
   overflow-y: scroll;
+}
+
+.landing .algolia-autocomplete .aa-dropdown-menu {
+  background-image: url("https://www.algolia.com/static_assets/images/press/downloads/algolia-logo-light.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: right 15px top 0;
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
