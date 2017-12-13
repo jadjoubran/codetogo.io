@@ -4,7 +4,7 @@
     <title>Code to Go</title>
     @include('_partials.head')
 </head>
-<body>
+<body class="landing">
     @include('_partials.header')
 
     @yield('body')
