@@ -1,18 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{$page->question()}} | Code to Go</title>
+    @include('_partials.head')
+</head>
+<body>
+    @include('_partials.header_inner')
+
 <?php
 $date = new DateTime;
 $date->setTimestamp($page->date);
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{$page->question()}} | Code to Go</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-    @include('_partials.header_inner')
 
     <div class="container howto-container">
 
