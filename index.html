@@ -5,7 +5,8 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/css/main.css?v=2">
 <meta name="google-site-verification" content="xEjRvI-66es5w1rNkXoLeIcOQH-x0JZYst9uHHwD_1E" />
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -16,7 +17,20 @@
 <meta name="apple-mobile-web-app-title" content="Code to go">
 <meta name="application-name" content="Code to go">
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+
+
+<meta name="description" content="Javascript code to go: Find updated snippets for common JavaScript use cases.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript Code to go">
+<meta name="twitter:description" content="Javascript code to go: Find updated snippets for common JavaScript use cases.">
+<meta name="twitter:image" content="/images/share.png">
+
+<meta name="og:title" content="JavaScript Code to go" />
+<meta name="og:type" content="article" />
+<meta name="og:image" content="/images/share.png" />
+<meta name="og:description" content="Javascript code to go: Find updated snippets for common JavaScript use cases." />
+<meta name="og:site_name" content="Code to go" />
 </head>
 <body class="landing">
     <nav>
@@ -30,7 +44,7 @@
            </a>
            <div id="menu">
             <a class="link" href="/all">Use Cases</a>
-<a class="link hide-mobile" href="https://github.com/jadjoubran/codetogo.io/issues/new?title=Use+Case+Suggestion:" target="_blank" rel="noopener">Collaborate</a>
+<a class="link hide-mobile" id="contribute" href="https://github.com/jadjoubran/codetogo.io/issues/new?title=Use+Case+Suggestion:" target="_blank" rel="noopener">Contribute</a>
         </div>
     </div>
 </div>
@@ -54,7 +68,12 @@
 
 for (const person of people){
     console.log(person);
-}</code></pre>    </div>
+}</code></pre>
+<pre class="output">
+John
+Nicole
+Jad
+</pre>    </div>
     <div class="card">
         <a href="/how-to-add-class-to-element-in-javascript/">
             <h3>How to add class to element in JavaScript</h3>
@@ -77,9 +96,9 @@ element.classList.add('class-name');</code></pre>    </div>
     <div class="container">
         <div class="footer-container">
             <div>
-                &copy; Codetogo 2017 / Built by
+                &copy; 2017 / Built by
                 <a href="https://jadjoubran.io" target="_blank" rel="noopener">Jad Joubran</a>
-                &amp;
+                &amp; designed by
                 <a href="https://nicolesaidy.com" target="_blank" rel="noopener">Nicole Saidy</a>
             </div>
             <div class="links">
@@ -93,7 +112,7 @@ element.classList.add('class-name');</code></pre>    </div>
 
     <script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-<script defer src="/js/all.js"></script>
+<script defer src="/js/all.js?v=2"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110654751-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
