@@ -6,5 +6,6 @@ link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 
 
 ```javascript
-Number.parseInt("24", 10);//24
+Number.parseInt("24", 10);
 ```
+<pre class="output">24</pre>

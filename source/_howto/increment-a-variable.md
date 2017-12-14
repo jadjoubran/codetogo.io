@@ -7,5 +7,6 @@ link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operator
 
 ```javascript
 let counter = 0;
-counter++;//1
+counter++;
 ```
+<pre class="output">1</pre>

@@ -8,5 +8,7 @@ link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 ```javascript
 const text = 'Hello World';
 
-text.toUpperCase();//HELLO WORLD
+text.toUpperCase();
 ```
+
+<pre class="output">HELLO WORLD</pre>

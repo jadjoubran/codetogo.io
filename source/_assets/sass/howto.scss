@@ -3,6 +3,33 @@
 }
 
 .mdn-container{
-    color: var(--gray-800);
+    color: var(--gray-700);
+    font-size: 12px;
+    padding-top: 8px;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.output{
+    background-color: var(--gray-300);
+    padding: 15px;
+    border-radius: 0.3em;
     font-size: 14px;
+    line-height: 20px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    color: var(--gray-800);
+    margin-bottom: 0;
+}
+
+.output::before{
+    content: "Output";
+    display: block;
+    color: var(--gray-600);
+    font-size: 12px;
+    font-family: var(--base-font);
+    position: relative;
+    top: -10px;
+    right: -7px;
+    font-weight: bold;
+    float: right;
 }

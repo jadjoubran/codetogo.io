@@ -13,4 +13,6 @@ const person = {
 };
 
 const keys = Object.keys(person);
+console.log(keys);
 ```
+<pre class="output">["key", "first_name", "last_name"]</pre>

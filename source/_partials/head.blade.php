@@ -1,7 +1,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/css/main.css?v=2">
 <meta name="google-site-verification" content="xEjRvI-66es5w1rNkXoLeIcOQH-x0JZYst9uHHwD_1E" />
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -12,4 +13,25 @@
 <meta name="apple-mobile-web-app-title" content="Code to go">
 <meta name="application-name" content="Code to go">
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+
+<?php
+$title = "JavaScript Code to go";
+$description = "Javascript code to go: Find updated snippets for common JavaScript use cases.";
+if (isset($question) && $question){
+    $title = "$question | Code to go";
+    $description = "$question | Code to go";
+}
+?>
+
+<meta name="description" content="{{$description}}">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{$title}}">
+<meta name="twitter:description" content="{{$description}}">
+<meta name="twitter:image" content="/images/share.png">
+
+<meta name="og:title" content="{{$title}}" />
+<meta name="og:type" content="article" />
+<meta name="og:image" content="/images/share.png" />
+<meta name="og:description" content="{{$description}}" />
+<meta name="og:site_name" content="Code to go" />

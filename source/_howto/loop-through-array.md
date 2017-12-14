@@ -12,3 +12,9 @@ for (const person of people){
     console.log(person);
 }
 ```
+
+<pre class="output">
+John
+Nicole
+Jad
+</pre>

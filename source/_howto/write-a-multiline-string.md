@@ -7,6 +7,6 @@ link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template
 
 ```javascript
 const text = `Using the backtick character
-you can create a string that
+you can define a string that
 spans multiple lines.`;
 ```

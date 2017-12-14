@@ -8,5 +8,6 @@ link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template
 ```javascript
 const name = 'John';
 
-const text = `Welcome ${name} to your new home!`;
+console.log(`Welcome ${name} to your new home!`);
 ```
+<pre class="output">Welcome John to your new home!</pre>

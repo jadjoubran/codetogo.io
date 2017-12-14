@@ -7,5 +7,6 @@ link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operator
 
 ```javascript
 let limit = 10;
-limit--;//9
+limit--;
 ```
+<pre class="output">9</pre>

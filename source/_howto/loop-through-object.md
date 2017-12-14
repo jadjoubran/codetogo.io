@@ -16,3 +16,8 @@ for (const value of Object.values(repository)){
     console.log(value);
 }
 ```
+<pre class="output">
+1
+javascript
+true
+</pre>
