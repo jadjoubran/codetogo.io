@@ -128,6 +128,7 @@ pre[class*="language-"] {
   --gray-300: #EEF0F1;
   --gray-200: #F3F4F4;
   --gray-100: #FAFAFA;
+  --base-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -135,7 +136,7 @@ body {
   color: var(--gray-900);
   background-color: var(--gray-100);
   -webkit-font-smoothing: antialiased;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--base-font);
   letter-spacing: -0.01em;
 }
 
@@ -279,6 +280,10 @@ nav .link {
   }
 }
 
+.howto .card:hover {
+  box-shadow: none;
+}
+
 .banner {
   padding: 130px 0;
   text-align: center;
@@ -329,6 +334,18 @@ footer a {
   margin-left: 20px;
 }
 
+.algolia-autocomplete .aa-input::-webkit-input-placeholder {
+  color: #C0C9CF;
+}
+
+.algolia-autocomplete .aa-input:-ms-input-placeholder {
+  color: #C0C9CF;
+}
+
+.algolia-autocomplete .aa-input::placeholder {
+  color: #C0C9CF;
+}
+
 .algolia-autocomplete .aa-input,
 .algolia-autocomplete .aa-hint {
   border-radius: 3px;
@@ -355,10 +372,7 @@ footer a {
 .algolia-autocomplete .aa-input:focus {
   border-color: var(--gray-200);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.05);
-}
-
-.algolia-autocomplete .aa-input:focus ~ .aa-hint {
-  background-color: white !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .autocomplete-header .algolia-autocomplete .aa-input,
@@ -383,13 +397,6 @@ footer a {
   overflow-y: scroll;
 }
 
-.landing .algolia-autocomplete .aa-dropdown-menu {
-  background-image: url("https://www.algolia.com/static_assets/images/press/downloads/algolia-logo-light.svg");
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-  background-position: right 15px top 0;
-}
-
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
   cursor: pointer;
   padding: 15px 20px;
@@ -399,16 +406,39 @@ footer a {
   background-color: var(--gray-200);
 }
 
-.landing .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:first-child.aa-cursor {
-  background-image: url("https://www.algolia.com/static_assets/images/press/downloads/algolia-logo-light.svg");
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-  background-position: right 15px top 0;
-}
-
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
   font-weight: bold;
   font-style: normal;
+}
+
+@media screen and (min-width: 560px) {
+  .landing .algolia-autocomplete .aa-dropdown-menu {
+    background-image: url("https://www.algolia.com/static_assets/images/press/downloads/algolia-logo-light.svg");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: right 15px top 0;
+  }
+  .landing .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:first-child.aa-cursor:not(.aa-notfound) {
+    background-image: url("https://www.algolia.com/static_assets/images/press/downloads/algolia-logo-light.svg");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: right 15px top 0;
+  }
+}
+
+.algolia-autocomplete .aa-notfound {
+  font-size: 14px;
+  color: var(--gray-600);
+  background-image: none !important;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.algolia-autocomplete .aa-notfound em {
+  color: var(--gray-800);
 }
 
 .all a {
@@ -432,8 +462,35 @@ footer a {
 }
 
 .mdn-container {
-  color: var(--gray-800);
+  color: var(--gray-700);
+  font-size: 12px;
+  padding-top: 8px;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.output {
+  background-color: var(--gray-300);
+  padding: 15px;
+  border-radius: 0.3em;
   font-size: 14px;
+  line-height: 20px;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: var(--gray-800);
+  margin-bottom: 0;
+}
+
+.output::before {
+  content: "Output";
+  display: block;
+  color: var(--gray-600);
+  font-size: 12px;
+  font-family: var(--base-font);
+  position: relative;
+  top: -10px;
+  right: -7px;
+  font-weight: bold;
+  float: right;
 }
 
 .about-text {

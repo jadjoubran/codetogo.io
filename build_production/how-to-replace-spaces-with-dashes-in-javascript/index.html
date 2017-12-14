@@ -5,7 +5,8 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/css/main.css?v=2">
 <meta name="google-site-verification" content="xEjRvI-66es5w1rNkXoLeIcOQH-x0JZYst9uHHwD_1E" />
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -16,9 +17,22 @@
 <meta name="apple-mobile-web-app-title" content="Code to go">
 <meta name="application-name" content="Code to go">
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+
+
+<meta name="description" content="How to replace spaces with dashes in JavaScript | Code to go">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to replace spaces with dashes in JavaScript | Code to go">
+<meta name="twitter:description" content="How to replace spaces with dashes in JavaScript | Code to go">
+<meta name="twitter:image" content="/images/share.png">
+
+<meta name="og:title" content="How to replace spaces with dashes in JavaScript | Code to go" />
+<meta name="og:type" content="article" />
+<meta name="og:image" content="/images/share.png" />
+<meta name="og:description" content="How to replace spaces with dashes in JavaScript | Code to go" />
+<meta name="og:site_name" content="Code to go" />
 </head>
-<body>
+<body class="howto">
     <nav>
     <div class="container">
         <div class="nav-container">
@@ -32,7 +46,7 @@
             </div>
             <div id="menu" class="nav-spacer">
                 <a class="link" href="/all">Use Cases</a>
-<a class="link hide-mobile" href="https://github.com/jadjoubran/codetogo.io/issues/new?title=Use+Case+Suggestion:" target="_blank" rel="noopener">Collaborate</a>
+<a class="link hide-mobile" id="contribute" href="https://github.com/jadjoubran/codetogo.io/issues/new?title=Use+Case+Suggestion:" target="_blank" rel="noopener">Contribute</a>
             </div>
         </div>
     </div>
@@ -44,8 +58,11 @@
         <div class="card">
             <h2>How to replace spaces with dashes in JavaScript</h2>
             <h5>Last updated Nov 11, 2017</h5>
-            <pre><code class="language-javascript">const text = "lorem ipsum dolor sit amet";
-const token = text.replace(/ /g, '-');</code></pre>
+            <pre><code class="language-javascript">const text = "codetogo saved me tons of time";
+const token = text.replace(/ /g, '-');
+
+console.log(token);</code></pre>
+<pre class="output">codetogo-saved-me-tons-of-time</pre>
                     </div>
     </div>
 
@@ -53,9 +70,9 @@ const token = text.replace(/ /g, '-');</code></pre>
     <div class="container">
         <div class="footer-container">
             <div>
-                &copy; Codetogo 2017 / Built by
+                &copy; 2017 / Built by
                 <a href="https://jadjoubran.io" target="_blank" rel="noopener">Jad Joubran</a>
-                &amp;
+                &amp; designed by
                 <a href="https://nicolesaidy.com" target="_blank" rel="noopener">Nicole Saidy</a>
             </div>
             <div class="links">
@@ -68,7 +85,7 @@ const token = text.replace(/ /g, '-');</code></pre>
 </footer>
     <script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-<script defer src="/js/all.js"></script>
+<script defer src="/js/all.js?v=2"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110654751-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
