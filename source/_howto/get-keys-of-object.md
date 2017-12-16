@@ -1,6 +1,6 @@
 ---
 extends: _layouts.howto
-date: 2017-11-11
+date: 2017-12-16
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 ---
 
@@ -12,7 +12,6 @@ const person = {
     last_name: 'Doe'
 };
 
-const keys = Object.keys(person);
-console.log(keys);
+Object.keys(person);
 ```
-<pre class="output">["key", "first_name", "last_name"]</pre>
+<pre class="output">['key', 'first_name', 'last_name']</pre>

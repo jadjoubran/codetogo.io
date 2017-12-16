@@ -1,14 +1,13 @@
 ---
 extends: _layouts.howto
-date: 2017-11-11
+date: 2017-12-16
 ---
 
 
 ```javascript
 const text = "codetogo saved me tons of time";
-const token = text.replace(/ /g, '-');
 
-console.log(token);
+text.replace(/ /g, '-');
 ```
 
 <pre class="output">codetogo-saved-me-tons-of-time</pre>

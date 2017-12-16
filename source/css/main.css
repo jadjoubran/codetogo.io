@@ -247,6 +247,7 @@ nav .link {
   padding: 40px;
   margin: 40px 0;
   border: 1px solid var(--gray-200);
+  transition: box-shadow 250ms;
 }
 
 .card:hover {
