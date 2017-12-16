@@ -195,7 +195,8 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"],
-code[class*="language-"] {
+code[class*="language-"],
+pre.output {
   white-space: pre-wrap;
   word-break: keep-all;
 }
