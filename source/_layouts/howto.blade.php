@@ -7,21 +7,28 @@
 <body class="howto">
     @include('_partials.header_inner')
 
-<?php
-$date = new DateTime;
-$date->setTimestamp($page->date);
-?>
+    <?php
+    $date = new DateTime;
+    $date->setTimestamp($page->date);
+    ?>
 
     <div class="container howto-container">
 
-        <div class="card">
-            <h2>{{$page->question()}}</h2>
-            <h5>Last updated {{$date->format('M d, Y')}}</h5>
-            @yield('content')
+        <div class="card" itemscope itemtype="http://schema.org/Question">
+            <h2 itemprop="text">{{$page->question()}}</h2>
+            <h5 itemprop="dateModified" datetime="{{$date->format('c')}}">
+                Last updated {{$date->format('M d, Y')}}
+            </h5>
+
+            <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
+                <div itemprop="text">
+                    @yield('content')
+                </div>
+            </div>
 
             @if ($page->link)
             <div class="mdn-container">
-                <a href="{{$page->link}}" target="_blank" rel="noopener">MDN Docs</a>
+                <a href="{{$page->link}}" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
             </div>
             @endif
         </div>
