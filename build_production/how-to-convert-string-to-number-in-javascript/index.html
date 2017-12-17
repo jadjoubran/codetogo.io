@@ -52,16 +52,23 @@
     </div>
 </nav>
 
-
+    
     <div class="container howto-container">
 
-        <div class="card">
-            <h2>How to convert string to number in JavaScript</h2>
-            <h5>Last updated Nov 11, 2017</h5>
-            <pre><code class="language-javascript">Number.parseInt("24", 10);</code></pre>
-<pre class="output">24</pre>
+        <div class="card" itemscope itemtype="http://schema.org/Question">
+            <h2 itemprop="text">How to convert string to number in JavaScript</h2>
+            <h5 itemprop="dateModified" datetime="2017-11-11T00:00:00+00:00">
+                Last updated Nov 11, 2017
+            </h5>
+
+            <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
+                <div itemprop="text">
+                    <pre><code class="language-javascript">Number.parseInt("24", 10);</code></pre>
+<pre class="output">24</pre>                </div>
+            </div>
+
                         <div class="mdn-container">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt" target="_blank" rel="noopener">MDN Docs</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
             </div>
                     </div>
     </div>
@@ -83,7 +90,14 @@
         </div>
     </div>
 </footer>
-    <script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+    (function(){
+        const questions = ['How to loop through array in JavaScript', 'How to interpolate in JavaScript', 'How to get keys of object in JavaScript', 'How to check if element has class in JavaScript', 'How to get first character of string in JavaScript', 'How to capitalize first letter in JavaScript', 'How to validate email in JavaScript', 'How to replace a class of element in JavaScript', 'How to reload page in JavaScript', 'How to interpolate in JavaScript']
+        const index = Math.floor(Math.random() * questions.length)
+        document.querySelector('#autocomplete').placeholder = questions[index];
+    })();
+</script>
+<script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
 <script defer src="/js/all.js?v=2"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110654751-1"></script>

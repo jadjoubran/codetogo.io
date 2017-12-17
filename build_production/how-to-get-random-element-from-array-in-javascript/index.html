@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>How to get keys of object in JavaScript | Code to Go</title>
+    <title>How to get random element from array in JavaScript | Code to Go</title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -19,17 +19,17 @@
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
 
 
-<meta name="description" content="How to get keys of object in JavaScript | Code to go">
+<meta name="description" content="How to get random element from array in JavaScript | Code to go">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to get keys of object in JavaScript | Code to go">
-<meta name="twitter:description" content="How to get keys of object in JavaScript | Code to go">
+<meta name="twitter:title" content="How to get random element from array in JavaScript | Code to go">
+<meta name="twitter:description" content="How to get random element from array in JavaScript | Code to go">
 <meta name="twitter:image" content="/images/share.png">
 
-<meta name="og:title" content="How to get keys of object in JavaScript | Code to go" />
+<meta name="og:title" content="How to get random element from array in JavaScript | Code to go" />
 <meta name="og:type" content="article" />
 <meta name="og:image" content="/images/share.png" />
-<meta name="og:description" content="How to get keys of object in JavaScript | Code to go" />
+<meta name="og:description" content="How to get random element from array in JavaScript | Code to go" />
 <meta name="og:site_name" content="Code to go" />
 </head>
 <body class="howto">
@@ -56,26 +56,18 @@
     <div class="container howto-container">
 
         <div class="card" itemscope itemtype="http://schema.org/Question">
-            <h2 itemprop="text">How to get keys of object in JavaScript</h2>
-            <h5 itemprop="dateModified" datetime="2017-12-16T00:00:00+00:00">
-                Last updated Dec 16, 2017
+            <h2 itemprop="text">How to get random element from array in JavaScript</h2>
+            <h5 itemprop="dateModified" datetime="2017-12-17T00:00:00+00:00">
+                Last updated Dec 17, 2017
             </h5>
 
             <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                 <div itemprop="text">
-                    <pre><code class="language-javascript">const person = {
-    key: 'value',
-    first_name: 'John',
-    last_name: 'Doe'
-};
+                    <pre><code class="language-javascript">const names = ['Tom', 'Jad', 'Nicole'];
 
-Object.keys(person);</code></pre>
-<pre class="output">['key', 'first_name', 'last_name']</pre>                </div>
+names[ Math.floor(Math.random() * names.length) ];</code></pre>                </div>
             </div>
 
-                        <div class="mdn-container">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
-            </div>
                     </div>
     </div>
 

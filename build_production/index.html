@@ -59,31 +59,6 @@
     <h4>Popular use cases</h4>
 
     <div class="card">
-        <a href="/how-to-loop-through-array-in-javascript/">
-            <h3>How to loop through array in JavaScript</h3>
-        </a>
-        <h5>Last updated Nov 11, 2017</h5>
-
-        <pre><code class="language-javascript">const people = ['John', 'Nicole', 'Jad'];
-
-for (const person of people){
-    console.log(person);
-}</code></pre>
-<pre class="output">
-John
-Nicole
-Jad
-</pre>    </div>
-    <div class="card">
-        <a href="/how-to-add-class-to-element-in-javascript/">
-            <h3>How to add class to element in JavaScript</h3>
-        </a>
-        <h5>Last updated Nov 11, 2017</h5>
-
-        <pre><code class="language-javascript">const element = document.querySelector('css-selector');
-
-element.classList.add('class-name');</code></pre>    </div>
-    <div class="card">
         <a href="/how-to-interpolate-in-javascript/">
             <h3>How to interpolate in JavaScript</h3>
         </a>
@@ -97,6 +72,15 @@ You have ${2 * 5} new notifications!`);</code></pre>
 Welcome John.
 You have 10 new notifications!
 </pre>    </div>
+    <div class="card">
+        <a href="/how-to-add-class-to-element-in-javascript/">
+            <h3>How to add class to element in JavaScript</h3>
+        </a>
+        <h5>Last updated Nov 11, 2017</h5>
+
+        <pre><code class="language-javascript">const element = document.querySelector('css-selector');
+
+element.classList.add('class-name');</code></pre>    </div>
     <div class="card">
         <a href="/how-to-replace-spaces-with-dashes-in-javascript/">
             <h3>How to replace spaces with dashes in JavaScript</h3>
@@ -121,6 +105,22 @@ text.replace(/ /g, '-');</code></pre>
         <h5>Last updated Nov 11, 2017</h5>
 
         <pre><code class="language-javascript">const element = document.querySelector('#element-id');</code></pre>    </div>
+    <div class="card">
+        <a href="/how-to-loop-through-array-in-javascript/">
+            <h3>How to loop through array in JavaScript</h3>
+        </a>
+        <h5>Last updated Nov 11, 2017</h5>
+
+        <pre><code class="language-javascript">const people = ['John', 'Nicole', 'Jad'];
+
+for (const person of people){
+    console.log(person);
+}</code></pre>
+<pre class="output">
+John
+Nicole
+Jad
+</pre>    </div>
     <div class="card">
         <a href="/how-to-listen-to-click-event-in-javascript/">
             <h3>How to listen to click event in JavaScript</h3>
@@ -186,7 +186,14 @@ text.toUpperCase();</code></pre>
     </div>
 </footer>
 
-    <script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+    (function(){
+        const questions = ['How to loop through array in JavaScript', 'How to interpolate in JavaScript', 'How to get keys of object in JavaScript', 'How to check if element has class in JavaScript', 'How to get first character of string in JavaScript', 'How to capitalize first letter in JavaScript', 'How to validate email in JavaScript', 'How to replace a class of element in JavaScript', 'How to reload page in JavaScript', 'How to interpolate in JavaScript']
+        const index = Math.floor(Math.random() * questions.length)
+        document.querySelector('#autocomplete').placeholder = questions[index];
+    })();
+</script>
+<script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
 <script defer src="/js/all.js?v=2"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110654751-1"></script>

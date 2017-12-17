@@ -55,6 +55,12 @@
     <div class="container all">
         <h4 class="page-title">All Use Cases</h4>
 
+                        <a href="/how-to-create-a-promise-in-javascript">
+            <div class="card">
+                <h3>How to create a promise in JavaScript</h3>
+                <h5>Last updated Dec 17, 2017</h5>
+            </div>
+        </a>
                         <a href="/how-to-prevent-default-action-of-event-in-javascript">
             <div class="card">
                 <h3>How to prevent default action of event in JavaScript</h3>
@@ -95,6 +101,12 @@
             <div class="card">
                 <h3>How to check if array includes element in JavaScript</h3>
                 <h5>Last updated Dec 16, 2017</h5>
+            </div>
+        </a>
+                        <a href="/how-to-get-random-element-from-array-in-javascript">
+            <div class="card">
+                <h3>How to get random element from array in JavaScript</h3>
+                <h5>Last updated Dec 17, 2017</h5>
             </div>
         </a>
                         <a href="/how-to-increment-a-variable-in-javascript">
@@ -181,6 +193,12 @@
                 <h5>Last updated Dec 16, 2017</h5>
             </div>
         </a>
+                        <a href="/how-to-call-a-function-in-javascript">
+            <div class="card">
+                <h3>How to call a function in JavaScript</h3>
+                <h5>Last updated Dec 17, 2017</h5>
+            </div>
+        </a>
                         <a href="/how-to-match-text-against-regex-in-javascript">
             <div class="card">
                 <h3>How to match text against regex in JavaScript</h3>
@@ -209,6 +227,12 @@
             <div class="card">
                 <h3>How to convert string to number in JavaScript</h3>
                 <h5>Last updated Nov 11, 2017</h5>
+            </div>
+        </a>
+                        <a href="/how-to-check-if-variable-is-an-object-in-javascript">
+            <div class="card">
+                <h3>How to check if variable is an object in JavaScript</h3>
+                <h5>Last updated Dec 17, 2017</h5>
             </div>
         </a>
                         <a href="/how-to-remove-class-from-element-in-javascript">
@@ -344,7 +368,14 @@
         </div>
     </div>
 </footer>
-    <script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+    (function(){
+        const questions = ['How to loop through array in JavaScript', 'How to interpolate in JavaScript', 'How to get keys of object in JavaScript', 'How to check if element has class in JavaScript', 'How to get first character of string in JavaScript', 'How to capitalize first letter in JavaScript', 'How to validate email in JavaScript', 'How to replace a class of element in JavaScript', 'How to reload page in JavaScript', 'How to interpolate in JavaScript']
+        const index = Math.floor(Math.random() * questions.length)
+        document.querySelector('#autocomplete').placeholder = questions[index];
+    })();
+</script>
+<script defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
 <script defer src="/js/all.js?v=2"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110654751-1"></script>
