@@ -19,6 +19,10 @@
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     color: var(--gray-800);
     margin-bottom: 0;
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 .output::before{
