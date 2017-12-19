@@ -146,7 +146,10 @@ body {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 38px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
@@ -273,6 +276,10 @@ nav .link {
 
 .card h5 {
   margin-bottom: 35px;
+}
+
+.card-compact {
+  margin: 30px 0;
 }
 
 @media screen and (max-width: 712px) {
@@ -462,6 +469,16 @@ footer a {
   color: var(--gray-800);
 }
 
+.landing .subscribe-cta {
+  margin-bottom: 58px;
+  cursor: pointer;
+  transition: color 250ms;
+}
+
+.landing .subscribe-cta:hover {
+  color: var(--gray-700);
+}
+
 .all a {
   text-decoration: none;
 }
@@ -522,6 +539,55 @@ footer a {
   color: var(--gray-800);
   line-height: 34px;
   font-size: 18px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#subscribe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+#subscribe.show {
+  transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#subscribe-popup {
+  width: 100vw;
+  height: 100vh;
+  opacity: .97;
+}
+
+#subscribe-close {
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #f5f7f9;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+#subscribe-close:hover {
+  background-color: #e8eef2;
 }
 
 /*# sourceMappingURL=main.css.map */
