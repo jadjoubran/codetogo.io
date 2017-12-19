@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "devDependencies": {
     "algoliasearch": "^3.24.5",
     "gulp": "^3.8.8",
@@ -10,6 +10,6 @@
   },
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
-    "deploy": "gulp && jigsaw build production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production www gh-pages"
+    "deploy": "gulp --production && jigsaw build production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production www gh-pages"
   }
 }

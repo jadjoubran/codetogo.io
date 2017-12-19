@@ -13,6 +13,7 @@ elixir(function(mix) {
     mix.sass('main.scss')
         .scripts('*.js')
         .exec(bin.path() + ' build ' + env, ['./source/*', './source/**/*', '!./source/_assets/**/*'])
+        .copy('./source/404.html', 'build_' + env + '/404.html')
         .browserSync({
             port: port,
             server: { baseDir: 'build_' + env },

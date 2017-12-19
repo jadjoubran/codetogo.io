@@ -16,7 +16,7 @@
         $date->setTimestamp($entry->date);
         ?>
         <a href="/{{ $entry->url() }}">
-            <div class="card">
+            <div class="card card-compact">
                 <h3>{{ $entry->question() }}</h3>
                 <h5>Last updated {{$date->format('M d, Y')}}</h5>
             </div>

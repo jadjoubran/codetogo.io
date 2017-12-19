@@ -1,0 +1,11 @@
+.landing{
+    .subscribe-cta{
+        margin-bottom: 58px;
+        cursor: pointer;
+        transition: color 250ms;
+
+        &:hover{
+            color: var(--gray-700);
+        }
+    }
+}
