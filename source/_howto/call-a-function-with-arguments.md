@@ -2,6 +2,7 @@
 extends: _layouts.howto
 date: 2017-12-18
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+related: call-a-function
 ---
 
 
