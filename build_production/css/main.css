@@ -283,6 +283,10 @@ nav .link {
   margin: 30px 0;
 }
 
+.card-compact h5 {
+  margin: 0;
+}
+
 @media screen and (max-width: 712px) {
   .card {
     margin: 20px 0;
@@ -290,7 +294,7 @@ nav .link {
   }
 }
 
-.howto .card:hover {
+.howto .usecase-card:hover {
   box-shadow: none;
 }
 
@@ -488,10 +492,6 @@ footer a {
   color: var(--gray-900);
 }
 
-.all h5 {
-  margin: 0;
-}
-
 .all .page-title {
   margin-top: 45px;
 }
@@ -534,6 +534,24 @@ footer a {
   right: -7px;
   font-weight: bold;
   float: right;
+}
+
+.related {
+  padding-top: 20px;
+}
+
+.related a {
+  text-decoration: none;
+}
+
+.related h3 {
+  font-size: 22px;
+  color: var(--gray-900);
+}
+
+.related .card-compact {
+  margin: 24px 0;
+  padding: 30px;
 }
 
 .about-text {
