@@ -1,7 +1,7 @@
 const fs = require('fs');
 const algoliasearch = require('algoliasearch');
 
-const path = "./source/_howto";
+const path = "./source/_usecases";
 
 const initIndex = () => {
     const client = algoliasearch("7V5EBRZWFF", "8f142e7a74d7fe262bb0d74bf6098c4c");
