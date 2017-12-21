@@ -1,4 +1,4 @@
-@extends('_layouts.landing')
+@extends('_layouts.master', ['is_landing' => true])
 
 @section('body')
 <div class="container">
