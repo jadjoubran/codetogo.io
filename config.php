@@ -4,7 +4,7 @@ return [
     'baseUrl' => '',
     'production' => true,
     'collections' => [
-        'howto' => [
+        'usecases' => [
             'path' => 'how-to-{filename}-in-javascript',
             'section' => 'content',
             'question' => function ($page) {

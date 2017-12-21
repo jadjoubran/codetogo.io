@@ -5,7 +5,7 @@
 <div class="container all">
     <h4 class="page-title">All Use Cases</h4>
 
-    @foreach ($howto as $entry)
+    @foreach ($usecases as $entry)
     <?php
     $date = (new DateTime)->setTimestamp($entry->date);
     ?>

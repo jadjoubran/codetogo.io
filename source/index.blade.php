@@ -15,7 +15,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.interpolate')
+        @include('_usecases.interpolate')
     </div>
     <div class="card">
         <a href="/how-to-add-class-to-element-in-javascript/">
@@ -23,7 +23,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.add-class-to-element')
+        @include('_usecases.add-class-to-element')
     </div>
     <div class="card">
         <a href="/how-to-replace-spaces-with-dashes-in-javascript/">
@@ -31,7 +31,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.replace-spaces-with-dashes')
+        @include('_usecases.replace-spaces-with-dashes')
     </div>
     <div class="card">
         <a href="/how-to-reload-page-in-javascript/">
@@ -39,7 +39,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.reload-page')
+        @include('_usecases.reload-page')
     </div>
     <div class="card">
         <a href="/how-to-find-element-by-id-in-javascript/">
@@ -47,7 +47,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.find-element-by-id')
+        @include('_usecases.find-element-by-id')
     </div>
     <div class="card">
         <a href="/how-to-loop-through-array-in-javascript/">
@@ -55,7 +55,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.loop-through-array')
+        @include('_usecases.loop-through-array')
     </div>
     <div class="card">
         <a href="/how-to-listen-to-click-event-in-javascript/">
@@ -63,7 +63,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.listen-to-click-event')
+        @include('_usecases.listen-to-click-event')
     </div>
     <div class="card">
         <a href="/how-to-get-keys-of-object-in-javascript/">
@@ -71,7 +71,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.get-keys-of-object')
+        @include('_usecases.get-keys-of-object')
     </div>
     <div class="card">
         <a href="/how-to-increment-a-variable-in-javascript/">
@@ -79,7 +79,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.increment-a-variable')
+        @include('_usecases.increment-a-variable')
     </div>
     <div class="card">
         <a href="/how-to-uppercase-a-string-in-javascript/">
@@ -87,7 +87,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_howto.uppercase-a-string')
+        @include('_usecases.uppercase-a-string')
     </div>
 
 </div>
