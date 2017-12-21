@@ -4,12 +4,12 @@
     "algoliasearch": "^3.24.5",
     "gulp": "^3.8.8",
     "hasbin": "^1.2.3",
-    "laravel-elixir": "^6.0.0-15",
+    "laravel-elixir": "^5.0.0-15",
     "laravel-elixir-browsersync-official": "^1.0.0",
     "yargs": "^4.6.0"
   },
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
-    "deploy": "gulp && jigsaw build production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production www gh-pages"
+    "deploy": "gulp --env=production --production&& jigsaw build production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production www gh-pages"
   }
 }
