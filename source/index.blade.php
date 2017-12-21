@@ -1,7 +1,7 @@
 @extends('_layouts.master', ['is_landing' => true])
 
 @section('body')
-<div class="container">
+<div class="container landing">
     <div class="banner">
         <h1>Find up to date snippets for common JavaScript use cases</h1>
         <h4 class="subscribe-cta">Click here to get weekly updates in your inbox</h4>
