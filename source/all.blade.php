@@ -5,13 +5,13 @@
 <div class="container all">
     <h4 class="page-title">All Use Cases</h4>
 
-    @foreach ($usecases as $entry)
+    @foreach ($usecases as $usecase)
     <?php
-    $date = (new DateTime)->setTimestamp($entry->date);
+    $date = (new DateTime)->setTimestamp($usecase->date);
     ?>
-    <a href="/{{ $entry->url() }}">
+    <a href="/{{ $usecase->url() }}">
         <div class="card card-compact">
-            <h3>{{ $entry->question() }}</h3>
+            <h3>{{ $usecase->question() }}</h3>
             <h5>Last updated {{$date->format('M d, Y')}}</h5>
         </div>
     </a>
