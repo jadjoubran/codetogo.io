@@ -1,17 +1,20 @@
 ---
 extends: _layouts.usecase
-date: 2017-12-16
+date: 2017-12-23
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring
-related: destructure-from-object,destructure-with-default-value
+related: destructure-from-array,destructure-from-object
 ---
 
 
 ```javascript
-const [lat, lng] = [52.369661, 4.897243];
+const {id, active = true} = {
+    id: 10,
+    name: "John",
+};
 
-console.log(lat, lng)
+console.log(id, active);
 ```
 <pre class="output">
-52.369661
-4.897243
+10
+true
 </pre>
