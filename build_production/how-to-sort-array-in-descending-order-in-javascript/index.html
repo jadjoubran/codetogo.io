@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>How to destructure from array in JavaScript | Code to go</title>
+    <title>How to sort array in descending order in JavaScript | Code to go</title>
 
             <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,17 +20,17 @@
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
 
 
-<meta name="description" content="How to destructure from array in JavaScript | Code to go">
+<meta name="description" content="How to sort array in descending order in JavaScript | Code to go">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to destructure from array in JavaScript | Code to go">
-<meta name="twitter:description" content="How to destructure from array in JavaScript | Code to go">
+<meta name="twitter:title" content="How to sort array in descending order in JavaScript | Code to go">
+<meta name="twitter:description" content="How to sort array in descending order in JavaScript | Code to go">
 <meta name="twitter:image" content="/images/share.png">
 
-<meta name="og:title" content="How to destructure from array in JavaScript | Code to go" />
+<meta name="og:title" content="How to sort array in descending order in JavaScript | Code to go" />
 <meta name="og:type" content="article" />
 <meta name="og:image" content="/images/share.png" />
-<meta name="og:description" content="How to destructure from array in JavaScript | Code to go" />
+<meta name="og:description" content="How to sort array in descending order in JavaScript | Code to go" />
 <meta name="og:site_name" content="Code to go" />
     </head>
 <body>
@@ -57,39 +57,32 @@
         <div class="container usecase">
 
             <div class="card usecase-card" itemscope itemtype="http://schema.org/Question">
-            <h2 itemprop="text">How to destructure from array in JavaScript</h2>
-            <h5 itemprop="dateModified" datetime="2017-12-16T00:00:00+00:00">
-                Last updated Dec 16, 2017
+            <h2 itemprop="text">How to sort array in descending order in JavaScript</h2>
+            <h5 itemprop="dateModified" datetime="2017-12-23T00:00:00+00:00">
+                Last updated Dec 23, 2017
             </h5>
 
             <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                 <div itemprop="text">
-                    <pre><code class="language-javascript">const [lat, lng] = [52.369661, 4.897243];
+                    <pre><code class="language-javascript">const numbers = [10, 20, 30, 100, 5, 1, 20];
 
-console.log(lat, lng)</code></pre>
-<pre class="output">
-52.369661
-4.897243
-</pre>                </div>
+numbers.sort((a, b) =&gt; b - a);
+
+console.log(numbers);</code></pre>
+<pre class="output">[100, 30, 20, 20, 10, 5, 1]</pre>                </div>
             </div>
 
                         <div class="mdn-container">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
             </div>
                     </div>
         <div class="related">
 
     <h4>Related use cases</h4>
 
-        <a href="/how-to-destructure-from-object-in-javascript/">
+        <a href="/how-to-sort-array-in-ascending-order-in-javascript/">
         <div class="card card-compact">
-            <h3>How to destructure from object in JavaScript</h3>
-            <h5>Last updated Nov 11, 2017</h5>
-        </div>
-    </a>
-        <a href="/how-to-destructure-with-default-value-in-javascript/">
-        <div class="card card-compact">
-            <h3>How to destructure with default value in JavaScript</h3>
+            <h3>How to sort array in ascending order in JavaScript</h3>
             <h5>Last updated Nov 11, 2017</h5>
         </div>
     </a>
