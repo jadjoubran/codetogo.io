@@ -4,12 +4,14 @@ const algoliasearch = require('algoliasearch');
 const path = "./source/_usecases";
 
 const initIndex = () => {
-    const client = algoliasearch("7V5EBRZWFF", "8f142e7a74d7fe262bb0d74bf6098c4c");
+    const appId = "7V5EBRZWFF";
+    const client = algoliasearch(appId, process.env.CODETOGO_ALGOLIA_KEY);
     return client.initIndex('prod_JS-HOWTO');
 }
 
 const index = initIndex();
 const questions = [];
+
 
 fs.readdir(path, function(err, items) {
     for (const item of items){
