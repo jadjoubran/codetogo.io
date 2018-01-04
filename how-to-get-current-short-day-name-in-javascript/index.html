@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>How to get current month name in JavaScript | Code to go</title>
+    <title>How to get current short day name in JavaScript | Code to go</title>
 
             <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,17 +20,17 @@
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
 
 
-<meta name="description" content="How to get current month name in JavaScript | Code to go">
+<meta name="description" content="How to get current short day name in JavaScript | Code to go">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to get current month name in JavaScript | Code to go">
-<meta name="twitter:description" content="How to get current month name in JavaScript | Code to go">
+<meta name="twitter:title" content="How to get current short day name in JavaScript | Code to go">
+<meta name="twitter:description" content="How to get current short day name in JavaScript | Code to go">
 <meta name="twitter:image" content="/images/share.png">
 
-<meta name="og:title" content="How to get current month name in JavaScript | Code to go" />
+<meta name="og:title" content="How to get current short day name in JavaScript | Code to go" />
 <meta name="og:type" content="article" />
 <meta name="og:image" content="/images/share.png" />
-<meta name="og:description" content="How to get current month name in JavaScript | Code to go" />
+<meta name="og:description" content="How to get current short day name in JavaScript | Code to go" />
 <meta name="og:site_name" content="Code to go" />
     </head>
 <body>
@@ -57,21 +57,21 @@
         <div class="container usecase">
 
             <div class="card usecase-card" itemscope itemtype="http://schema.org/Question">
-            <h2 itemprop="text">How to get current month name in JavaScript</h2>
-            <h5 itemprop="dateModified" datetime="2017-12-29T00:00:00+00:00">
-                Last updated Dec 29, 2017
+            <h2 itemprop="text">How to get current short day name in JavaScript</h2>
+            <h5 itemprop="dateModified" datetime="2018-01-04T00:00:00+00:00">
+                Last updated Jan 04, 2018
             </h5>
 
             <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                 <div itemprop="text">
                     <pre><code class="language-javascript">const date = Date.now();
 
-const options = {month: 'long'};
+const options = {weekday: 'short'};
 
 new Intl.DateTimeFormat('en-US', options)
 .format(date);</code></pre>
 <pre class="output">
-December
+Thu
 </pre>                </div>
             </div>
 
@@ -83,14 +83,14 @@ December
 
     <h4>Related use cases</h4>
 
-        <a href="/how-to-get-current-short-month-name-in-javascript/">
-        <div class="card card-compact">
-            <h3>How to get current short month name in JavaScript</h3>
-        </div>
-    </a>
         <a href="/how-to-get-current-day-name-in-javascript/">
         <div class="card card-compact">
             <h3>How to get current day name in JavaScript</h3>
+        </div>
+    </a>
+        <a href="/how-to-get-current-month-name-in-javascript/">
+        <div class="card card-compact">
+            <h3>How to get current month name in JavaScript</h3>
         </div>
     </a>
     </div>
