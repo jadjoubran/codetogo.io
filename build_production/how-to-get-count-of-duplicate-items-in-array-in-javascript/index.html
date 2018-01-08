@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>How to get random element from array in JavaScript | Code to go</title>
+    <title>How to get count of duplicate items in array in JavaScript | Code to go</title>
 
             <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,17 +20,17 @@
 <meta name="msapplication-config" content="/favicons/browserconfig.xml">
 
 
-<meta name="description" content="How to get random element from array in JavaScript | Code to go">
+<meta name="description" content="How to get count of duplicate items in array in JavaScript | Code to go">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to get random element from array in JavaScript | Code to go">
-<meta name="twitter:description" content="How to get random element from array in JavaScript | Code to go">
+<meta name="twitter:title" content="How to get count of duplicate items in array in JavaScript | Code to go">
+<meta name="twitter:description" content="How to get count of duplicate items in array in JavaScript | Code to go">
 <meta name="twitter:image" content="/images/share.png">
 
-<meta name="og:title" content="How to get random element from array in JavaScript | Code to go" />
+<meta name="og:title" content="How to get count of duplicate items in array in JavaScript | Code to go" />
 <meta name="og:type" content="article" />
 <meta name="og:image" content="/images/share.png" />
-<meta name="og:description" content="How to get random element from array in JavaScript | Code to go" />
+<meta name="og:description" content="How to get count of duplicate items in array in JavaScript | Code to go" />
 <meta name="og:site_name" content="Code to go" />
     </head>
 <body>
@@ -57,18 +57,26 @@
         <div class="container usecase">
 
             <div class="card usecase-card" itemscope itemtype="http://schema.org/Question">
-            <h2 itemprop="text">How to get random element from array in JavaScript</h2>
+            <h2 itemprop="text">How to get count of duplicate items in array in JavaScript</h2>
             <h5 itemprop="dateModified" datetime="2018-01-08T00:00:00+00:00">
                 Last updated Jan 08, 2018
             </h5>
 
             <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                 <div itemprop="text">
-                    <pre><code class="language-javascript">const names = ['Tom', 'Jad', 'Nicole'];
+                    <pre><code class="language-javascript">const chars = ['a','b','c','a','a','c'];
+let result = {}
 
-names[ Math.floor(Math.random() * names.length) ];</code></pre>
+result = chars.reduce((acc, item) =&gt; {
+  acc[item] = acc[item] ? ++acc[item] : 1;
+  return acc;
+}, result);</code></pre>
 <pre class="output">
-a random element from the names array
+{
+    a: 3,
+    b: 1,
+    c: 2
+}
 </pre>                </div>
             </div>
 
