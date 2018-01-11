@@ -16,6 +16,7 @@ elixir(function(mix) {
         .copy('./source/404.html', 'build_' + env + '/404.html')
         .version(['css/main.css', 'js/all.js'])
         .browserSync({
+            open: false,
             port: port,
             server: { baseDir: 'build_' + env },
             proxy: null,
