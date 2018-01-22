@@ -2,6 +2,7 @@
 extends: _layouts.usecase
 date: 2017-12-18
 link: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+category: JSON
 ---
 
 

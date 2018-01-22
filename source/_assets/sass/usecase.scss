@@ -2,6 +2,25 @@
     min-height: calc(100vh - 80px - 65px - 86px);
 }
 
+.usecase-subtitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    .category{
+        margin-right: 10px;
+        background-color: var(--gray-200); 
+        padding: 4px 6px;
+        border-radius: 3px;
+        color: var(--gray-800);
+        font-size: 14px;
+    }
+
+    h5{
+        margin-bottom: 0;
+    }
+}
+
 .mdn-container{
     color: var(--gray-700);
     font-size: 12px;

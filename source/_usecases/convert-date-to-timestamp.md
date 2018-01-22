@@ -2,6 +2,7 @@
 extends: _layouts.usecase
 date: 2017-12-26
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+category: datetime
 ---
 
 

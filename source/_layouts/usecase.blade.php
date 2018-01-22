@@ -12,9 +12,14 @@
     ?>
         <div class="card usecase-card" itemscope itemtype="http://schema.org/Question">
             <h2 itemprop="text">{{$page->question()}}</h2>
-            <h5 itemprop="dateModified" datetime="{{$date->format('c')}}">
-                Last updated {{$date->format('M d, Y')}}
-            </h5>
+            <div class="usecase-subtitle">
+                @if ($page->category)
+                    <div class="category">{{ucfirst($page->category)}}</div>
+                @endif
+                <h5 itemprop="dateModified" datetime="{{$date->format('c')}}">
+                    Last updated {{$date->format('M d, Y')}}
+                </h5>
+            </div>
 
             <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                 <div itemprop="text">

@@ -1,6 +1,16 @@
 @extends('_layouts/master', ['title' => 'Use Cases'])
 
 @section('body')
+<?php
+// $categories = $usecases->unique('category');
+// $filter = 'functions';
+// $title = $filter ? $filter :'All';
+
+// $filteredUsecases = $usecases;
+// if ($filter){
+//     $filteredUsecases = $usecases->where('category', $filter);
+// }
+?>
 
 <div class="container all">
     <h4 class="page-title">All Use Cases</h4>

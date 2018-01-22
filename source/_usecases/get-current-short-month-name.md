@@ -3,6 +3,7 @@ extends: _layouts.usecase
 date: 2018-01-04
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
 related: get-current-month-name,get-current-day-name
+category: datetime
 ---
 
 

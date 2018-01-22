@@ -21,6 +21,7 @@ extends: _layouts.usecase
 date: 2018-01-20
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 related: lowercase-a-string
+category: strings
 ---
 
 
@@ -43,4 +44,6 @@ text.toUpperCase();
 
 7. If there is one or more related use cases, please reference them (comma separated) in the `related:` filed in the headers. If there are none, then please remove that line.
 
-8. Set the `date:` to today's date
+8. Update the `category:` to a suitable category
+
+9. Set the `date:` to today's date
