@@ -1,9 +1,0 @@
-root = true
-
-[*]
-end_of_line = lf
-
-# 4 space indentation
-[*.{js,php,scss}]
-indent_style = space
-indent_size = 4
