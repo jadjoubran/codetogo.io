@@ -10,6 +10,6 @@
   },
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
-    "deploy": "gulp --env=production --production && jigsaw build production && git add build_production && git commit -m 'Build for production' && git subtree push --prefix build_production origin gh-pages && npm run sync"
+    "deploy": "gulp --env=production --production && jigsaw build production && git subtree push --prefix build_production origin gh-pages && npm run sync"
   }
 }
