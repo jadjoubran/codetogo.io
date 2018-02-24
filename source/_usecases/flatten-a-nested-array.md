@@ -10,8 +10,9 @@ category: arrays
 const nestedArray = [1, [2], [[3], 4], 5];
 
 const flatten = (nestedArray) =>
-  nestedArray.reduce((flattenedArray, item) =>
-    flattenedArray.concat(Array.isArray(item) ? flatten(item) : [item]), []);
+  nestedArray.reduce((flat, item) =>
+    flat.concat(Array.isArray(item) ?
+        flatten(item) : [item]), []);
 
 flatten(nestedArray);
 ```
