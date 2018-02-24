@@ -7,13 +7,13 @@ category: arrays
 
 
 ```javascript
-const complexArray = [1, [2], [[3], 4], 5];
+const nestedArray = [1, [2], [[3], 4], 5];
 
 const flatten = (nestedArray) =>
   nestedArray.reduce((flattenedArray, item) =>
     flattenedArray.concat(Array.isArray(item) ? flatten(item) : [item]), []);
 
-flatten(complexArray);
+flatten(nestedArray);
 ```
 
 <pre class="output">[1, 2, 3, 4, 5 ]</pre>
