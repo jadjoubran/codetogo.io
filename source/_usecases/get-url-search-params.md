@@ -2,7 +2,7 @@
 extends: _layouts.usecase
 date: 2018-03-04
 link: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
-related: set-url-params
+related: set-url-search-params
 category: URL
 ---
 
