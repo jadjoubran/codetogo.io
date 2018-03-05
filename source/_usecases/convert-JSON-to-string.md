@@ -17,5 +17,5 @@ JSON.stringify(object);
 ```
 
 <pre class="output">
-{"id":1,"name":"Leanne Graham"}
+"{"id":1,"name":"Leanne Graham"}"
 </pre>
