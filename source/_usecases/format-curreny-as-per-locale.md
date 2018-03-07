@@ -8,9 +8,12 @@ category: numbers
 
 ```javascript
 const amount = 1999.90;
-const formattedCurrency = amount.toLocaleString("en-US", { style: "currency", currency: "USD" });
+const options = {
+    style: "currency",
+    currency: "USD",
+};
 
-console.log("United States: ", formattedCurrency);
+amount.toLocaleString("en-US", options);
 ```
 
-<pre class="output">United States: $1,999.90</pre>
+<pre class="output">$1,999.90</pre>

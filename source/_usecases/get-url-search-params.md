@@ -8,9 +8,9 @@ category: URL
 
 
 ```javascript
+//https://codetogo.io?lang=en
 const url = new URL(document.location);
-// document.location -> 'https://codetogo.io?lang=en'
 
-console.log(url.searchParams.get("lang"));
+const lang = url.searchParams.get("lang");
 ```
 <pre class="output">en</pre>

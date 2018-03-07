@@ -14,4 +14,4 @@ url.searchParams.set("lang", "en");
 
 console.log(url.href);
 ```
-<pre class="output">https://codetogo.io?lang=en</pre>
+<pre class="output">https://codetogo.io/how-to-set-url-search-params-in-javascript/?lang=en</pre>
