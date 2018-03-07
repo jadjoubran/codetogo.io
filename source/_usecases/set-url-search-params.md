@@ -8,10 +8,10 @@ category: URL
 
 
 ```javascript
-const url = new URL('https://codetogo.io');
+const url = new URL(document.location);
 
-url.searchParams.set("hello", "world)
+url.searchParams.set("lang", "en");
 
 console.log(url.href);
 ```
-<pre class="output">https://codetogo.io?hello=world</pre>
+<pre class="output">https://codetogo.io?lang=en</pre>
