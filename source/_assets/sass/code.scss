@@ -2,11 +2,42 @@ pre[class*="language-"] {
     font-size: 18px;
     padding: 30px;
     letter-spacing: 0;
+    position: relative;
 }
 
 pre[class*="language-"],
 code[class*="language-"],
-pre.output{
+pre.output {
     white-space: pre-wrap;
     word-break: keep-all;
+}
+
+pre.language-html,
+pre.language-css{
+    margin-bottom: 15px;
+}
+
+pre.language-html::before,
+pre.language-css::before,
+pre.language-javascript::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 12px;
+    color: var(--gray-700);
+    font-family: var(--base-font);
+}
+
+pre.language-html::before {
+    content: "html";
+    text-transform: uppercase;
+}
+pre.language-css::before {
+    content: "css";
+    text-transform: uppercase;
+}
+pre.language-javascript::before {
+    content: "JavaScript";
 }

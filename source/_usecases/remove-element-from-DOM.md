@@ -5,9 +5,12 @@ link: https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove
 category: DOM
 ---
 
+```html
+<div id="box"></div>
+```
 
 ```javascript
-const element = document.querySelector('css-selector');
+const element = document.querySelector('#box');
 
 element.remove();
 ```
