@@ -1,7 +1,8 @@
 ---
 extends: _layouts.usecase
 date: 2018-02-16
-link: 
+link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+reference: String.split
 category: strings
 ---
 

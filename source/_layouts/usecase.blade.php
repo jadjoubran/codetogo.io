@@ -29,7 +29,11 @@
 
             @if ($page->link)
             <div class="mdn-container">
-                <a href="{{$page->link}}" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
+                @if ($page->reference)
+                    <a href="{{$page->link}}" target="_blank" rel="noopener"  itemprop="citation">{{$page->reference}} on MDN</a>
+                @else
+                    <a href="{{$page->link}}" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
+                @endif
             </div>
             @endif
         </div>

@@ -2,6 +2,7 @@
 extends: _layouts.usecase
 date: 2018-02-19
 link: https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand
+reference: Document.execCommand
 category: strings
 ---
 

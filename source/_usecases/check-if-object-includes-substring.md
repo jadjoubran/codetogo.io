@@ -2,6 +2,7 @@
 extends: _layouts.usecase
 date: 2018-01-28
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
+reference: Object.values
 related: check-if-object-includes-value
 category: objects
 ---

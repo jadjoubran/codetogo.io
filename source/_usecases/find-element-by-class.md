@@ -1,12 +1,13 @@
 ---
 extends: _layouts.usecase
-date: 2017-11-11
+date: 2018-03-11
 link: https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+reference: Document.querySelector
 related: find-element-by-id,find-multiple-DOM-elements,find-an-element-from-the-DOM
 category: DOM
 ---
 
 
 ```javascript
-const element = document.querySelectorAll('.class-name');
+const element = document.querySelector('.class-name');
 ```

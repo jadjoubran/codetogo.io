@@ -2,6 +2,7 @@
 extends: _layouts.usecase
 date: 2017-12-16
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring
+reference: Object destructuring
 related: destructure-from-array,destructure-with-default-value
 category: syntax
 ---

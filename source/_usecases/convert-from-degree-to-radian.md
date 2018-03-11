@@ -1,7 +1,8 @@
 ---
 extends: _layouts.usecase
 date: 2017-12-21
-link: https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
+link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI
+reference: Math.PI
 category: numbers
 ---
 

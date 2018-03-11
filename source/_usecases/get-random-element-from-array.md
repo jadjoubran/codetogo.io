@@ -1,6 +1,8 @@
 ---
 extends: _layouts.usecase
 date: 2018-01-08
+link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+reference: Math.random
 category: arrays
 ---
 

@@ -2,6 +2,7 @@
 extends: _layouts.usecase
 date: 2017-12-17
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+reference: Functions
 related: call-a-function-with-arguments
 category: functions
 ---

@@ -2,6 +2,7 @@
 extends: _layouts.usecase
 date: 2018-03-08
 link: https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+reference: Element.innerHTML
 category: DOM
 ---
 
