@@ -20,6 +20,7 @@ For example: [lowercase-a-string.md](https://github.com/jadjoubran/codetogo.io/b
 extends: _layouts.usecase
 date: 2018-01-20
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+reference: String.toUpperCase
 related: lowercase-a-string
 category: strings
 ---
@@ -40,7 +41,7 @@ text.toUpperCase();
 5. If there's an output for such code, show it in between `<pre class="output"></pre>`
 
 6. If the solution for that usecase references a particular javascript method or object, please find the [MDN](https://developer.mozilla.org/
-) link for it and replace it in the header of the file.
+) link for it and replace it in the header of the file. Also add a `reference` that points to the method name. For example: `String.toUpperCase`.
 
 7. If there is one or more related use cases, please reference them (comma separated) in the `related:` filed in the headers. If there are none, then please remove that line.
 
