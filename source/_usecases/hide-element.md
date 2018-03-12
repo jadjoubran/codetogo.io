@@ -1,13 +1,16 @@
 ---
 extends: _layouts.usecase
-date: 2018-01-11
+date: 2018-03-11
 related: show-element
 category: DOM
 ---
 
+```html
+<div id="box"></div>
+```
 
 ```javascript
-const element = document.querySelector('css-selector');
+const element = document.querySelector('#box');
 
 element.style.display = 'none';
 ```

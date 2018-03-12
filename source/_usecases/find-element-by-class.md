@@ -7,7 +7,10 @@ related: find-element-by-id,find-multiple-DOM-elements,find-an-element-from-the-
 category: DOM
 ---
 
+```html
+<div class="box"></div>
+```
 
 ```javascript
-const element = document.querySelector('.class-name');
+const element = document.querySelector('.box');
 ```

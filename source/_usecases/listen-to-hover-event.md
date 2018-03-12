@@ -6,9 +6,12 @@ reference: EventTarget.addEventListener
 category: DOM
 ---
 
+```html
+<div id="box"></div>
+```
 
 ```javascript
-const element = document.querySelector('css-selector');
+const element = document.querySelector('#box');
 
 element.addEventListener('mouseover', event => {
     console.log('Mouse over');

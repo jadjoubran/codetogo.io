@@ -60,14 +60,18 @@
             <h2 itemprop="text">How to show element in JavaScript</h2>
             <div class="usecase-subtitle">
                                     <div class="category">DOM</div>
-                                <h5 itemprop="dateModified" datetime="2018-01-11T00:00:00+00:00">
-                    Last updated Jan 11, 2018
+                                <h5 itemprop="dateModified" datetime="2018-03-11T00:00:00+00:00">
+                    Last updated Mar 11, 2018
                 </h5>
             </div>
 
             <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                 <div itemprop="text">
-                    <pre><code class="language-javascript">const element = document.querySelector('css-selector');
+                    <pre><code class="language-html">&lt;div id="box"&gt;&lt;/div&gt;</code></pre>
+<pre><code class="language-css">#box{
+    display: none;
+}</code></pre>
+<pre><code class="language-javascript">const element = document.querySelector('#box');
 
 element.style.display = 'block';</code></pre>                </div>
             </div>

@@ -7,9 +7,12 @@ related: listen-to-click-event
 category: DOM
 ---
 
+```html
+<div id="box"></div>
+```
 
 ```javascript
-const element = document.querySelector('css-selector');
+const element = document.querySelector('#box');
 
 element.addEventListener('click', event => {
     event.preventDefault();
