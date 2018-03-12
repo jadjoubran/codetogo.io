@@ -69,7 +69,11 @@
                 <div itemprop="text">
                     <pre><code class="language-javascript">if ('serviceWorker' in navigator) {
   window.addEventListener('load', () =&gt; {
-    navigator.serviceWorker.register('/sw.js');
+
+    navigator.serviceWorker.register('/sw.js')
+    .then(registration =&gt; console.log(registration))
+    .catch(err =&gt; console.error(err));
+
   });
 }</code></pre>                </div>
             </div>
