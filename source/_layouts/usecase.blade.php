@@ -1,6 +1,7 @@
 @extends('_layouts/master', [
     'title' => $page->question(),
     'question' => $page->question(),
+    'reference' => $page->reference,
 ])
 
 @section('body')
