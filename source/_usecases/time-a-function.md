@@ -12,11 +12,11 @@ function foo(){
     // do stuff
 }
 
-let start = performance.now();
+const start = performance.now();
 foo();
-let end = performance.now();
+const end = performance.now();
 
-console.log(`Call to ${foo.name} took ${(end - start)} milliseconds.`);
+console.log(`Call to ${foo.name} took ${(end - start)} ms.`);
 ```
 
-<pre class="output">Call to foo took x milliseconds</pre>
+<pre class="output">Call to foo took x ms</pre>
