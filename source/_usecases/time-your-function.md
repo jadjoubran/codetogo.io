@@ -3,7 +3,6 @@ extends: _layouts.usecase
 date: 2018-03-14
 link: https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 reference: performance.now
-related: interpolate
 category: performance
 ---
 
