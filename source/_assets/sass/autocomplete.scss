@@ -1,6 +1,14 @@
 #autocomplete{
 }
 
+.hide-till-ready{
+    visibility: hidden;
+}
+//when autocomplete widget is ready
+.algolia-autocomplete .hide-till-ready{
+    visibility: visible;
+}
+
 .algolia-autocomplete {
   width: 100%;
   border: 0;

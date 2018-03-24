@@ -7,7 +7,7 @@
                 </div>
             </a>
             <div class="autocomplete-header hide-mobile">
-                <input type="text" id="autocomplete" placeholder="How to loop through array in JavaScript">
+                <input type="text" id="autocomplete" class="hide-till-ready" placeholder="How to loop through array in JavaScript">
             </div>
             <div id="menu" class="nav-spacer">
                 @include('_partials.menu')
