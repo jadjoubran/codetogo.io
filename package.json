@@ -11,5 +11,8 @@
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
     "deploy": "gulp --env=production --production && jigsaw build production && npm run sync"
+  },
+  "dependencies": {
+    "rrssb": "^1.14.0"
   }
 }

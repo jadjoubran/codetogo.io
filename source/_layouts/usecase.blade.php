@@ -38,6 +38,7 @@
             </div>
             @endif
         </div>
+        @include('_partials/share')
         @include('_partials/related')
     </div>
 

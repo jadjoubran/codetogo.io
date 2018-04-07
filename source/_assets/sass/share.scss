@@ -1,0 +1,38 @@
+.share {
+    .clear {
+        clear: both;
+    }
+}
+
+.rrssb-buttons {
+    height: 34px;
+}
+.rrssb-buttons li {
+    margin-right: 12px;
+}
+
+.rrssb-buttons li a {
+    padding: 11px 7px 12px 27px;
+    border-radius: 3px;
+}
+
+.rrssb-buttons li a .rrssb-icon {
+    left: 9px;
+}
+
+.rrssb-buttons li.rrssb-facebook a,
+.rrssb-buttons li.rrssb-twitter a,
+.rrssb-buttons li.rrssb-googleplus a {
+    background-color: #ccc;
+}
+.rrssb-buttons li.rrssb-facebook a:hover {
+    background-color: #306199;
+}
+
+.rrssb-buttons li.rrssb-twitter a:hover {
+    background-color: #26c4f1;
+}
+
+.rrssb-buttons li.rrssb-googleplus a:hover {
+    background-color: #e93f2e;
+}
