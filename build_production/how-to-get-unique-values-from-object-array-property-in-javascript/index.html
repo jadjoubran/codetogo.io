@@ -68,17 +68,14 @@
             <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
                 <div itemprop="text">
                     <pre><code class="language-javascript">const objects = [
-    {id: 1, category: "Cars"},
-    {id: 2, category: "Cars"},
-    {id: 3, category: "Smatphones"},
-    {id: 4, category: "Cars"},
-    {id: 5, category: "Tablet"},
+    { id: 1, category: 'Cars' },
+    { id: 2, category: 'Cars' },
+    { id: 3, category: 'Smatphones' },
+    { id: 4, category: 'Cars' },
+    { id: 5, category: 'Tablet' }
 ];
 
-const categories = [...new Set(
-    objects.map(object =&gt; object.category)
-)];
-</code></pre>
+const categories = [...new Set(objects.map(object =&gt; object.category))];</code></pre>
 <pre class="output">["Cars", "Smartphones", "Tablet"]</pre>                </div>
             </div>
 

@@ -70,9 +70,9 @@
                     <pre><code class="language-javascript">const length = 20;
 
 //should NOT be used for cryptography
-const randomString = [...Array(length)].map(
-    () =&gt; Math.random().toString(36)[5]
-).join('');</code></pre>
+const randomString = [...Array(length)]
+    .map(() =&gt; Math.random().toString(36)[5])
+    .join('');</code></pre>
 <pre class="output">ga6fr8rf7uan1yn2adqy</pre>                </div>
             </div>
 
