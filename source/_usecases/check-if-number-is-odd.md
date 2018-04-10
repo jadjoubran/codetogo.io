@@ -7,7 +7,6 @@ related: check-if-number-is-even
 category: numbers
 ---
 
-
 ```javascript
 const number = 13;
 
@@ -15,4 +14,5 @@ const isOdd = number % 2 !== 0;
 
 console.log(isOdd);
 ```
+
 <pre class="output">true</pre>

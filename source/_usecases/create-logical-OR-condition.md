@@ -7,13 +7,13 @@ related: create-logical-AND-condition
 category: syntax
 ---
 
-
 ```javascript
 const isUnderage = true;
 const isDrunk = false;
 
-if (isUnderage || isDrunk){
+if (isUnderage || isDrunk) {
     console.log('Cannot drive');
 }
 ```
+
 <pre class="output">Cannot drive</pre>

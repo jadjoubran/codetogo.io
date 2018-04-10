@@ -7,7 +7,6 @@ related: match-text-against-regex
 category: syntax
 ---
 
-
 ```javascript
 new Promise((resolve, reject) => {
     // asynchronous operation
@@ -15,6 +14,6 @@ new Promise((resolve, reject) => {
     // then in case of success
     resolve();
     // or
-    reject("failure reason");
+    reject('failure reason');
 });
 ```

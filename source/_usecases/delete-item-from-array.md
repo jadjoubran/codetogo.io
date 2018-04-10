@@ -6,12 +6,12 @@ reference: Array.splice
 category: arrays
 ---
 
-
 ```javascript
-const apps = ["phone", "calculator", "codetogo", "clock"];
+const apps = ['phone', 'calculator', 'codetogo', 'clock'];
 
 apps.splice(2, 1);
 
 console.log(apps);
 ```
+
 <pre class="output">["phone", "calculator", "clock"]</pre>

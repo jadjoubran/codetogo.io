@@ -6,7 +6,6 @@ reference: Element.classList
 category: DOM
 ---
 
-
 ```html
 <div id="box"></div>
 ```

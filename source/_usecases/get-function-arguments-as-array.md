@@ -6,9 +6,8 @@ reference: Spread operator
 category: functions
 ---
 
-
 ```javascript
-function log(...msgs){
+function log(...msgs) {
     //msgs is now an array
     console.log(`Received ${msgs.length} messages`);
 }

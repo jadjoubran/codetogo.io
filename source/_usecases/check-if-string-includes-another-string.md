@@ -6,11 +6,10 @@ reference: String.includes
 category: strings
 ---
 
-
 ```javascript
-const text = "Code to go has awesome use cases!";
+const text = 'Code to go has awesome use cases!';
 
-text.includes("Code to go");
+text.includes('Code to go');
 ```
 
 <pre class="output">true</pre>

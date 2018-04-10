@@ -7,11 +7,10 @@ related: replace-spaces-with-dashes
 category: strings
 ---
 
-
 ```javascript
-const text = "We are outside. We are waiting."
+const text = 'We are outside. We are waiting.';
 
-text.replace(/We/g, "You");
+text.replace(/We/g, 'You');
 ```
 
 <pre class="output">You are outside. You are waiting.</pre>

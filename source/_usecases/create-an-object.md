@@ -6,7 +6,6 @@ reference: Object
 category: objects
 ---
 
-
 ```javascript
 const person = {
     key: 'value',

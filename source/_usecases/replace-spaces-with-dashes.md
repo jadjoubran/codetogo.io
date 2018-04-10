@@ -7,9 +7,8 @@ related: replace-all-occurrences-of-string
 category: strings
 ---
 
-
 ```javascript
-const text = "codetogo saved me tons of time";
+const text = 'codetogo saved me tons of time';
 
 text.replace(/ /g, '-');
 ```

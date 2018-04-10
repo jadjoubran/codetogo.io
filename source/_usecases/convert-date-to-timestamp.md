@@ -6,10 +6,10 @@ reference: Date.getTime
 category: datetime
 ---
 
-
 ```javascript
 const date = new Date('Jan 10, 2000');
 
 const timestamp = date.getTime();
 ```
+
 <pre class="output">947455200000</pre>

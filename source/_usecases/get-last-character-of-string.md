@@ -7,9 +7,8 @@ related: get-first-character-of-string
 category: strings
 ---
 
-
 ```javascript
-const name = "Lewis";
+const name = 'Lewis';
 
 name.substr(-1);
 ```

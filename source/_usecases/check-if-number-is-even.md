@@ -7,7 +7,6 @@ related: check-if-number-is-odd
 category: numbers
 ---
 
-
 ```javascript
 const number = 12;
 
@@ -15,4 +14,5 @@ const isEven = number % 2 === 0;
 
 console.log(isEven);
 ```
+
 <pre class="output">true</pre>

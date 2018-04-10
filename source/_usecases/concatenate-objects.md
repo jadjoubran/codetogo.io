@@ -7,16 +7,15 @@ category: objects
 related: concatenate-arrays
 ---
 
-
 ```javascript
 const defaultOptions = {
     verbose: false,
     src: './src',
     dist: './dist'
 };
-const userOptions = {verbose: true};
+const userOptions = { verbose: true };
 
-const options = {...defaultOptions, ...userOptions};
+const options = { ...defaultOptions, ...userOptions };
 ```
 
 <pre class="output">{

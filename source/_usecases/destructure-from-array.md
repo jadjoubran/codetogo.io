@@ -7,12 +7,12 @@ related: destructure-from-object,destructure-with-default-value
 category: syntax
 ---
 
-
 ```javascript
 const [lat, lng] = [52.369661, 4.897243];
 
-console.log(lat, lng)
+console.log(lat, lng);
 ```
+
 <pre class="output">
 52.369661
 4.897243

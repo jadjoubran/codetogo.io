@@ -7,11 +7,10 @@ related: parse-JSON-string
 category: JSON
 ---
 
-
 ```javascript
 const object = {
     id: 1,
-    name: "Leanne Graham"
+    name: 'Leanne Graham'
 };
 
 JSON.stringify(object);

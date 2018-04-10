@@ -6,8 +6,8 @@ reference: Number.parseInt
 category: numbers
 ---
 
-
 ```javascript
-Number.parseInt("24", 10);
+Number.parseInt('24', 10);
 ```
+
 <pre class="output">24</pre>

@@ -6,12 +6,11 @@ reference: Remainder
 category: numbers
 ---
 
-
 ```javascript
 const even = 8 % 2;
 const odd = 5 % 2;
 
-console.log({even, odd});
+console.log({ even, odd });
 ```
 
 <pre class="output">{

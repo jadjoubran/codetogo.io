@@ -6,7 +6,6 @@ reference: Object.values
 category: objects
 ---
 
-
 ```javascript
 const repository = {
     id: 1,
@@ -14,10 +13,11 @@ const repository = {
     public: true
 };
 
-for (const value of Object.values(repository)){
+for (const value of Object.values(repository)) {
     console.log(value);
 }
 ```
+
 <pre class="output">
 1
 javascript

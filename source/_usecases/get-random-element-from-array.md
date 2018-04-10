@@ -6,11 +6,10 @@ reference: Math.random
 category: arrays
 ---
 
-
 ```javascript
 const names = ['Tom', 'Jad', 'Nicole'];
 
-names[ Math.floor(Math.random() * names.length) ];
+names[Math.floor(Math.random() * names.length)];
 ```
 
 <pre class="output">

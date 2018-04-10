@@ -7,12 +7,12 @@ related: split-comma-separated-string
 category: arrays
 ---
 
-
 ```javascript
 const elements = ['Eat', 'Sleep', 'Code', 'Repeat'];
 
 elements.join(',');
 ```
+
 <pre class="output">
 Eat,Sleep,Code,Repeat
 </pre>

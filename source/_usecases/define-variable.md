@@ -6,7 +6,6 @@ reference: let
 category: syntax
 ---
 
-
 ```javascript
 //variables that can be re-assigned
 let counter = 0;

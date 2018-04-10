@@ -7,7 +7,6 @@ related: lowercase-a-string
 category: strings
 ---
 
-
 ```javascript
 const text = 'Hello World';
 

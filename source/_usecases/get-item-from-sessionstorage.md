@@ -7,7 +7,6 @@ related: add-item-to-sessionstorage
 category: storage
 ---
 
-
 ```javascript
-sessionStorage.getItem("name");
+sessionStorage.getItem('name');
 ```

@@ -6,9 +6,8 @@ reference: performance.now
 category: performance
 ---
 
-
 ```javascript
-function foo(){
+function foo() {
     // do stuff
 }
 
@@ -16,7 +15,7 @@ const start = performance.now();
 foo();
 const end = performance.now();
 
-console.log(`Call to ${foo.name} took ${(end - start)} ms.`);
+console.log(`Call to ${foo.name} took ${end - start} ms.`);
 ```
 
 <pre class="output">Call to foo took x ms</pre>

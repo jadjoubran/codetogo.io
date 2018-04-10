@@ -7,7 +7,6 @@ related: add-item-to-localstorage
 category: storage
 ---
 
-
 ```javascript
-localStorage.getItem("name");
+localStorage.getItem('name');
 ```

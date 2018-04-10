@@ -6,7 +6,6 @@ reference: Object.toString
 category: objects
 ---
 
-
 ```javascript
 const value = {
     name: 'John'
@@ -14,4 +13,5 @@ const value = {
 
 Object.prototype.toString.call(value) === '[object Object]';
 ```
+
 <pre class="output">true</pre>

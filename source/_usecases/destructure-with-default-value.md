@@ -7,15 +7,15 @@ related: destructure-from-array,destructure-from-object
 category: syntax
 ---
 
-
 ```javascript
-const {id, active = true} = {
+const { id, active = true } = {
     id: 10,
-    name: "John",
+    name: 'John'
 };
 
 console.log(id, active);
 ```
+
 <pre class="output">
 10
 true

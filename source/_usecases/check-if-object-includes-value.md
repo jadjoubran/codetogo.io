@@ -7,7 +7,6 @@ related: check-if-object-includes-substring
 category: objects
 ---
 
-
 ```javascript
 const person = {
     first_name: 'Joan',

@@ -7,12 +7,12 @@ related: get-url-search-params
 category: URL
 ---
 
-
 ```javascript
 const url = new URL(document.location);
 
-url.searchParams.set("lang", "en");
+url.searchParams.set('lang', 'en');
 
 console.log(url.href);
 ```
+
 <pre class="output">https://codetogo.io/how-to-set-url-search-params-in-javascript/?lang=en</pre>

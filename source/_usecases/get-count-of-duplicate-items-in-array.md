@@ -4,14 +4,13 @@ date: 2018-01-08
 category: arrays
 ---
 
-
 ```javascript
-const chars = ['a','b','c','a','a','c'];
-let result = {}
+const chars = ['a', 'b', 'c', 'a', 'a', 'c'];
+let result = {};
 
 result = chars.reduce((acc, item) => {
-  acc[item] = acc[item] ? ++acc[item] : 1;
-  return acc;
+    acc[item] = acc[item] ? ++acc[item] : 1;
+    return acc;
 }, result);
 ```
 

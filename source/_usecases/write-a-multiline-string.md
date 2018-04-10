@@ -7,7 +7,6 @@ related: interpolate
 category: strings
 ---
 
-
 ```javascript
 const text = `Using the backtick character
 you can define a string that

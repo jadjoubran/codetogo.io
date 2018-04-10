@@ -6,7 +6,6 @@ reference: Array destructuring
 category: syntax
 ---
 
-
 ```javascript
 let first_name = 'Doe';
 let last_name = 'John';
@@ -16,4 +15,5 @@ let last_name = 'John';
 
 console.log(first_name, last_name);
 ```
+
 <pre class="output">John Doe</pre>
