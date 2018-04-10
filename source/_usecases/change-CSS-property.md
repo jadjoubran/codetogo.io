@@ -9,8 +9,8 @@ category: DOM
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
 //change background-color
-element.style.backgroundColor = 'red';
+element.style.backgroundColor = "red";
 ```

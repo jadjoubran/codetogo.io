@@ -14,7 +14,7 @@ category: DOM
 ```
 
 ```javascript
-const box = document.querySelector('#box');
+const box = document.querySelector("#box");
 
-const title = document.querySelector('.title');
+const title = document.querySelector(".title");
 ```

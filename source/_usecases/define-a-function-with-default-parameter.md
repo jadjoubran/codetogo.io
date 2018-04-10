@@ -7,8 +7,8 @@ category: syntax
 ---
 
 ```javascript
-function greetUser(name = 'user') {
-    return `Welcome ${name} to code to go!`;
+function greetUser(name = "user") {
+  return `Welcome ${name} to code to go!`;
 }
 
 let result = greetUser();

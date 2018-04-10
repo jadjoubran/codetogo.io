@@ -8,7 +8,7 @@ category: strings
 ---
 
 ```javascript
-const text = 'Hello World';
+const text = "Hello World";
 
 text.toUpperCase();
 ```

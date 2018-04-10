@@ -10,7 +10,7 @@ category: DOM
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
-element.style.display = 'none';
+element.style.display = "none";
 ```

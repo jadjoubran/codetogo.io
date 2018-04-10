@@ -8,9 +8,9 @@ category: arrays
 ---
 
 ```javascript
-const elements = ['Eat', 'Sleep', 'Code', 'Repeat'];
+const elements = ["Eat", "Sleep", "Code", "Repeat"];
 
-elements.join(',');
+elements.join(",");
 ```
 
 <pre class="output">

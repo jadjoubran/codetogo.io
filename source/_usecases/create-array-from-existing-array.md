@@ -8,7 +8,7 @@ category: arrays
 ---
 
 ```javascript
-const apps = ['phone', 'calculator', 'clock'];
+const apps = ["phone", "calculator", "clock"];
 
 const clonedApps = [...apps];
 ```

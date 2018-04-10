@@ -8,7 +8,7 @@ related: get-unique-values-from-object-array-property
 ---
 
 ```javascript
-const items = ['Cars', 'Cars', 'Smartphone', 'Cars', 'Tablet'];
+const items = ["Cars", "Cars", "Smartphone", "Cars", "Tablet"];
 
 const uniqueItems = [...new Set(items)];
 ```

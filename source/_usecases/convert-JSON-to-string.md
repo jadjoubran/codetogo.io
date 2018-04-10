@@ -9,8 +9,8 @@ category: JSON
 
 ```javascript
 const object = {
-    id: 1,
-    name: 'Leanne Graham'
+  id: 1,
+  name: "Leanne Graham"
 };
 
 JSON.stringify(object);

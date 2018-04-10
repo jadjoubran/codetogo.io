@@ -9,9 +9,9 @@ category: syntax
 
 ```javascript
 const { lat, lng } = {
-    lat: 52.369661,
-    lng: 4.897243,
-    elevation: -2
+  lat: 52.369661,
+  lng: 4.897243,
+  elevation: -2
 };
 
 console.log(lat, lng);

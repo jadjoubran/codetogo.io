@@ -8,7 +8,7 @@ category: storage
 ---
 
 ```javascript
-const name = 'John';
+const name = "John";
 
-sessionStorage.setItem('name', name);
+sessionStorage.setItem("name", name);
 ```

@@ -8,8 +8,8 @@ related: concatenate-objects
 ---
 
 ```javascript
-const winners = ['Jane', 'Bob'];
-const losers = ['Ronald', 'Kevin'];
+const winners = ["Jane", "Bob"];
+const losers = ["Ronald", "Kevin"];
 
 const players = [...winners, ...losers];
 ```

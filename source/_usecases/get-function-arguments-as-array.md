@@ -8,12 +8,12 @@ category: functions
 
 ```javascript
 function log(...msgs) {
-    //msgs is now an array
-    console.log(`Received ${msgs.length} messages`);
+  //msgs is now an array
+  console.log(`Received ${msgs.length} messages`);
 }
 
-log('code', 'to', 'go');
-log('code', 'to', 'go', 'is', 'cool');
+log("code", "to", "go");
+log("code", "to", "go", "is", "cool");
 ```
 
 <pre class="output">

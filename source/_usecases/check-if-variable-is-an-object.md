@@ -8,10 +8,10 @@ category: objects
 
 ```javascript
 const value = {
-    name: 'John'
+  name: "John"
 };
 
-Object.prototype.toString.call(value) === '[object Object]';
+Object.prototype.toString.call(value) === "[object Object]";
 ```
 
 <pre class="output">true</pre>

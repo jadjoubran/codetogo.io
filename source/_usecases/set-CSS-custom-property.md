@@ -9,10 +9,10 @@ category: DOM
 
 ```css
 :root {
-    --primary-color: #ececec;
+  --primary-color: #ececec;
 }
 ```
 
 ```javascript
-document.documentElement.style.setProperty('--primary-color', '#000000');
+document.documentElement.style.setProperty("--primary-color", "#000000");
 ```

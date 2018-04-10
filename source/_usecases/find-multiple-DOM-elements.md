@@ -14,5 +14,5 @@ category: DOM
 ```
 
 ```javascript
-const elements = document.querySelectorAll('.boxes');
+const elements = document.querySelectorAll(".boxes");
 ```

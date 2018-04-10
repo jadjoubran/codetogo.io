@@ -12,10 +12,10 @@ category: DOM
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
-element.addEventListener('click', event => {
-    event.preventDefault();
-    //Default action prevented
+element.addEventListener("click", event => {
+  event.preventDefault();
+  //Default action prevented
 });
 ```

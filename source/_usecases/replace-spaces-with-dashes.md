@@ -8,9 +8,9 @@ category: strings
 ---
 
 ```javascript
-const text = 'codetogo saved me tons of time';
+const text = "codetogo saved me tons of time";
 
-text.replace(/ /g, '-');
+text.replace(/ /g, "-");
 ```
 
 <pre class="output">codetogo-saved-me-tons-of-time</pre>

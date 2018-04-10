@@ -9,8 +9,8 @@ category: syntax
 
 ```javascript
 const { id, active = true } = {
-    id: 10,
-    name: 'John'
+  id: 10,
+  name: "John"
 };
 
 console.log(id, active);

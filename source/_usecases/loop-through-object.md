@@ -8,13 +8,13 @@ category: objects
 
 ```javascript
 const repository = {
-    id: 1,
-    language: 'javascript',
-    public: true
+  id: 1,
+  language: "javascript",
+  public: true
 };
 
 for (const value of Object.values(repository)) {
-    console.log(value);
+  console.log(value);
 }
 ```
 

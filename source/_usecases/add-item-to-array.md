@@ -9,9 +9,9 @@ category: arrays
 ```javascript
 const apps = [];
 
-apps.push('calculator');
+apps.push("calculator");
 
-apps.push('phone', 'clock');
+apps.push("phone", "clock");
 ```
 
 <pre class="output">["calculator", "phone", "clock"]</pre>

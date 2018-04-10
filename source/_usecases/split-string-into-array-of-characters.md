@@ -5,7 +5,7 @@ category: arrays
 ---
 
 ```javascript
-const arrayOfChars = [...'hello world'];
+const arrayOfChars = [..."hello world"];
 ```
 
 <pre class="output">

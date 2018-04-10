@@ -8,9 +8,9 @@ category: strings
 ---
 
 ```javascript
-const string = 'js is awesome';
+const string = "js is awesome";
 
-string.startsWith('js');
+string.startsWith("js");
 ```
 
 <pre class="output">true</pre>

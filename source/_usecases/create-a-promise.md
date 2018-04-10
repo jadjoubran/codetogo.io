@@ -9,11 +9,11 @@ category: syntax
 
 ```javascript
 new Promise((resolve, reject) => {
-    // asynchronous operation
+  // asynchronous operation
 
-    // then in case of success
-    resolve();
-    // or
-    reject('failure reason');
+  // then in case of success
+  resolve();
+  // or
+  reject("failure reason");
 });
 ```

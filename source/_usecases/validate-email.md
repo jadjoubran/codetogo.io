@@ -7,7 +7,7 @@ category: regex
 ```javascript
 const pattern = /\S+@\S+\.\S+/;
 
-pattern.test('john@gmail.com');
+pattern.test("john@gmail.com");
 ```
 
 <pre class="output">true</pre>

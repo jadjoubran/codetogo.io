@@ -7,16 +7,16 @@ category: syntax
 ---
 
 ```javascript
-let key = 'right';
+let key = "right";
 
 switch (key) {
-    case 'right':
-        console.log('Go right');
-        break;
+  case "right":
+    console.log("Go right");
+    break;
 
-    case 'left':
-        console.log('Go left');
-        break;
+  case "left":
+    console.log("Go left");
+    break;
 }
 ```
 

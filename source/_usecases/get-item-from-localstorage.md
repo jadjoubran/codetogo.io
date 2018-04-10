@@ -8,5 +8,5 @@ category: storage
 ---
 
 ```javascript
-localStorage.getItem('name');
+localStorage.getItem("name");
 ```

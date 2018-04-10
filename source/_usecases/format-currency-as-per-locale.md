@@ -9,11 +9,11 @@ category: numbers
 ```javascript
 const amount = 1999.9;
 const options = {
-    style: 'currency',
-    currency: 'USD'
+  style: "currency",
+  currency: "USD"
 };
 
-amount.toLocaleString('en-US', options);
+amount.toLocaleString("en-US", options);
 ```
 
 <pre class="output">$1,999.90</pre>

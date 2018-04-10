@@ -5,7 +5,7 @@ category: arrays
 ---
 
 ```javascript
-const apps = ['phone', 'calculator', 'clock'];
+const apps = ["phone", "calculator", "clock"];
 const object = {};
 
 apps.map((value, index) => (object[index] = value));

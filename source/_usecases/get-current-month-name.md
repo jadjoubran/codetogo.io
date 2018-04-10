@@ -10,9 +10,9 @@ category: datetime
 ```javascript
 const date = Date.now();
 
-const options = { month: 'long' };
+const options = { month: "long" };
 
-new Intl.DateTimeFormat('en-US', options).format(date);
+new Intl.DateTimeFormat("en-US", options).format(date);
 ```
 
 <pre class="output">

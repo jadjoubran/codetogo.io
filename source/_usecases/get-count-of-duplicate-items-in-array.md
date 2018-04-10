@@ -5,12 +5,12 @@ category: arrays
 ---
 
 ```javascript
-const chars = ['a', 'b', 'c', 'a', 'a', 'c'];
+const chars = ["a", "b", "c", "a", "a", "c"];
 let result = {};
 
 result = chars.reduce((acc, item) => {
-    acc[item] = acc[item] ? ++acc[item] : 1;
-    return acc;
+  acc[item] = acc[item] ? ++acc[item] : 1;
+  return acc;
 }, result);
 ```
 

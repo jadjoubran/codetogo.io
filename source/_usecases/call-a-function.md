@@ -9,7 +9,7 @@ category: functions
 
 ```javascript
 function greetUser() {
-    return 'Welcome to code to go!';
+  return "Welcome to code to go!";
 }
 
 let result = greetUser();

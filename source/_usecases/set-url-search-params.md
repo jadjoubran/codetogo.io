@@ -10,7 +10,7 @@ category: URL
 ```javascript
 const url = new URL(document.location);
 
-url.searchParams.set('lang', 'en');
+url.searchParams.set("lang", "en");
 
 console.log(url.href);
 ```

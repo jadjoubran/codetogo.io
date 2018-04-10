@@ -9,10 +9,10 @@ category: functions
 
 ```javascript
 function greetUser(name) {
-    return `Welcome ${name} to code to go!`;
+  return `Welcome ${name} to code to go!`;
 }
 
-let result = greetUser('John');
+let result = greetUser("John");
 
 console.log(result);
 ```

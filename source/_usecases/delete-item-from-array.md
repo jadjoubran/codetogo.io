@@ -7,7 +7,7 @@ category: arrays
 ---
 
 ```javascript
-const apps = ['phone', 'calculator', 'codetogo', 'clock'];
+const apps = ["phone", "calculator", "codetogo", "clock"];
 
 apps.splice(2, 1);
 

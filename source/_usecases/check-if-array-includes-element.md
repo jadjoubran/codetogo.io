@@ -7,9 +7,9 @@ category: arrays
 ---
 
 ```javascript
-const apps = ['phone', 'calculator', 'clock'];
+const apps = ["phone", "calculator", "clock"];
 
-apps.includes('calculator');
+apps.includes("calculator");
 ```
 
 <pre class="output">true</pre>

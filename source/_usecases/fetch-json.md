@@ -7,12 +7,12 @@ category: JSON
 ---
 
 ```javascript
-fetch('https://codetogo.io/api/users.json')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-    .catch(console.error);
+fetch("https://codetogo.io/api/users.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(console.error);
 ```
 
 <pre class="output">

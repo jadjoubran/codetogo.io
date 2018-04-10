@@ -12,7 +12,7 @@ const isUnderage = true;
 const isDrunk = false;
 
 if (isUnderage || isDrunk) {
-    console.log('Cannot drive');
+  console.log("Cannot drive");
 }
 ```
 

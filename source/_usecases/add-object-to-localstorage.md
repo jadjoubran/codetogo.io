@@ -9,10 +9,10 @@ category: storage
 
 ```javascript
 const user = {
-    id: 1,
-    first_name: 'John',
-    last_name: 'Doe'
+  id: 1,
+  first_name: "John",
+  last_name: "Doe"
 };
 
-localStorage.setItem('user', JSON.stringify(user));
+localStorage.setItem("user", JSON.stringify(user));
 ```

@@ -8,7 +8,7 @@ category: regex
 ---
 
 ```javascript
-const result = 'My age is 41'.match(/\d+/);
+const result = "My age is 41".match(/\d+/);
 
 console.log(result);
 console.log(result[0]);

@@ -8,5 +8,5 @@ category: storage
 ---
 
 ```javascript
-localStorage.removeItem('name');
+localStorage.removeItem("name");
 ```

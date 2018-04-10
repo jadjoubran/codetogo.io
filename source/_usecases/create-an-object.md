@@ -8,8 +8,8 @@ category: objects
 
 ```javascript
 const person = {
-    key: 'value',
-    first_name: 'John',
-    last_name: 'Doe'
+  key: "value",
+  first_name: "John",
+  last_name: "Doe"
 };
 ```

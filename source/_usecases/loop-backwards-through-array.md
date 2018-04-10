@@ -8,10 +8,10 @@ category: arrays
 ---
 
 ```javascript
-const people = ['John', 'Nicole', 'Jad'];
+const people = ["John", "Nicole", "Jad"];
 
 for (const person of people.reverse()) {
-    console.log(person);
+  console.log(person);
 }
 ```
 

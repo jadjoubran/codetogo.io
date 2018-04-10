@@ -12,7 +12,7 @@ const isLearning = true;
 const isOverwhelmed = true;
 
 if (isLearning && isOverwhelmed) {
-    console.log('Take a break');
+  console.log("Take a break");
 }
 ```
 

@@ -7,5 +7,5 @@ category: URL
 ---
 
 ```javascript
-window.location.href = 'https://codetogo.io';
+window.location.href = "https://codetogo.io";
 ```

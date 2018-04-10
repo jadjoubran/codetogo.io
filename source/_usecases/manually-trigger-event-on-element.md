@@ -11,8 +11,8 @@ category: DOM
 ```
 
 ```javascript
-const button = document.querySelector('#submit');
+const button = document.querySelector("#submit");
 
 //trigger click
-button.dispatchEvent(new Event('click'));
+button.dispatchEvent(new Event("click"));
 ```

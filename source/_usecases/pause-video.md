@@ -14,7 +14,7 @@ category: DOM
 ```
 
 ```javascript
-const video = document.querySelector('#video');
+const video = document.querySelector("#video");
 
 video.pause();
 ```

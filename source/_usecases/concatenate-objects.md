@@ -9,9 +9,9 @@ related: concatenate-arrays
 
 ```javascript
 const defaultOptions = {
-    verbose: false,
-    src: './src',
-    dist: './dist'
+  verbose: false,
+  src: "./src",
+  dist: "./dist"
 };
 const userOptions = { verbose: true };
 

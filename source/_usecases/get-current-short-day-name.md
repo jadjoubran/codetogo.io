@@ -10,9 +10,9 @@ category: datetime
 ```javascript
 const date = Date.now();
 
-const options = { weekday: 'short' };
+const options = { weekday: "short" };
 
-new Intl.DateTimeFormat('en-US', options).format(date);
+new Intl.DateTimeFormat("en-US", options).format(date);
 ```
 
 <pre class="output">

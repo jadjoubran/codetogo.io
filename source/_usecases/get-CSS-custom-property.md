@@ -9,13 +9,13 @@ category: DOM
 
 ```css
 :root {
-    --primary-color: #ececec;
+  --primary-color: #ececec;
 }
 ```
 
 ```javascript
 const color = getComputedStyle(document.body).getPropertyValue(
-    '--primary-color'
+  "--primary-color"
 );
 ```
 

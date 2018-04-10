@@ -7,8 +7,8 @@ category: arrays
 ---
 
 ```javascript
-const colors = ['red', 'green', 'blue'];
-colors.indexOf('green');
+const colors = ["red", "green", "blue"];
+colors.indexOf("green");
 ```
 
 <pre class="output">1</pre>

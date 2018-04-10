@@ -5,7 +5,7 @@ category: strings
 ---
 
 ```javascript
-let str = 'welcome to code to go';
+let str = "welcome to code to go";
 
 str = str.charAt(0).toUpperCase() + str.substr(1);
 ```

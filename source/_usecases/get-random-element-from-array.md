@@ -7,7 +7,7 @@ category: arrays
 ---
 
 ```javascript
-const names = ['Tom', 'Jad', 'Nicole'];
+const names = ["Tom", "Jad", "Nicole"];
 
 names[Math.floor(Math.random() * names.length)];
 ```

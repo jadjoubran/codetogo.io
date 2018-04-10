@@ -8,7 +8,7 @@ category: strings
 ---
 
 ```javascript
-const name = 'Lewis';
+const name = "Lewis";
 
 name.substr(-1);
 ```

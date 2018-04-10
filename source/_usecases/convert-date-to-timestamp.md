@@ -7,7 +7,7 @@ category: datetime
 ---
 
 ```javascript
-const date = new Date('Jan 10, 2000');
+const date = new Date("Jan 10, 2000");
 
 const timestamp = date.getTime();
 ```

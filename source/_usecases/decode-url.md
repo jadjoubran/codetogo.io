@@ -8,7 +8,7 @@ category: URL
 ---
 
 ```javascript
-const search = 'hello%20world%3F';
+const search = "hello%20world%3F";
 
 decodeURIComponent(search);
 ```

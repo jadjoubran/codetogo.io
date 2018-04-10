@@ -12,7 +12,7 @@ category: DOM
 ```
 
 ```javascript
-const elements = document.querySelectorAll('.title');
+const elements = document.querySelectorAll(".title");
 
 const length = elements.length;
 ```

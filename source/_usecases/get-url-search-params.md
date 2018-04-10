@@ -11,7 +11,7 @@ category: URL
 //https://codetogo.io?lang=en
 const url = new URL(document.location);
 
-const lang = url.searchParams.get('lang');
+const lang = url.searchParams.get("lang");
 ```
 
 <pre class="output">en</pre>

@@ -8,7 +8,7 @@ category: performance
 
 ```javascript
 function foo() {
-    // do stuff
+  // do stuff
 }
 
 const start = performance.now();

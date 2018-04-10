@@ -8,5 +8,5 @@ category: storage
 ---
 
 ```javascript
-sessionStorage.getItem('name');
+sessionStorage.getItem("name");
 ```

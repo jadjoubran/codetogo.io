@@ -5,11 +5,11 @@ category: strings
 ---
 
 ```javascript
-let string = 'code to go is awesome';
+let string = "code to go is awesome";
 const pattern = /([^\W_]+[^\s]*) */g;
 
 string = string.replace(pattern, w => {
-    return w.charAt(0).toUpperCase() + w.substr(1);
+  return w.charAt(0).toUpperCase() + w.substr(1);
 });
 ```
 

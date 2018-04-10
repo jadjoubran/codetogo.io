@@ -10,7 +10,7 @@ category: datetime
 let date = new Date();
 
 //YYYY-MM-DD format
-date.toISOString().split('T')[0];
+date.toISOString().split("T")[0];
 ```
 
 <pre class="output">2017-12-29</pre>

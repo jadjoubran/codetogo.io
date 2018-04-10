@@ -9,14 +9,14 @@ category: objects
 
 ```javascript
 const person = {
-    first_name: 'Joan',
-    last_name: 'Leon',
-    twitter: '@nucliweb'
+  first_name: "Joan",
+  last_name: "Leon",
+  twitter: "@nucliweb"
 };
 
 Object.values(person)
-    .toString()
-    .includes('web');
+  .toString()
+  .includes("web");
 ```
 
 <pre class="output">true</pre>

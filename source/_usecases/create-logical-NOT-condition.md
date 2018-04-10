@@ -10,7 +10,7 @@ category: syntax
 const isOverage = false;
 
 if (!isOverage) {
-    console.log('You are underage');
+  console.log("You are underage");
 }
 ```
 

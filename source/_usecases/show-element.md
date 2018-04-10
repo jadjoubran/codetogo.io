@@ -11,12 +11,12 @@ category: DOM
 
 ```css
 #box {
-    display: none;
+  display: none;
 }
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
-element.style.display = 'block';
+element.style.display = "block";
 ```

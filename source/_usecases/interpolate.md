@@ -8,7 +8,7 @@ category: strings
 ---
 
 ```javascript
-const name = 'John';
+const name = "John";
 
 console.log(`Welcome ${name}.
 You have ${2 * 5} new notifications!`);
