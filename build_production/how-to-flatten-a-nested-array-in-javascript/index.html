@@ -70,11 +70,10 @@
                     <pre><code class="language-javascript">const nestedArray = [1, [2], [[3], 4], 5];
 
 const flatten = nestedArray =&gt;
-    nestedArray.reduce(
-        (flat, item) =&gt;
-            flat.concat(Array.isArray(item) ? flatten(item) : [item]),
-        []
-    );
+  nestedArray.reduce(
+    (flat, item) =&gt; flat.concat(Array.isArray(item) ? flatten(item) : [item]),
+    []
+  );
 
 flatten(nestedArray);</code></pre>
 <pre class="output">[1, 2, 3, 4, 5 ]</pre>                </div>
