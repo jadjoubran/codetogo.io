@@ -1,4 +1,5 @@
 {
+  "name": "codetogo",
   "private": false,
   "devDependencies": {
     "algoliasearch": "^3.24.5",
@@ -13,16 +14,14 @@
   },
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
-    "deploy": "gulp --env=production --production && jigsaw build production && npm run sync",
+    "deploy":
+      "gulp --env=production --production && jigsaw build production && npm run sync",
     "precommit": "lint-staged"
   },
   "dependencies": {
     "rrssb": "^1.14.0"
   },
   "lint-staged": {
-    "source/_usecases/*.md": [
-      "prettier --write",
-      "git add"
-    ]
+    "source/_usecases/*.md": ["prettier --write", "git add"]
   }
 }
