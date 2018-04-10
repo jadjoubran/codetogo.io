@@ -19,10 +19,6 @@
   "dependencies": {
     "rrssb": "^1.14.0"
   },
-  "prettier": {
-    "tabWidth": 4,
-    "singleQuote": true
-  },
   "lint-staged": {
     "source/_usecases/*.md": [
       "prettier --write",
