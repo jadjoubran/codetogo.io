@@ -6,7 +6,6 @@ reference: Array.reduce
 category: arrays
 ---
 
-
 ```javascript
 const calories = [50, 100, 200];
 

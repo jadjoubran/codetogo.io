@@ -7,7 +7,6 @@ category: arrays
 related: concatenate-objects
 ---
 
-
 ```javascript
 const winners = ['Jane', 'Bob'];
 const losers = ['Ronald', 'Kevin'];

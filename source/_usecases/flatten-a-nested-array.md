@@ -6,14 +6,15 @@ reference: Array
 category: arrays
 ---
 
-
 ```javascript
 const nestedArray = [1, [2], [[3], 4], 5];
 
-const flatten = (nestedArray) =>
-  nestedArray.reduce((flat, item) =>
-    flat.concat(Array.isArray(item) ?
-        flatten(item) : [item]), []);
+const flatten = nestedArray =>
+    nestedArray.reduce(
+        (flat, item) =>
+            flat.concat(Array.isArray(item) ? flatten(item) : [item]),
+        []
+    );
 
 flatten(nestedArray);
 ```

@@ -6,7 +6,6 @@ reference: delete
 category: objects
 ---
 
-
 ```javascript
 const repository = {
     id: 1,

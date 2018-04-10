@@ -7,13 +7,13 @@ related: create-logical-OR-condition
 category: syntax
 ---
 
-
 ```javascript
 const isLearning = true;
 const isOverwhelmed = true;
 
-if (isLearning && isOverwhelmed){
+if (isLearning && isOverwhelmed) {
     console.log('Take a break');
 }
 ```
+
 <pre class="output">Take a break</pre>

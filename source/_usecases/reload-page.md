@@ -6,7 +6,6 @@ reference: Location.reload
 category: URL
 ---
 
-
 ```javascript
 window.location.reload();
 ```

@@ -6,14 +6,13 @@ reference: Classes
 category: syntax
 ---
 
-
 ```javascript
 class Pencil {
     constructor(price) {
         this.price = price;
     }
 
-    isExpensive(){
+    isExpensive() {
         return this.price >= 10;
     }
 }
@@ -22,4 +21,5 @@ class Pencil {
 const bic = new Pencil(3);
 bic.isExpensive();
 ```
+
 <pre class="output">false</pre>

@@ -6,12 +6,12 @@ reference: String.length
 category: strings
 ---
 
-
 ```javascript
-const name = "Penny";
+const name = 'Penny';
 
 console.log(name.length);
 ```
+
 <pre class="output">
 5
 </pre>

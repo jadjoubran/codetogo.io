@@ -7,9 +7,8 @@ related: get-last-character-of-string
 category: strings
 ---
 
-
 ```javascript
-const name = "William moore";
+const name = 'William moore';
 
 name.charAt(0);
 ```

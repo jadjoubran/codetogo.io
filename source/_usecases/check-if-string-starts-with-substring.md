@@ -7,7 +7,6 @@ related: check-if-string-ends-with-substring
 category: strings
 ---
 
-
 ```javascript
 const string = 'js is awesome';
 

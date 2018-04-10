@@ -7,11 +7,10 @@ related: convert-array-to-comma-separated-string
 category: strings
 ---
 
-
 ```javascript
-const csv = "Eat,Sleep,Code,Repeat";
+const csv = 'Eat,Sleep,Code,Repeat';
 
-csv.split(",");
+csv.split(',');
 ```
 
 <pre class="output">['Eat', 'Sleep', 'Code', 'Repeat']</pre>

@@ -7,11 +7,10 @@ related: loop-through-object
 category: arrays
 ---
 
-
 ```javascript
 const people = ['John', 'Nicole', 'Jad'];
 
-for (const person of people){
+for (const person of people) {
     console.log(person);
 }
 ```

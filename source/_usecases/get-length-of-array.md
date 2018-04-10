@@ -6,10 +6,10 @@ reference: Array.length
 category: arrays
 ---
 
-
 ```javascript
-const apps = ["phone", "calculator", "clock"];
+const apps = ['phone', 'calculator', 'clock'];
 
 const count = apps.length;
 ```
+
 <pre class="output">3</pre>

@@ -6,18 +6,17 @@ reference: switch
 category: syntax
 ---
 
-
 ```javascript
 let key = 'right';
 
-switch (key){
+switch (key) {
     case 'right':
         console.log('Go right');
-    break;
+        break;
 
     case 'left':
         console.log('Go left');
-    break;
+        break;
 }
 ```
 

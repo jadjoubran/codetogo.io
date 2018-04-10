@@ -7,9 +7,9 @@ related: increment-a-variable
 category: numbers
 ---
 
-
 ```javascript
 let limit = 10;
 limit--;
 ```
+
 <pre class="output">9</pre>

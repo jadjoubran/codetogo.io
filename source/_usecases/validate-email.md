@@ -4,7 +4,6 @@ date: 2017-12-16
 category: regex
 ---
 
-
 ```javascript
 const pattern = /\S+@\S+\.\S+/;
 

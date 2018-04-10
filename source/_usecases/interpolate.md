@@ -7,13 +7,13 @@ related: write-a-multiline-string
 category: strings
 ---
 
-
 ```javascript
 const name = 'John';
 
 console.log(`Welcome ${name}.
 You have ${2 * 5} new notifications!`);
 ```
+
 <pre class="output">
 Welcome John.
 You have 10 new notifications!

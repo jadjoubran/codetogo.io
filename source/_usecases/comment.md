@@ -6,7 +6,6 @@ reference: Comments
 category: syntax
 ---
 
-
 ```javascript
 //this is a one line comment
 

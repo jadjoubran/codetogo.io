@@ -6,13 +6,12 @@ reference: Math.random
 category: numbers
 ---
 
-
 ```javascript
 const min = 0;
 const max = 10;
 let rand;
 
-rand = Math.floor(Math.random() * (max - min + 1)) + min;
+rand = Math.floor(Math.random() * (max - min + 1)) + min;
 ```
 
 <pre class="output">

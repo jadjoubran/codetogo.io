@@ -10,7 +10,7 @@ category: DOM
 ```
 
 ```css
-#box{
+#box {
     display: none;
 }
 ```
