@@ -6,7 +6,6 @@ reference: String.includes
 category: strings
 ---
 
-
 ```javascript
 const text = "Code to go has awesome use cases!";
 

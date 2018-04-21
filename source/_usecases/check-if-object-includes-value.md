@@ -7,15 +7,14 @@ related: check-if-object-includes-substring
 category: objects
 ---
 
-
 ```javascript
 const person = {
-    first_name: 'Joan',
-    last_name: 'Leon',
-    twitter: '@nucliweb'
+  first_name: "Joan",
+  last_name: "Leon",
+  twitter: "@nucliweb"
 };
 
-Object.values(person).includes('@nucliweb');
+Object.values(person).includes("@nucliweb");
 ```
 
 <pre class="output">true</pre>

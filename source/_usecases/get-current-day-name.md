@@ -7,15 +7,14 @@ related: get-current-short-day-name,get-current-month-name
 category: datetime
 ---
 
-
 ```javascript
 const date = Date.now();
 
-const options = {weekday: 'long'};
+const options = { weekday: "long" };
 
-new Intl.DateTimeFormat('en-US', options)
-.format(date);
+new Intl.DateTimeFormat("en-US", options).format(date);
 ```
+
 <pre class="output">
 Friday
 </pre>

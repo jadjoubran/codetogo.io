@@ -4,7 +4,7 @@
     <title>{{isset($title) ? "$title | Code to go" : "Code to go"}}</title>
 
     @if (isset($question))
-        @include('_partials.head', ['question' => $question])
+        @include('_partials.head', ['question' => $question, 'reference' => $reference])
     @else
         @include('_partials.head')
     @endif

@@ -7,15 +7,14 @@ related: get-current-month-name,get-current-day-name
 category: datetime
 ---
 
-
 ```javascript
 const date = Date.now();
 
-const options = {month: 'short'};
+const options = { month: "short" };
 
-new Intl.DateTimeFormat('en-US', options)
-.format(date);
+new Intl.DateTimeFormat("en-US", options).format(date);
 ```
+
 <pre class="output">
 Jan
 </pre>

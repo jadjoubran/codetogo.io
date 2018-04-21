@@ -6,7 +6,6 @@ reference: String.split
 category: strings
 ---
 
-
 ```javascript
 const name = "Jad Joubran";
 

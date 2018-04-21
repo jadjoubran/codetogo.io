@@ -13,6 +13,6 @@ category: DOM
 ```
 
 ```javascript
-const box2 = document.querySelector('#box2');
+const box2 = document.querySelector("#box2");
 const box1 = element.previousElementSibling;
 ```

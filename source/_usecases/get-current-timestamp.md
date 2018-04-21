@@ -7,10 +7,10 @@ related: get-current-timestamp-in-seconds
 category: datetime
 ---
 
-
 ```javascript
 const timestamp = Date.now();
 
-console.log(timestamp);//in milliseconds
+console.log(timestamp); //in milliseconds
 ```
+
 <pre class="output">1514300333756</pre>

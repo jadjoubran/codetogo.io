@@ -7,14 +7,14 @@ related: call-a-function-with-arguments
 category: functions
 ---
 
-
 ```javascript
 function greetUser() {
-    return 'Welcome to code to go!';
+  return "Welcome to code to go!";
 }
 
 let result = greetUser();
 
 console.log(result);
 ```
+
 <pre class="output">Welcome to code to go!</pre>

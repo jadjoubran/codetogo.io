@@ -7,14 +7,14 @@ related: loop-through-array
 category: arrays
 ---
 
-
 ```javascript
-const people = ['John', 'Nicole', 'Jad'];
+const people = ["John", "Nicole", "Jad"];
 
-for (const person of people.reverse()){
-    console.log(person);
+for (const person of people.reverse()) {
+  console.log(person);
 }
 ```
+
 <pre class="output">
 Jad
 Nicole

@@ -6,12 +6,11 @@ reference: delete
 category: objects
 ---
 
-
 ```javascript
 const repository = {
-    id: 1,
-    language: 'javascript',
-    public: true
+  id: 1,
+  language: "javascript",
+  public: true
 };
 
 delete repository.id;

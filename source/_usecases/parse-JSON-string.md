@@ -7,7 +7,6 @@ related: convert-JSON-to-string
 category: JSON
 ---
 
-
 ```javascript
 const string = '{"id":1,"name":"Leanne Graham"}';
 

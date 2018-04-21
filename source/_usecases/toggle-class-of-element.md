@@ -6,13 +6,12 @@ reference: Element.classList
 category: DOM
 ---
 
-
 ```html
 <div id="box"></div>
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
-element.classList.toggle('class-name');
+element.classList.toggle("class-name");
 ```

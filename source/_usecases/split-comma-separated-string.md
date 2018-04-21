@@ -7,7 +7,6 @@ related: convert-array-to-comma-separated-string
 category: strings
 ---
 
-
 ```javascript
 const csv = "Eat,Sleep,Code,Repeat";
 

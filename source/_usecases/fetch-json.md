@@ -6,15 +6,15 @@ reference: Fetch
 category: JSON
 ---
 
-
 ```javascript
-fetch('https://codetogo.io/api/users.json')
-.then(response => response.json())
-.then(data => {
+fetch("https://codetogo.io/api/users.json")
+  .then(response => response.json())
+  .then(data => {
     console.log(data);
-})
-.catch(console.error);
+  })
+  .catch(console.error);
 ```
+
 <pre class="output">
 [{
     id: 1,

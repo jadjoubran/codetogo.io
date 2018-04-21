@@ -6,11 +6,10 @@ reference: String.lastIndexOf
 category: strings
 ---
 
-
 ```javascript
-const url = '/Users/code/codetogo/index.html';
+const url = "/Users/code/codetogo/index.html";
 
-url.substr(url.lastIndexOf('/') + 1)
+url.substr(url.lastIndexOf("/") + 1);
 ```
 
 <pre class="output">index.html</pre>

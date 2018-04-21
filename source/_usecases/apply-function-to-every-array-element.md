@@ -6,7 +6,6 @@ reference: Array.map
 category: functions
 ---
 
-
 ```javascript
 const ages = [18, 20, 21, 30];
 

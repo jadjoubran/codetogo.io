@@ -6,9 +6,8 @@ reference: Window.location
 category: URL
 ---
 
-
 ```javascript
-window.location.href
+window.location.href;
 ```
 
 <pre class="output">https://codetogo.io/how-to-get-current-page-url-in-javascript/</pre>

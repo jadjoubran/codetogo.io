@@ -11,13 +11,13 @@ category: DOM
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
-element.addEventListener('mouseover', event => {
-    console.log('Mouse over');
+element.addEventListener("mouseover", event => {
+  console.log("Mouse over");
 });
 
-element.addEventListener('mouseout', event => {
-    console.log('Mouse out');
+element.addEventListener("mouseout", event => {
+  console.log("Mouse out");
 });
 ```

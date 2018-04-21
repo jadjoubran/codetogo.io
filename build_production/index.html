@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="/build/css/main-d8a02073e6.css">
+<link rel="stylesheet" href="/build/css/main-7f2117e9d5.css">
 <meta name="google-site-verification" content="xEjRvI-66es5w1rNkXoLeIcOQH-x0JZYst9uHHwD_1E" />
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -56,7 +56,7 @@
     <div class="banner">
         <h1>Find up to date snippets for common JavaScript use cases</h1>
         <h4 class="subscribe-cta">Click here to get weekly updates in your inbox</h4>
-        <input type="text" id="autocomplete" placeholder="How to loop through array in JavaScript">
+        <input type="text" id="autocomplete" class="hide-till-ready" placeholder="How to loop through array in JavaScript">
     </div>
     <h4>Popular use cases</h4>
 
@@ -66,7 +66,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        <pre><code class="language-javascript">const name = 'John';
+        <pre><code class="language-javascript">const name = "John";
 
 console.log(`Welcome ${name}.
 You have ${2 * 5} new notifications!`);</code></pre>
@@ -81,9 +81,9 @@ You have 10 new notifications!
         <h5>Last updated Nov 11, 2017</h5>
 
         <pre><code class="language-html">&lt;div id="box"&gt;&lt;/div&gt;</code></pre>
-<pre><code class="language-javascript">const element = document.querySelector('#box');
+<pre><code class="language-javascript">const element = document.querySelector("#box");
 
-element.classList.add('class-name');</code></pre>    </div>
+element.classList.add("class-name");</code></pre>    </div>
     <div class="card">
         <a href="/how-to-replace-spaces-with-dashes-in-javascript/">
             <h3>How to replace spaces with dashes in JavaScript</h3>
@@ -92,7 +92,7 @@ element.classList.add('class-name');</code></pre>    </div>
 
         <pre><code class="language-javascript">const text = "codetogo saved me tons of time";
 
-text.replace(/ /g, '-');</code></pre>
+text.replace(/ /g, "-");</code></pre>
 <pre class="output">codetogo-saved-me-tons-of-time</pre>    </div>
     <div class="card">
         <a href="/how-to-reload-page-in-javascript/">
@@ -108,17 +108,17 @@ text.replace(/ /g, '-');</code></pre>
         <h5>Last updated Nov 11, 2017</h5>
 
         <pre><code class="language-html">&lt;div id="box"&gt;&lt;/div&gt;</code></pre>
-<pre><code class="language-javascript">const element = document.querySelector('#box');</code></pre>    </div>
+<pre><code class="language-javascript">const element = document.querySelector("#box");</code></pre>    </div>
     <div class="card">
         <a href="/how-to-loop-through-array-in-javascript/">
             <h3>How to loop through array in JavaScript</h3>
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        <pre><code class="language-javascript">const people = ['John', 'Nicole', 'Jad'];
+        <pre><code class="language-javascript">const people = ["John", "Nicole", "Jad"];
 
-for (const person of people){
-    console.log(person);
+for (const person of people) {
+  console.log(person);
 }</code></pre>
 <pre class="output">
 John
@@ -132,10 +132,10 @@ Jad
         <h5>Last updated Nov 11, 2017</h5>
 
         <pre><code class="language-html">&lt;div id="box"&gt;&lt;/div&gt;</code></pre>
-<pre><code class="language-javascript">const element = document.querySelector('#box');
+<pre><code class="language-javascript">const element = document.querySelector("#box");
 
-element.addEventListener('click', event =&gt; {
-    console.log('Element clicked');
+element.addEventListener("click", event =&gt; {
+  console.log("Element clicked");
 });</code></pre>    </div>
     <div class="card">
         <a href="/how-to-get-keys-of-object-in-javascript/">
@@ -144,9 +144,9 @@ element.addEventListener('click', event =&gt; {
         <h5>Last updated Nov 11, 2017</h5>
 
         <pre><code class="language-javascript">const person = {
-    key: 'value',
-    first_name: 'John',
-    last_name: 'Doe'
+  key: "value",
+  first_name: "John",
+  last_name: "Doe"
 };
 
 Object.keys(person);</code></pre>
@@ -166,7 +166,7 @@ counter++;</code></pre>
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        <pre><code class="language-javascript">const text = 'Hello World';
+        <pre><code class="language-javascript">const text = "Hello World";
 
 text.toUpperCase();</code></pre>
 <pre class="output">HELLO WORLD</pre>    </div>

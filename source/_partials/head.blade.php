@@ -19,7 +19,7 @@ $title = "JavaScript Code to go";
 $description = "Javascript code to go: Find updated snippets for common JavaScript use cases.";
 if (isset($question) && $question){
     $title = "$question | Code to go";
-    $description = "$question | Code to go";
+    $description = "$question, $reference modern JavaScript answer on Code to go";
 }
 ?>
 

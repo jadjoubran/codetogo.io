@@ -7,11 +7,10 @@ related: check-if-string-starts-with-substring
 category: strings
 ---
 
-
 ```javascript
-const string = 'js is awesome';
+const string = "js is awesome";
 
-string.endsWith('awesome');
+string.endsWith("awesome");
 ```
 
 <pre class="output">true</pre>

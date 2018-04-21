@@ -7,9 +7,9 @@ related: decrement-a-variable
 category: syntax
 ---
 
-
 ```javascript
 let counter = 0;
 counter++;
 ```
+
 <pre class="output">1</pre>

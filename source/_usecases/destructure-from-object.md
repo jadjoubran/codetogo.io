@@ -7,16 +7,16 @@ related: destructure-from-array,destructure-with-default-value
 category: syntax
 ---
 
-
 ```javascript
-const {lat, lng} = {
-    lat: 52.369661,
-    lng: 4.897243,
-    elevation: -2
+const { lat, lng } = {
+  lat: 52.369661,
+  lng: 4.897243,
+  elevation: -2
 };
 
-console.log(lat, lng)
+console.log(lat, lng);
 ```
+
 <pre class="output">
 52.369661
 4.897243

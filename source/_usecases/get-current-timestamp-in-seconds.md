@@ -7,10 +7,10 @@ related: get-current-timestamp
 category: datetime
 ---
 
-
 ```javascript
 const timestamp = Math.floor(Date.now() / 1000);
 
-console.log(timestamp);//in seconds
+console.log(timestamp); //in seconds
 ```
+
 <pre class="output">1514300500</pre>

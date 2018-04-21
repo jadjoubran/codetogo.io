@@ -6,20 +6,20 @@ reference: Classes
 category: syntax
 ---
 
-
 ```javascript
 class Pencil {
-    constructor(price) {
-        this.price = price;
-    }
+  constructor(price) {
+    this.price = price;
+  }
 
-    isExpensive(){
-        return this.price >= 10;
-    }
+  isExpensive() {
+    return this.price >= 10;
+  }
 }
 
 //usage
 const bic = new Pencil(3);
 bic.isExpensive();
 ```
+
 <pre class="output">false</pre>

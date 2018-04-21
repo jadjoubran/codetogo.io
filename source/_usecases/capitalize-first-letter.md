@@ -4,7 +4,6 @@ date: 2017-12-16
 category: strings
 ---
 
-
 ```javascript
 let str = "welcome to code to go";
 

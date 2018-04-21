@@ -6,12 +6,12 @@ reference: Logical operators
 category: syntax
 ---
 
-
 ```javascript
 const isOverage = false;
 
-if (!isOverage){
-    console.log('You are underage');
+if (!isOverage) {
+  console.log("You are underage");
 }
 ```
+
 <pre class="output">You are underage</pre>

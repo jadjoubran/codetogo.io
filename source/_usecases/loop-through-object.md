@@ -6,18 +6,18 @@ reference: Object.values
 category: objects
 ---
 
-
 ```javascript
 const repository = {
-    id: 1,
-    language: 'javascript',
-    public: true
+  id: 1,
+  language: "javascript",
+  public: true
 };
 
-for (const value of Object.values(repository)){
-    console.log(value);
+for (const value of Object.values(repository)) {
+  console.log(value);
 }
 ```
+
 <pre class="output">
 1
 javascript

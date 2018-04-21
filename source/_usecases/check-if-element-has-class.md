@@ -11,9 +11,9 @@ category: DOM
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
-element.classList.contains('class-name');
+element.classList.contains("class-name");
 ```
 
 <pre class="output">true | false</pre>

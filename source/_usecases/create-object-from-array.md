@@ -4,12 +4,11 @@ date: 2018-01-04
 category: arrays
 ---
 
-
 ```javascript
 const apps = ["phone", "calculator", "clock"];
 const object = {};
 
-apps.map((value, index) => object[index] = value);
+apps.map((value, index) => (object[index] = value));
 
 console.log(object);
 ```

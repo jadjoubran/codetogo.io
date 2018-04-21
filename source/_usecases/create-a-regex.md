@@ -6,7 +6,6 @@ reference: RegExp
 category: regex
 ---
 
-
 ```javascript
 let pattern = /hello world/;
 ```

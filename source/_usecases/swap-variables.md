@@ -6,14 +6,14 @@ reference: Array destructuring
 category: syntax
 ---
 
-
 ```javascript
-let first_name = 'Doe';
-let last_name = 'John';
+let first_name = "Doe";
+let last_name = "John";
 
 //swap
 [first_name, last_name] = [last_name, first_name];
 
 console.log(first_name, last_name);
 ```
+
 <pre class="output">John Doe</pre>

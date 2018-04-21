@@ -12,7 +12,7 @@ category: DOM
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
-element.classList.remove('class-name');
+element.classList.remove("class-name");
 ```

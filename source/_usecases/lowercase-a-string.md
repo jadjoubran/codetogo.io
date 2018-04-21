@@ -7,10 +7,10 @@ related: uppercase-a-string
 category: strings
 ---
 
-
 ```javascript
-const text = 'Hello World';
+const text = "Hello World";
 
 text.toLowerCase();
 ```
+
 <pre class="output">hello world</pre>

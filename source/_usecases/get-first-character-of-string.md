@@ -7,7 +7,6 @@ related: get-last-character-of-string
 category: strings
 ---
 
-
 ```javascript
 const name = "William moore";
 

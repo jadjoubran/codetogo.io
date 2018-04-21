@@ -6,7 +6,6 @@ reference: Array.length
 category: arrays
 ---
 
-
 ```javascript
 const apps = ["phone", "calculator", "clock"];
 

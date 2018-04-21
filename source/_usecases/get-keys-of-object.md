@@ -6,14 +6,14 @@ reference: Object.keys
 category: objects
 ---
 
-
 ```javascript
 const person = {
-    key: 'value',
-    first_name: 'John',
-    last_name: 'Doe'
+  key: "value",
+  first_name: "John",
+  last_name: "Doe"
 };
 
 Object.keys(person);
 ```
+
 <pre class="output">['key', 'first_name', 'last_name']</pre>

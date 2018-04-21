@@ -1,15 +1,27 @@
 {
+  "name": "codetogo",
   "private": false,
   "devDependencies": {
     "algoliasearch": "^3.24.5",
     "gulp": "^3.8.8",
     "hasbin": "^1.2.3",
+    "husky": "^0.14.3",
     "laravel-elixir": "^5.0.0-15",
     "laravel-elixir-browsersync-official": "^1.0.0",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.11.1",
     "yargs": "^4.6.0"
   },
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
-    "deploy": "gulp --env=production --production && jigsaw build production && npm run sync"
+    "deploy":
+      "gulp --env=production --production && jigsaw build production && npm run sync",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "rrssb": "^1.14.0"
+  },
+  "lint-staged": {
+    "source/_usecases/*.md": ["prettier --write", "git add"]
   }
 }

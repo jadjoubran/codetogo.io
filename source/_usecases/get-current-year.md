@@ -7,12 +7,12 @@ related: get-current-day-name,get-current-month-name
 category: datetime
 ---
 
-
 ```javascript
 cosnt date = new Date();
 
 const year = date.getFullYear()
 ```
+
 <pre class="output">
 2018
 </pre>

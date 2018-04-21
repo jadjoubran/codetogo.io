@@ -8,14 +8,15 @@ category: DOM
 ---
 
 ```css
-:root{
-    --primary-color: #ECECEC;
+:root {
+  --primary-color: #ececec;
 }
 ```
 
 ```javascript
-const color = getComputedStyle(document.body)
-.getPropertyValue("--primary-color");
+const color = getComputedStyle(document.body).getPropertyValue(
+  "--primary-color"
+);
 ```
 
 <pre class="output">#ECECEC</pre>

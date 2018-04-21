@@ -7,7 +7,6 @@ related: add-item-to-sessionstorage
 category: arrays
 ---
 
-
 ```javascript
 const apps = ["phone", "calculator", "clock"];
 

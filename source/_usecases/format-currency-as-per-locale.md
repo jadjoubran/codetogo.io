@@ -6,12 +6,11 @@ reference: Number.toLocaleString
 category: numbers
 ---
 
-
 ```javascript
-const amount = 1999.90;
+const amount = 1999.9;
 const options = {
-    style: "currency",
-    currency: "USD",
+  style: "currency",
+  currency: "USD"
 };
 
 amount.toLocaleString("en-US", options);

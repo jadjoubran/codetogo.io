@@ -8,9 +8,9 @@ category: strings
 const length = 20;
 
 //should NOT be used for cryptography
-const randomString = [...Array(length)].map(
-    () => Math.random().toString(36)[5]
-).join('');
+const randomString = [...Array(length)]
+  .map(() => Math.random().toString(36)[5])
+  .join("");
 ```
 
 <pre class="output">ga6fr8rf7uan1yn2adqy</pre>

@@ -7,7 +7,6 @@ reference: Window.localStorage
 category: storage
 ---
 
-
 ```javascript
 const name = "John";
 

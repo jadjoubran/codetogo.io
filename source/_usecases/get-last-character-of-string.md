@@ -7,7 +7,6 @@ related: get-first-character-of-string
 category: strings
 ---
 
-
 ```javascript
 const name = "Lewis";
 

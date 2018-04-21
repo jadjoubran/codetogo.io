@@ -1,6 +1,7 @@
 @extends('_layouts/master', [
     'title' => $page->question(),
     'question' => $page->question(),
+    'reference' => $page->reference,
 ])
 
 @section('body')
@@ -37,6 +38,7 @@
             </div>
             @endif
         </div>
+        @include('_partials/share')
         @include('_partials/related')
     </div>
 

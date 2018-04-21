@@ -6,7 +6,6 @@ reference: Array.includes
 category: arrays
 ---
 
-
 ```javascript
 const apps = ["phone", "calculator", "clock"];
 

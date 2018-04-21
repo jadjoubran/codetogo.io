@@ -6,7 +6,6 @@ reference: Math.PI
 category: numbers
 ---
 
-
 ```javascript
 const degree = 90;
 

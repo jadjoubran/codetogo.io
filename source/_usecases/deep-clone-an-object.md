@@ -6,18 +6,18 @@ reference: Spread operator
 category: objects
 ---
 
-
 ```javascript
 const person = {
-    id: 1,
-    name: {
-        first: 'John',
-        last: 'Doe'
-    }
-}
+  id: 1,
+  name: {
+    first: "John",
+    last: "Doe"
+  }
+};
 
-const duplicate = {...person};
+const duplicate = { ...person };
 ```
+
 <pre class="output">
 {
     id: 1,

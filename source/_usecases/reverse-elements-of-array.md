@@ -6,7 +6,6 @@ reference: Array.reverse
 category: arrays
 ---
 
-
 ```javascript
 const data = [1, 2, 3, 4, 5];
 

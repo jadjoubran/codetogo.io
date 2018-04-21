@@ -6,7 +6,6 @@ reference: Array.push
 category: arrays
 ---
 
-
 ```javascript
 const apps = [];
 

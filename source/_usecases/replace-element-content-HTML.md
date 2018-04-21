@@ -11,7 +11,7 @@ category: DOM
 ```
 
 ```javascript
-const element = document.querySelector('#box');
+const element = document.querySelector("#box");
 
 element.innerHTML = `<div>New Content</div>`;
 ```

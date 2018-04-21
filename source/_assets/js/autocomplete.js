@@ -28,7 +28,7 @@ autocomplete('#autocomplete', {
         window.location.href = `/${suggestion.url}`;
     }else{
         const url = document.querySelector('#contribute').href;
-        
+
         window.open(`${url} ${event.currentTarget.value}`);
     }
 });
