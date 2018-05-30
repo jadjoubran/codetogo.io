@@ -14,5 +14,5 @@ category: DOM
 
 ```javascript
 const box1 = document.querySelector("#box1");
-const box2 = element.nextElementSibling;
+const box2 = box1.nextElementSibling;
 ```

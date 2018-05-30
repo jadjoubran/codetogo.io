@@ -8,7 +8,7 @@ category: DOM
 ---
 
 ```html
-<div id="box"></div>
+<div id="box" class="class-name"></div>
 ```
 
 ```javascript
