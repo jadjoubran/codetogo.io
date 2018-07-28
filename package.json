@@ -14,9 +14,8 @@
   },
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
-    "setup": "composer require tightenco/jigsaw",
     "deploy":
-      "gulp --env=production --production && jigsaw build production && npm run sync",
+      "gulp --env=production --production && ./vendor/bin/jigsaw build production && npm run sync",
     "precommit": "lint-staged"
   },
   "dependencies": {
