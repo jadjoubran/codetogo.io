@@ -14,16 +14,15 @@
   },
   "scripts": {
     "sync": "node tasks/algolia-sync.js",
-    "deploy": "gulp --env=production --production && jigsaw build production && npm run sync",
+    "setup": "composer require tightenco/jigsaw",
+    "deploy":
+      "gulp --env=production --production && jigsaw build production && npm run sync",
     "precommit": "lint-staged"
   },
   "dependencies": {
     "rrssb": "^1.14.0"
   },
   "lint-staged": {
-    "source/_usecases/*.md": [
-      "prettier --write",
-      "git add"
-    ]
+    "source/_usecases/*.md": ["prettier --write", "git add"]
   }
 }
