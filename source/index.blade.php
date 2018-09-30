@@ -10,6 +10,14 @@
     <h4>Popular use cases</h4>
 
     <div class="card">
+        <a href="/how-to-check-if-element-has-class-in-javascript/">
+            <h3>How to check if element has class in JavaScript</h3>
+        </a>
+        <h5>Last updated Aug 24, 2018</h5>
+
+        @include('_usecases.check-if-element-has-class')
+    </div>
+    <div class="card">
         <a href="/how-to-interpolate-in-javascript/">
             <h3>How to interpolate in JavaScript</h3>
         </a>
