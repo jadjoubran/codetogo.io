@@ -19,7 +19,8 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "rrssb": "^1.14.0"
+    "rrssb": "^1.14.0",
+    "yaml-front-matter": "^4.0.0"
   },
   "lint-staged": {
     "source/_usecases/*.md": [
