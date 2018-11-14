@@ -12,12 +12,12 @@
     $date->setTimestamp($page->date);
     ?>
         <div class="card usecase-card" itemscope itemtype="http://schema.org/Question">
-            <h2 itemprop="text">{{$page->question()}}</h2>
+            <h2 itemprop="text name">{{$page->question()}}</h2>
             <div class="usecase-subtitle">
                 @if ($page->category)
                     <div class="category">{{ucfirst($page->category)}}</div>
                 @endif
-                <h5 itemprop="dateModified" datetime="{{$date->format('c')}}">
+                <h5 itemprop="dateModified dateCreated" datetime="{{$date->format('c')}}">
                     Last updated {{$date->format('M d, Y')}}
                 </h5>
             </div>
@@ -26,6 +26,17 @@
                 <div itemprop="text">
                     @yield('content')
                 </div>
+                <div class="hidden" itemprop="dateCreated">
+                    {{$date->format('M d, Y')}}
+                    <div itemprop="upvoteCount">1</div>
+                    <h3 itemprop="author">Jad Joubran</h3>
+                    <a href="{{$page->link}}" itemprop="url">See answer</a>
+                </div>
+            </div>
+
+            <div class="hidden">
+                <span itemprop="answerCount">1</span>
+                <h3 itemprop="author">Jad Joubran</h3>
             </div>
 
             @if ($page->link)
