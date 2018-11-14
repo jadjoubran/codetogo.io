@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" @if (isset($question)) itemscope itemtype="http://schema.org/QAPage" @endif>
 <head>
     <title>{{isset($title) ? "$title | Code to go" : "Code to go"}}</title>
 
