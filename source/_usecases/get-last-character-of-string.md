@@ -1,8 +1,8 @@
 ---
 extends: _layouts.usecase
-date: 2017-12-16
-link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
-reference: String.substr
+date: 2018-12-18
+link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+reference: String.substring
 related: get-first-character-of-string
 category: strings
 ---
@@ -10,7 +10,7 @@ category: strings
 ```javascript
 const name = "Lewis";
 
-name.substr(-1);
+name.substring(name.length - 1);
 ```
 
 <pre class="output">s</pre>
