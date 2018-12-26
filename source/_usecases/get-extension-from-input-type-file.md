@@ -1,6 +1,6 @@
 ---
 extends: _layouts.usecase
-date: 2018-11-05
+date: 2018-12-26
 category: functions
 ---
 
@@ -16,6 +16,6 @@ upload.addEventListener("change", event => {
   if (!file) {
     return false;
   }
-  const extension = file.substr(file.lastIndexOf(".") + 1);
+  const extension = file.substring(file.lastIndexOf(".") + 1);
 });
 ```
