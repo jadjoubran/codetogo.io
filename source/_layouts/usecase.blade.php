@@ -11,7 +11,7 @@
     $date = new DateTime;
     $date->setTimestamp($page->date);
     ?>
-        <div class="card usecase-card" itemscope itemtype="http://schema.org/Question">
+        <div class="card usecase-card" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
             <h2 itemprop="text name">{{$page->question()}}</h2>
             <div class="usecase-subtitle">
                 @if ($page->category)
