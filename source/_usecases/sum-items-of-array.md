@@ -1,6 +1,6 @@
 ---
 extends: _layouts.usecase
-date: 2017-12-19
+date: 2018-01-02
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 reference: Array.reduce
 category: arrays
@@ -10,7 +10,7 @@ category: arrays
 const calories = [50, 100, 200];
 
 //sum
-calories.reduce((a, b) => a + b, 0);
+calories.reduce((prev, next) => prev + next, 0);
 ```
 
 <pre class="output">350</pre>
