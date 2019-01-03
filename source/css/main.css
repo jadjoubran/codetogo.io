@@ -817,7 +817,7 @@ footer {
   border-radius: 0.3em;
   font-size: 14px;
   line-height: 20px;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   color: var(--gray-800);
   margin-bottom: 0; }
   .output a {
@@ -834,6 +834,32 @@ footer {
   right: -7px;
   font-weight: bold;
   float: right; }
+
+.learn-javascript-container {
+  margin-top: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.learn-javascript {
+  background-color: #00b99f;
+  color: white !important;
+  padding: 12px 40px;
+  font-weight: 800;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 0;
+  font-family: var(--font-family);
+  cursor: pointer;
+  display: inline-block;
+  transition: opacity 200ms ease-out, transform 200ms ease-out; }
+
+.learn-javascript:hover {
+  opacity: 0.8; }
+
+.learn-javascript:active {
+  transform: translate(0.5px, 0.5px); }
 
 .related {
   padding-top: 20px; }
