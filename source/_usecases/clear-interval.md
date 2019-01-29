@@ -5,13 +5,13 @@ link: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope
 reference: Window.clearInterval
 related: set-interval
 category: functions
+author: "Vijay Singh"
 ---
 
-
 ```javascript
-const intervalID = setInterval(() => {
-    console.log('I will not be printed');
+const intervalId = setInterval(() => {
+  console.log("I will not be printed");
 }, 2000);
 
-window.clearInterval(intervalID);
+clearInterval(intervalId);
 ```

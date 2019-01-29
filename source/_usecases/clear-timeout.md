@@ -5,13 +5,13 @@ link: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope
 reference: Window.clearTimeout
 related: set-timeout
 category: functions
+author: "Vijay Singh"
 ---
 
-
 ```javascript
-const timeOutID = setTimeout(() => {
-    console.log('I will not be printed');
+const timeOutId = setTimeout(() => {
+  console.log("I will not be printed");
 }, 2000);
 
-window.clearTimeout(timeOutID);
+clearTimeout(timeOutId);
 ```
