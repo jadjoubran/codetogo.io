@@ -9,7 +9,7 @@ category: functions
 
 
 ```javascript
-const timeOutID = window.setTimeout(() => {
+const timeOutID = setTimeout(() => {
     console.log('I will not be printed');
 }, 2000);
 
