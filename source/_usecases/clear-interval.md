@@ -9,7 +9,7 @@ category: functions
 
 
 ```javascript
-const intervalID = window.setInterval(() => {
+const intervalID = setInterval(() => {
     console.log('I will not be printed');
 }, 2000);
 
