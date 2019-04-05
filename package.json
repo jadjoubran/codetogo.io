@@ -19,6 +19,8 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "natives": "^1.1.6",
+    "node-gyp": "^3.8.0",
     "rrssb": "^1.14.0",
     "yaml-front-matter": "^4.0.0"
   },
