@@ -8,17 +8,16 @@ category: Promise
 author: "Marvin Heilemann"
 ---
 
-
 ```javascript
-const timer = ms => new Promise(r => setTimeout(r, ms)) // <---
+const timer = ms => new Promise(r => setTimeout(r, ms));
 
 async function doSomething() {
-   console.log("Start")
-   await timer(2000)
-   console.log("Stop")
+  console.log("Start");
+  await timer(2000);
+  console.log("Stop");
 }
 
-doSomething()
+doSomething();
 ```
 
 <pre class="output">
