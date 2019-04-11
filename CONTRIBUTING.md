@@ -23,6 +23,7 @@ link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 reference: String.toUpperCase
 related: lowercase-a-string
 category: strings
+author: "Your name/nickname (optional)"
 ---
 
 
