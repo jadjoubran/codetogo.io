@@ -1,3 +1,90 @@
+.rrssb-buttons {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.rrssb-buttons:after {
+    clear: both;
+}
+.rrssb-buttons:after,
+.rrssb-buttons:before {
+    content: " ";
+    display: table;
+}
+.rrssb-buttons li {
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    line-height: 13px;
+    list-style: none;
+    margin: 0;
+    padding: 0 2px;
+}
+
+.rrssb-buttons li.rrssb-facebook a {
+    background-color: #306199;
+}
+.rrssb-buttons li.rrssb-facebook a:hover {
+    background-color: #244872;
+}
+.rrssb-buttons li.rrssb-twitter a {
+    background-color: #26c4f1;
+}
+.rrssb-buttons li.rrssb-twitter a:hover {
+    background-color: #0eaad6;
+}
+
+.rrssb-buttons li a {
+    background-color: #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: block;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    height: 100%;
+    padding: 11px 7px 12px 27px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+}
+.rrssb-buttons li a .rrssb-icon {
+    display: block;
+    left: 10px;
+    padding-top: 9px;
+    position: absolute;
+    top: 0;
+    width: 10%;
+}
+.rrssb-buttons li a .rrssb-icon svg {
+    height: 17px;
+    width: 17px;
+}
+.rrssb-buttons li a .rrssb-icon svg circle,
+.rrssb-buttons li a .rrssb-icon svg path {
+    fill: #fff;
+}
+
 .share {
     .clear {
         clear: both;
@@ -21,8 +108,7 @@
 }
 
 .rrssb-buttons li.rrssb-facebook a,
-.rrssb-buttons li.rrssb-twitter a,
-.rrssb-buttons li.rrssb-googleplus a {
+.rrssb-buttons li.rrssb-twitter a {
     background-color: #ccc;
 }
 .rrssb-buttons li.rrssb-facebook a:hover {
@@ -31,8 +117,4 @@
 
 .rrssb-buttons li.rrssb-twitter a:hover {
     background-color: #26c4f1;
-}
-
-.rrssb-buttons li.rrssb-googleplus a:hover {
-    background-color: #e93f2e;
 }
