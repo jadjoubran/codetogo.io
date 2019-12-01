@@ -1,6 +1,6 @@
 ---
 extends: _layouts.usecase
-date: 2018-03-12
+date: 2019-12-01
 link: https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime
 reference: HTMLMediaElement.currentTime
 related: play-video,pause-video
@@ -8,7 +8,7 @@ category: DOM
 ---
 
 ```html
-<video id="video" controls>
+<video id="video">
   <source src="movie.mp4" type="video/mp4">
 </video>
 ```

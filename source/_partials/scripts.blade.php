@@ -16,31 +16,27 @@
         document.querySelector("#autocomplete").placeholder = questions[index];
     })();
 </script>
-<script
-    defer
-    src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"
-></script>
-<script
-defer
-src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"
-></script>
 <script defer src="{{ elixir('js/all.js', 'build') }}"></script>
 <script>
-    window.addEventListener("load", () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("set", "anonymizeIp", true);
+    window.addEventListener("load", () => {        
+        window.ga =
+        window.ga ||
+        function() {
+          (ga.q = ga.q || []).push(arguments);
+        };
+        ga.l = +new Date();
 
-        gtag("config", "UA-110654751-1", { anonymize_ip: true });
+        ga("create", "UA-110654751-1", "auto");
+        ga("set", "anonymizeIp", true);
+        ga("send", "pageview");
+
         setTimeout(() => {
             const script = document.createElement("script");
             script.src =
-                "https://www.googletagmanager.com/gtag/js?id=UA-110654751-1";
+                "https://www.google-analytics.com/analytics.js";
+            script.defer = true;
             script.async = true;
             document.body.appendChild(script);
-        }, 300);
+        }, 400);
     });
 </script>

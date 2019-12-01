@@ -9,7 +9,8 @@ category: datetime
 ```javascript
 const date = new Date();
 
+//RFC 3339 format
 const formatted = date.toISOString();
 ```
 
-<pre class="output">2018-08-15T13:05:25.239Z</pre>
+<pre class="output">2019-12-01T21:23:34.409Z</pre>

@@ -1,16 +1,16 @@
 ---
 extends: _layouts.usecase
-date: 2017-12-29
+date: 2019-12-01
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString
 reference: Date.toISOString
 category: datetime
 ---
 
 ```javascript
-let date = new Date();
+const date = new Date();
 
 //YYYY-MM-DD format
-date.toISOString().split("T")[0];
+const mysqlDate = date.toISOString().split("T")[0];
 ```
 
-<pre class="output">2017-12-29</pre>
+<pre class="output">2019-12-01</pre>

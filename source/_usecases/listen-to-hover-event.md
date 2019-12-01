@@ -1,6 +1,6 @@
 ---
 extends: _layouts.usecase
-date: 2018-01-11
+date: 2019-12-01
 link: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 reference: EventTarget.addEventListener
 category: DOM
@@ -14,7 +14,7 @@ category: DOM
 const element = document.querySelector("#box");
 
 element.addEventListener("mouseover", event => {
-  console.log("Mouse over");
+  console.log("Mouse in");
 });
 
 element.addEventListener("mouseout", event => {
