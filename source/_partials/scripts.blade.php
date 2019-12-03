@@ -16,9 +16,17 @@
         document.querySelector("#autocomplete").placeholder = questions[index];
     })();
 </script>
+<script
+    defer
+    src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"
+></script>
+<script
+defer
+src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"
+></script>
 <script defer src="{{ elixir('js/all.js', 'build') }}"></script>
 <script>
-    window.addEventListener("load", () => {        
+    window.addEventListener("load", () => {
         window.ga =
         window.ga ||
         function() {
