@@ -3,26 +3,33 @@
   "private": false,
   "devDependencies": {
     "algoliasearch": "^3.30.0",
-    "gulp": "^3.8.8",
-    "hasbin": "^1.2.3",
     "husky": "^0.14.3",
-    "laravel-elixir": "^5.0.0-15",
-    "laravel-elixir-browsersync-official": "^1.0.0",
     "lint-staged": "^7.3.0",
-    "nan": "^2.11.1",
     "prettier": "^1.14.3",
-    "yargs": "^4.6.0"
+    "yargs": "^4.6.0",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^3.2.3",
+    "extra-watch-webpack-plugin": "^1.0.3",
+    "hasbin": "^1.2.3",
+    "laravel-mix": "^4.0.0",
+    "node-cmd": "^3.0.0",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.11",
+    "yaml-front-matter": "^4.0.0",
+    "rrssb": "^1.14.0"
   },
   "scripts": {
+    "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --hide-modules --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "npm run local",
+    "prod": "npm run production",
+    "watch": "npm run local -- --watch",
     "sync": "node tasks/algolia-sync.js",
-    "deploy": "gulp --env=production --production && ./vendor/bin/jigsaw build production && npm run sync",
-    "precommit": "lint-staged"
-  },
-  "dependencies": {
-    "natives": "^1.1.6",
-    "node-gyp": "^3.8.0",
-    "rrssb": "^1.14.0",
-    "yaml-front-matter": "^4.0.0"
+    "precommit": "lint-staged",
+    "netlify-build": "npm run prod && npm run sync"
   },
   "lint-staged": {
     "source/_usecases/*.md": [
