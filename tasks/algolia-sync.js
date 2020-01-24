@@ -2,7 +2,7 @@ const fs = require("fs");
 const yamlFront = require("yaml-front-matter");
 const algoliasearch = require("algoliasearch");
 
-const path = "./source/_usecases";
+const paths = ["./source/_jsusecases", "./source/_reactusecases"];
 
 const initIndex = () => {
     const appId = "7V5EBRZWFF";
@@ -12,21 +12,27 @@ const initIndex = () => {
 
 const index = initIndex();
 const questions = [];
+paths.forEach(path => {
 
-fs.readdir(path, function(err, items) {
-    for (const item of items) {
-        const question = formatQuestion(stripExtension(cleanPath(item)));
-        const url = formatUrl(stripExtension(item));
-        const objectID = url;
-        const fileContents = fs.readFileSync(
-            `source/_usecases/${item}`,
-            "utf8"
-        );
-        const info = yamlFront.loadFront(fileContents);
-        const reference = info.reference;
-        questions.push({ question, url, objectID, reference });
-    }
-    syncQuestions(questions);
+    fs.readdir(path, function(err, items) {
+        for (const item of items) {
+            const course = getCourseFromPath(path);
+            const question = formatQuestion(stripExtension(cleanPath(item)), course);
+            const url = formatUrl(stripExtension(item), course);
+            if (item === ".DS_Store"){
+                continue;
+            }
+            const objectID = url;
+            const fileContents = fs.readFileSync(
+                `${path}/${item}`,
+                "utf8"
+                );
+            const info = yamlFront.loadFront(fileContents);
+            const reference = info.reference;
+            questions.push({ question, url, objectID, reference });
+        }
+        syncQuestions(questions);
+    });
 });
 
 const syncQuestions = questions => {
@@ -40,6 +46,17 @@ const syncQuestions = questions => {
     });
 };
 
+const getCourseFromPath = path => {
+    if (path === "./source/_jsusecases"){
+        return "javascript";
+    }
+    if (path === "./source/_reactusecases"){
+        return "react";
+    }
+    console.log("Could not find course");
+    process.exit();
+}
+
 const stripExtension = filename => {
     return filename.replace(".md", "");
 };
@@ -48,10 +65,15 @@ const cleanPath = filename => {
     return filename.replace(/\-/g, " ");
 };
 
-const formatQuestion = question => {
-    return `How to ${question} in JavaScript`;
+const formatQuestion = (question, course) => {
+    if (course === "javascript"){
+        return `How to ${question} in JavaScript`;
+    }
+    if (course === "react"){
+        return `How to ${question} in React`;
+    }
 };
 
-const formatUrl = url => {
-    return `how-to-${url}-in-javascript`;
+const formatUrl = (url, course) => {
+    return `how-to-${url}-in-${course}`;
 };
