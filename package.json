@@ -32,7 +32,11 @@
     "netlify-build": "npm run prod && npm run sync"
   },
   "lint-staged": {
-    "source/_usecases/*.md": [
+    "source/_jsusecases/*.md": [
+      "prettier --write",
+      "git add"
+    ],
+    "source/_reactusecases/*.md": [
       "prettier --write",
       "git add"
     ]

@@ -1,90 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
-/******/ })
-/************************************************************************/
-/******/ ({
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[0],{
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
@@ -113,64 +27,6 @@ try {
 // easier to handle this case. if(!global) { ...}
 
 module.exports = g;
-
-
-/***/ }),
-
-/***/ "./source/_assets/js/autocomplete.js":
-/*!*******************************************!*\
-  !*** ./source/_assets/js/autocomplete.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var client = algoliasearch("7V5EBRZWFF", "8a58d6caba2a81878b26e24c1028624d");
-var index = client.initIndex("prod_JS-HOWTO");
-autocomplete("#autocomplete", {
-  hint: true,
-  autoselect: true // autoselectOnBlur: true
-
-}, [{
-  source: autocomplete.sources.hits(index, {
-    hitsPerPage: 50
-  }),
-  displayKey: "question",
-  templates: {
-    suggestion: function suggestion(_suggestion) {
-      return _suggestion._highlightResult.question.value;
-    },
-    empty: function empty(_) {
-      return "<div class=\"aa-suggestion aa-notfound\" role=\"option\">\n        <div>No results found.</div>\n        <div>\n            <svg width=\"11\" height=\"11\" fill=\"var(--gray-800)\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 52 52\"><path d=\"M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm12.5 28H28v11a2 2 0 0 1-4 0V28H13.5a2 2 0 0 1 0-4H24V14a2 2 0 0 1 4 0v10h10.5a2 2 0 0 1 0 4z\"/></svg>\n            <em style=\"white-space: normal;\">Click here to contribute</em>\n        </div>\n        </div>";
-    }
-  }
-}]).on("autocomplete:selected", function (event, suggestion, dataset) {
-  if (suggestion && suggestion.url) {
-    window.location.href = "/".concat(suggestion.url);
-  } else {
-    var url = document.querySelector("#contribute").href;
-    window.open("".concat(url, " ").concat(event.currentTarget.value));
-  }
-});
-document.querySelector("#autocomplete").focus({
-  preventScroll: true
-});
-
-/***/ }),
-
-/***/ "./source/_assets/js/main.js":
-/*!***********************************!*\
-  !*** ./source/_assets/js/main.js ***!
-  \***********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _autocomplete_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./autocomplete.js */ "./source/_assets/js/autocomplete.js");
-/* harmony import */ var _autocomplete_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_autocomplete_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _prism_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./prism.min.js */ "./source/_assets/js/prism.min.js");
-/* harmony import */ var _prism_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_prism_min_js__WEBPACK_IMPORTED_MODULE_1__);
-
 
 
 /***/ }),
@@ -746,30 +602,6 @@ Prism.languages.javascript = Prism.languages.extend("clike", {
 }(Prism);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
-/***/ }),
-
-/***/ "./source/_assets/sass/main.scss":
-/*!***************************************!*\
-  !*** ./source/_assets/sass/main.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!*************************************************************************!*\
-  !*** multi ./source/_assets/js/main.js ./source/_assets/sass/main.scss ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! /Users/jadjoubran/code/codetogo.io/source/_assets/js/main.js */"./source/_assets/js/main.js");
-module.exports = __webpack_require__(/*! /Users/jadjoubran/code/codetogo.io/source/_assets/sass/main.scss */"./source/_assets/sass/main.scss");
-
-
 /***/ })
 
-/******/ });
+}]);

@@ -11,7 +11,7 @@ mix.webpackConfig({
     ]
 });
 
-mix.js('source/_assets/js/index.js', 'js')
+mix.js('source/_assets/js/main.js', 'js')
     .sass('source/_assets/sass/main.scss', 'css')
     .options({
         processCssUrls: false,

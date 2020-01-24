@@ -57,15 +57,13 @@
     float: right;
 }
 
-.learn-javascript-container {
+.learn-tech-container {
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
-.learn-javascript {
-    background-color: #00b99f;
-    color: white !important;
+.learn-btn {
     padding: 12px 40px;
     font-weight: 800;
     font-size: 16px;
@@ -76,9 +74,20 @@
     display: inline-block;
     transition: opacity 200ms ease-out, transform 200ms ease-out;
 }
-.learn-javascript:hover {
+
+.learn-btn:hover {
     opacity: 0.8;
 }
-.learn-javascript:active {
+.learn-btn:active {
     transform: translate(0.5px, 0.5px);
+}
+
+.learn-javascript {
+    background-color: #03cbaf;
+    color: #25272a !important;
+}
+
+.learn-react {
+    background-color: #0097ec;
+    color: white !important;
 }

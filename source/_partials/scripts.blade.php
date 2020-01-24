@@ -10,7 +10,9 @@
             "How to validate email in JavaScript",
             "How to replace a class of element in JavaScript",
             "How to reload page in JavaScript",
-            "How to interpolate in JavaScript"
+            "How to interpolate in JavaScript",
+            "How to destructure props in React",
+            "How to use state with hooks in React",
         ];
         const index = Math.floor(Math.random() * questions.length);
         document.querySelector("#autocomplete").placeholder = questions[index];
@@ -24,7 +26,7 @@
 defer
 src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"
 ></script>
-<script defer src="{{ elixir('js/all.js', 'build') }}"></script>
+<script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 <script>
     window.addEventListener("load", () => {
         window.ga =

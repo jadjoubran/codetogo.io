@@ -49,8 +49,8 @@
                 @endif
             </div>
             @endif
-            <div class="learn-javascript-container">
-                <a href="https://learnjavascript.online/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-javascript">Learn JavaScript step by step</a>
+            <div class="learn-tech-container">
+                {!! $page->learnbtn !!}
             </div>
         </div>
         @include('_partials/share')

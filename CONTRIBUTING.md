@@ -6,10 +6,10 @@ You can either follow the below steps to send a Pull Request, or you can simply 
 
 1. Search the website to make sure that this use case doesn't already exist
 
-2. Create a new markdown file in `source/_usecases/`.
+2. Create a new markdown file in `source/_jsusecases/` or `source/_reactusecases`.
 
 The name of the markdown file will determine the **Title** of the use case.
-For example: [lowercase-a-string.md](https://github.com/jadjoubran/codetogo.io/blob/master/source/_usecases/lowercase-a-string.md) will automatically yield a title of:
+For example: [lowercase-a-string.md](https://github.com/jadjoubran/codetogo.io/blob/master/source/_jsusecases/lowercase-a-string.md) will automatically yield a title of:
 `How to lowercase a string in JavaScript`.
 `How to ` and ` in JavaScript` are always automatically added.
 

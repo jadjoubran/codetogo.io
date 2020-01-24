@@ -4,7 +4,7 @@ return [
     'baseUrl' => '',
     'production' => true,
     'collections' => [
-        'usecases' => [
+        'jsusecases' => [
             'path' => 'how-to-{filename}-in-javascript',
             'section' => 'content',
             'question' => function ($page) {
@@ -13,7 +13,20 @@ return [
             },
             'url' => function ($page) {
                 return 'how-to-'.$page->getFilename().'-in-javascript';
-            }
+            },
+            'learnbtn' => '<a href="https://learnjavascript.online/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-btn learn-javascript">Learn JavaScript step by step</a>'
+        ],
+        'reactusecases' => [
+            'path' => 'how-to-{filename}-in-react',
+            'section' => 'content',
+            'question' => function ($page) {
+                $question = str_replace('-', ' ', $page->getFilename());
+                return "How to $question in React";
+            },
+            'url' => function ($page) {
+                return 'how-to-'.$page->getFilename().'-in-react';
+            },
+            'learnbtn' => '<a href="https://react-tutorial.app/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-btn learn-react">Learn React step by step</a>'
         ],
     ],
 ];
