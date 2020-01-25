@@ -1,8 +1,8 @@
 ---
 extends: _layouts.usecase
 date: 2020-01-25
-related: get-props
 reference: React props
+related: destructure-props
 category: props
 ---
 
@@ -10,8 +10,8 @@ category: props
 import React from "react";
 
 function App(props) {
-  const { theme, className } = props;
-  console.log(theme, className);
+  console.log(props.theme);
+  console.log(props.className);
 
   return <div>App</div>;
 }

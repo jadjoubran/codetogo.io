@@ -4,6 +4,7 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 <meta name="google-site-verification" content="xEjRvI-66es5w1rNkXoLeIcOQH-x0JZYst9uHHwD_1E" />
+<meta name="msvalidate.01" content="3BD9278535ABE0574373B8017C1A0787" />
 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">

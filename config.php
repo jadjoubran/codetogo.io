@@ -5,6 +5,8 @@ return [
     'production' => true,
     'collections' => [
         'jsusecases' => [
+            'type' => 'javascript',
+            'formated_type' => 'JavaScript',
             'path' => 'how-to-{filename}-in-javascript',
             'section' => 'content',
             'question' => function ($page) {
@@ -17,6 +19,8 @@ return [
             'learnbtn' => '<a href="https://learnjavascript.online/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-btn learn-javascript">Learn JavaScript step by step</a>'
         ],
         'reactusecases' => [
+            'type' => 'react',
+            'formatted_type' => 'React',
             'path' => 'how-to-{filename}-in-react',
             'section' => 'content',
             'question' => function ($page) {
