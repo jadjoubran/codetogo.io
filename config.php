@@ -6,7 +6,7 @@ return [
     'collections' => [
         'jsusecases' => [
             'type' => 'javascript',
-            'formated_type' => 'JavaScript',
+            'formatted_type' => 'JavaScript',
             'path' => 'how-to-{filename}-in-javascript',
             'section' => 'content',
             'question' => function ($page) {
