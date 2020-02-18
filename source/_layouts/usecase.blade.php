@@ -4,6 +4,10 @@
     'reference' => $page->reference,
 ])
 
+<?php
+$pageUrl = "https://codetogo.io".$page->getUrl()."/";
+?>
+
 @section('body')
     <div class="container usecase">
 
@@ -31,7 +35,7 @@
                     {{$date->format('M d, Y')}}
                     <div itemprop="upvoteCount">1</div>
                     <h3 itemprop="author">{{$page->author ? $page->author : "Jad Joubran"}}</h3>
-                    <a href="{{$page->link}}" itemprop="url">See answer</a>
+                    <a href="{{$pageUrl}}" itemprop="url">See answer</a>
                 </div>
             </div>
 

@@ -1,14 +1,12 @@
 ---
 extends: _layouts.usecase
-date: 2018-01-04
+date: 2020-02-18
 category: arrays
 ---
 
 ```javascript
 const apps = ["phone", "calculator", "clock"];
-const object = {};
-
-apps.map((value, index) => (object[index] = value));
+const object = { ...apps };
 
 console.log(object);
 ```
