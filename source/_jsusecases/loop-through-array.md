@@ -1,22 +1,23 @@
 ---
 extends: _layouts.usecase
-date: 2017-11-11
-link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
-reference: for...of
+date: 2020-02-22
+link: https://blog.learnjavascript.online/posts/javascript-foreach-the-complete-guide/
+reference: JavaScript forEach
+reference_website: Learn JavaScript Blog
 related: loop-through-object
 category: arrays
 ---
 
 ```javascript
-const people = ["John", "Nicole", "Jad"];
+const people = ["Sam", "Alex", "Charlie"];
 
-for (const person of people) {
+people.forEach(person => {
   console.log(person);
-}
+});
 ```
 
 <pre class="output">
-John
-Nicole
-Jad
+Sam
+Alex
+Charlie
 </pre>

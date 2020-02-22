@@ -25,8 +25,11 @@
     color: var(--gray-700);
     font-size: 14px;
     padding-top: 8px;
-    text-decoration: underline;
     text-align: right;
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 .output {

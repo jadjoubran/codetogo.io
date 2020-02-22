@@ -47,7 +47,7 @@ $pageUrl = "https://codetogo.io".$page->getUrl()."/";
             @if ($page->link)
             <div class="mdn-container">
                 @if ($page->reference)
-                    <a href="{{$page->link}}" target="_blank" rel="noopener"  itemprop="citation">{{$page->reference}} on MDN</a>
+                    <a href="{{$page->link}}" target="_blank" rel="noopener"  itemprop="citation">{{$page->reference}}</a> on {{$page->reference_website ?? "MDN"}}
                 @else
                     <a href="{{$page->link}}" target="_blank" rel="noopener"  itemprop="citation">MDN Docs</a>
                 @endif
