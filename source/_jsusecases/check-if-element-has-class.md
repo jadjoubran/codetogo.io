@@ -1,8 +1,9 @@
 ---
 extends: _layouts.usecase
-date: 2019-12-01
-link: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
-reference: Element.classList
+date: 2020-03-02
+link: https://blog.learnjavascript.online/posts/javascript-has-class/
+reference_website: Learn JavaScript Blog
+reference: JavaScript has class
 category: DOM
 ---
 
