@@ -30,7 +30,7 @@ return [
             'url' => function ($page) {
                 return 'how-to-'.$page->getFilename().'-in-react';
             },
-            'learnbtn' => '<a href="https://react-tutorial.app/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-btn learn-react">Learn React step by step</a>'
+            'learnbtn' => '<a href="https://react-tutorial.app/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-btn learn-react">Step by step React Tutorial</a>'
         ],
     ],
 ];
