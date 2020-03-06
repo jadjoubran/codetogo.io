@@ -3,7 +3,7 @@
 @section('body')
 <div class="container landing">
     <div class="banner">
-        <h1>Find up to date snippets for JavaScript &amp; React use cases</h1>
+        <h1>Find up to date snippets for <a href="https://learnjavascript.online?utm_source=codetogo.io" target="_blank" rel="noopener" style="color: inherit">JavaScript</a> &amp; <a href="https://react-tutorial.app?utm_source=codetogo.io" target="_blank" rel="noopener" style="color: inherit">React</a> use cases</h1>
         <h4>Search for a use case:</h4>
         <input type="text" id="autocomplete" class="hide-till-ready" placeholder="How to loop through array in JavaScript">
     </div>
