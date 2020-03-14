@@ -16,7 +16,7 @@ $pageUrl = "https://codetogo.io".$page->getUrl()."/";
     $date->setTimestamp($page->date);
     ?>
         <div class="card usecase-card" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
-            <h2 itemprop="text name">{{$page->question()}}</h2>
+            <h1 id="usecase-question" itemprop="text name">{{$page->question()}}</h1>
             <div class="usecase-subtitle">
                 @if ($page->category)
                     <div class="category">{{ucfirst($page->category)}}</div>

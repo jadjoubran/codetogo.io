@@ -1,8 +1,9 @@
 ---
 extends: _layouts.usecase
 date: 2017-12-16
-link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
-reference: Array.includes
+link: https://blog.learnjavascript.online/posts/javascript-in-array/
+reference_website: Learn JavaScript Blog
+reference: JavaScript in array
 category: arrays
 ---
 
