@@ -9,6 +9,7 @@ category: JSON
 
 ```javascript
 fetch("https://codetogo.io/api/users.json", {
+  method: "POST",
   headers: {
     "Content-Type": "application/json"
   },
