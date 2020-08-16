@@ -8,9 +8,9 @@ category: datetime
 ---
 
 ```javascript
-cosnt date = new Date();
+const date = new Date();
 
-const year = date.getFullYear()
+const year = date.getFullYear();
 ```
 
 <pre class="output">
