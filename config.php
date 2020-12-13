@@ -16,7 +16,7 @@ return [
             'url' => function ($page) {
                 return 'how-to-'.$page->getFilename().'-in-javascript';
             },
-            'learnbtn' => '<div style="text-align: center"><a href="https://learnjavascript.online/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-btn learn-javascript">Learn JavaScript step by step</a><p>Consider <a style="text-decoration: underline" target="_blank" rel="noopener" href="https://learnprogramming.online/?utm_source=codetogo.io">Learn Programming</a> which is tailored for absolute beginners.</p></div>'
+            'learnbtn' => '<div style="text-align: center"><a href="https://learnjavascript.online/?utm_source=codetogo.io" target="_blank" rel="noopener" class="learn-btn learn-javascript">Learn JavaScript step by step</a></div>'
         ],
         'reactusecases' => [
             'type' => 'react',

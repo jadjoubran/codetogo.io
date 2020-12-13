@@ -6,7 +6,6 @@
         <h1>Find up to date snippets for <a href="https://learnjavascript.online?utm_source=codetogo.io" target="_blank" rel="noopener" style="color: inherit">JavaScript</a> &amp; <a href="https://react-tutorial.app?utm_source=codetogo.io" target="_blank" rel="noopener" style="color: inherit">React</a> use cases</h1>
         <h4>Search for a use case:</h4>
         <input type="text" id="autocomplete" class="hide-till-ready" placeholder="How to loop through array in JavaScript">
-        <p style="color: var(--gray-800);position: relative;top: 40px;">Or <a href="https://learnprogramming.online/?utm_source=codetogo.io" style="color: var(--gray-800);" target="_blank" rel="noopener">learn programming</a> from scratch.</p>
     </div>
     <h4>Popular use cases</h4>
 
