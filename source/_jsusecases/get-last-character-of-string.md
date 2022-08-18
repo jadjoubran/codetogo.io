@@ -1,8 +1,9 @@
 ---
 extends: _layouts.usecase
-date: 2018-12-26
-link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
-reference: String.substring
+date: 2022-08-18
+link: https://blog.learnjavascript.online/posts/javascript-at-method/
+reference: String.at()
+reference_website: Learn JavaScript Blog
 related: get-first-character-of-string
 category: strings
 ---
@@ -10,7 +11,7 @@ category: strings
 ```javascript
 const name = "Lewis";
 
-name[name.length - 1];
+name.at(-1);
 ```
 
 <pre class="output">s</pre>

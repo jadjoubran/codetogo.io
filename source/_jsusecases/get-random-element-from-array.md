@@ -1,15 +1,16 @@
 ---
 extends: _layouts.usecase
-date: 2018-01-08
-link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-reference: Math.random
+date: 2022-08-18
+link: https://blog.learnjavascript.online/posts/javascript-at-method/
+reference: String.at()
+reference_website: Learn JavaScript Blog
 category: arrays
 ---
 
 ```javascript
-const names = ["Tom", "Jad", "Nicole"];
+const names = ["Sam", "Alex", "Charley"];
 
-names[Math.floor(Math.random() * names.length)];
+names.at(Math.random() * names.length);
 ```
 
 <pre class="output">
