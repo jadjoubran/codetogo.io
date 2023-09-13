@@ -1,0 +1,41 @@
+---
+extends: _layouts.usecase
+date: 2023-09-13
+link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+reference: Closures
+category: functions
+author: "Mageshkannan Annathurai"
+---
+
+
+```javascript
+function createCounter() {
+  let count = 0;
+
+  function increment() {
+    count++;
+    console.log(`Count: ${count}`);
+  }
+
+  function decrement() {
+    count--;
+    console.log(`Count: ${count}`);
+  }
+
+  return {
+    increment,
+    decrement
+  };
+}
+
+const counter1 = createCounter();
+const counter2 = createCounter();
+
+counter1.increment(); 
+counter1.increment(); 
+counter2.increment(); 
+```
+
+<pre class="output">Count: 1</pre>
+<pre class="output">Count: 2</pre>
+<pre class="output">Count: 1</pre>
