@@ -1,8 +1,9 @@
 ---
 extends: _layouts.usecase
-date: 2020-12-18
-link: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-reference: Fetch
+date: 2024-02-13
+link: https://learnjavascript.online/topics/fetch.html?utm_source=codetogo.io
+reference_website: Learn JavaScript
+reference: Fetch API use cases
 related: async-await-fetch
 category: JSON
 ---
