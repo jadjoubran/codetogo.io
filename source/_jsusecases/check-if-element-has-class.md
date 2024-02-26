@@ -1,6 +1,6 @@
 ---
 extends: _layouts.usecase
-date: 2020-03-02
+date: 2024-02-26
 link: https://blog.learnjavascript.online/posts/javascript-has-class/
 reference_website: Learn JavaScript Blog
 reference: JavaScript has class
@@ -14,6 +14,7 @@ category: DOM
 ```javascript
 const element = document.querySelector("#box");
 
+// Result is a boolean
 element.classList.contains("active");
 ```
 

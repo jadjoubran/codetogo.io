@@ -1,6 +1,6 @@
 ---
 extends: _layouts.usecase
-date: 2024-02-13
+date: 2024-02-26
 link: https://learnjavascript.online/topics/fetch.html?utm_source=codetogo.io
 reference_website: Learn JavaScript
 reference: Fetch API use cases
@@ -24,7 +24,7 @@ fetch("https://codetogo.io/api/users.xml")
 &lt;users&gt;
     &lt;user&gt;
         &lt;id&gt;1&lt;/id&gt;
-        &lt;name&gt;Jad&lt;/name&gt;
+        &lt;name&gt;Alex&lt;/name&gt;
     &lt;/user&gt;
     &lt;user&gt;
         &lt;id&gt;2&lt;/id&gt;

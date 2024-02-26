@@ -1,6 +1,6 @@
 ---
 extends: _layouts.usecase
-date: 2019-12-01
+date: 2024-02-26
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 reference: Object.values
 related: check-if-object-includes-substring
@@ -9,8 +9,8 @@ category: objects
 
 ```javascript
 const person = {
-  first_name: "Sam",
-  last_name: "Bradley"
+  firstName: "Sam",
+  lastName: "Bradley"
 };
 
 Object.values(person).includes("Bradley");
