@@ -3,7 +3,7 @@ extends: _layouts.usecase
 date: 2019-04-11
 link: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise
 reference: new Promise(executor)
-related: create-a-promise-in-javascript
+related: create-a-promise
 category: Promise
 author: "Marvin Heilemann"
 ---
