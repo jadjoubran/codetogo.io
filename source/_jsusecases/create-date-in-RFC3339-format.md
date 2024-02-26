@@ -13,4 +13,4 @@ const date = new Date();
 const rfc339 = date.toISOString();
 ```
 
-<pre class="output">2019-12-01T21:23:34.409Z</pre>
+<pre class="output">2024-02-26T20:11:23.708Z</pre>

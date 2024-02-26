@@ -13,6 +13,7 @@ const person = {
   lastName: "Bradley"
 };
 
+// Result is a boolean
 Object.values(person).includes("Bradley");
 ```
 

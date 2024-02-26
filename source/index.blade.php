@@ -8,15 +8,6 @@
         <input type="text" id="autocomplete" class="hide-till-ready" placeholder="How to loop through array in JavaScript">
     </div>
     <h4>Popular use cases</h4>
-
-        <div class="card">
-        <a href="/how-to-use-state-with-hooks-in-react/">
-            <h3>How to use state with hooks in React</h3>
-        </a>
-        <h5>Last updated Jan 23, 2020</h5>
-
-        @include('_reactusecases.use-state-with-hooks')
-    </div>
     <div class="card">
         <a href="/how-to-check-if-element-has-class-in-javascript/">
             <h3>How to check if element has class in JavaScript</h3>

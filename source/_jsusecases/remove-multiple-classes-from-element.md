@@ -16,3 +16,5 @@ const element = document.querySelector("#box");
 
 element.classList.remove("active", "highlighted");
 ```
+
+<pre class="output">&lt;div id="box"&gt;&lt;/div&gt;</pre>

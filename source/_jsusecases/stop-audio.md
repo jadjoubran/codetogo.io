@@ -16,7 +16,7 @@ category: DOM
 ```javascript
 const audio = document.querySelector("audio");
 
-// Stop = Pause + reset the playhead
+// Stop = pause + reset the playhead
 audio.pause();
 audio.currentTime = 0;
 ```

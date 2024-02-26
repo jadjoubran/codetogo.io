@@ -14,6 +14,7 @@ category: DOM
 ```javascript
 const element = document.querySelector("#box");
 
+// Check if hasclass
 // Result is a boolean
 element.classList.contains("active");
 ```
