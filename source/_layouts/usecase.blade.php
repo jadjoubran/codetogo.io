@@ -34,14 +34,14 @@ $pageUrl = "https://codetogo.io".$page->getUrl()."/";
                 <div class="hidden" itemprop="dateCreated">
                     {{$date->format('M d, Y')}}
                     <div itemprop="upvoteCount">1</div>
-                    <h3>{{$page->author ? $page->author : "Jad Joubran"}}</h3>
+                    <h3 itemprop="author">{{$page->author ? $page->author : "Jad Joubran"}}</h3>
                     <a href="{{$pageUrl}}" itemprop="url">See answer</a>
                 </div>
             </div>
 
             <div class="hidden">
                 <span itemprop="answerCount">1</span>
-                <h3>{{$page->author ? $page->author : "Jad Joubran"}}</h3>
+                <h3 itemprop="author">{{$page->author ? $page->author : "Jad Joubran"}}</h3>
             </div>
 
             @if ($page->link)
