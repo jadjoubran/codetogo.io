@@ -1,19 +1,19 @@
 ---
 extends: _layouts.usecase
-date: 2017-12-24
+date: 2024-02-27
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring
 reference: Array destructuring
 category: syntax
 ---
 
 ```javascript
-let first_name = "Doe";
-let last_name = "John";
+let firstName = "Doe";
+let lastName = "Sam";
 
-//swap
-[first_name, last_name] = [last_name, first_name];
+// Swap
+[firstName, lastName] = [lastName, firstName];
 
-console.log(first_name, last_name);
+console.log(firstName, lastName);
 ```
 
-<pre class="output">John Doe</pre>
+<pre class="output">Sam Doe</pre>

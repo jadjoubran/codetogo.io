@@ -3,6 +3,7 @@ extends: _layouts.usecase
 date: 2024-02-26
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString
 reference: Date.toISOString()
+related: get-human-friendly-date-difference
 category: datetime
 ---
 
