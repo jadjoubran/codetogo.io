@@ -1,8 +1,9 @@
 ---
 extends: _layouts.usecase
-date: 2019-02-03
-link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
-reference: Promise
+date: 2024-02-28
+link: https://learnjavascript.online/topics/promises.html?utm_source=codetogo.io
+reference: Promises
+reference_website: Learn JavaScript
 category: Promise
 author: "Vijay Singh"
 ---
@@ -22,9 +23,9 @@ author: "Vijay Singh"
 <pre class="output">
 [{
     id: 1,
-    name: "Jad"
+    name: "Sam"
 }, {
     id: 2,
-    name: "Nicole"
+    name: "Alex"
 }]
 </pre>

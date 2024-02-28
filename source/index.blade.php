@@ -12,25 +12,25 @@
         <a href="/how-to-check-if-element-has-class-in-javascript/">
             <h3>How to check if element has class in JavaScript</h3>
         </a>
-        <h5>Last updated Aug 24, 2018</h5>
+        <h5>Last updated Feb 26, 2024</h5>
 
         @include('_jsusecases.check-if-element-has-class')
     </div>
     <div class="card">
-        <a href="/how-to-interpolate-in-javascript/">
-            <h3>How to interpolate in JavaScript</h3>
+        <a href="/how-to-get-last-array-element-in-javascript/">
+            <h3>How to get last array element in JavaScript</h3>
         </a>
-        <h5>Last updated Nov 11, 2017</h5>
+        <h5>Last updated Feb 28, 2024</h5>
 
-        @include('_jsusecases.interpolate')
+        @include('_jsusecases.get-last-array-element')
     </div>
     <div class="card">
-        <a href="/how-to-add-class-to-element-in-javascript/">
-            <h3>How to add class to element in JavaScript</h3>
+        <a href="/how-to-add-multiple-classes-to-element-in-javascript/">
+            <h3>How to add multiple classes to element in JavaScript</h3>
         </a>
-        <h5>Last updated Nov 11, 2017</h5>
+        <h5>Last updated Sep 22, 2018</h5>
 
-        @include('_jsusecases.add-class-to-element')
+        @include('_jsusecases.add-multiple-classes-to-element')
     </div>
     <div class="card">
         <a href="/how-to-replace-spaces-with-dashes-in-javascript/">
@@ -41,26 +41,10 @@
         @include('_jsusecases.replace-spaces-with-dashes')
     </div>
     <div class="card">
-        <a href="/how-to-reload-page-in-javascript/">
-            <h3>How to reload page in JavaScript</h3>
-        </a>
-        <h5>Last updated Nov 11, 2017</h5>
-
-        @include('_jsusecases.reload-page')
-    </div>
-    <div class="card">
-        <a href="/how-to-find-element-by-id-in-javascript/">
-            <h3>How to find element by id in JavaScript</h3>
-        </a>
-        <h5>Last updated Nov 11, 2017</h5>
-
-        @include('_jsusecases.find-element-by-id')
-    </div>
-    <div class="card">
         <a href="/how-to-loop-through-array-in-javascript/">
             <h3>How to loop through array in JavaScript</h3>
         </a>
-        <h5>Last updated Nov 11, 2017</h5>
+        <h5>Last updated Feb 22, 2020</h5>
 
         @include('_jsusecases.loop-through-array')
     </div>
@@ -72,31 +56,6 @@
 
         @include('_jsusecases.listen-to-click-event')
     </div>
-    <div class="card">
-        <a href="/how-to-get-keys-of-object-in-javascript/">
-            <h3>How to get keys of object in JavaScript</h3>
-        </a>
-        <h5>Last updated Nov 11, 2017</h5>
-
-        @include('_jsusecases.get-keys-of-object')
-    </div>
-    <div class="card">
-        <a href="/how-to-increment-a-variable-in-javascript/">
-            <h3>How to increment a variable in JavaScript</h3>
-        </a>
-        <h5>Last updated Nov 11, 2017</h5>
-
-        @include('_jsusecases.increment-a-variable')
-    </div>
-    <div class="card">
-        <a href="/how-to-uppercase-a-string-in-javascript/">
-            <h3>How to uppercase a string in JavaScript</h3>
-        </a>
-        <h5>Last updated Nov 11, 2017</h5>
-
-        @include('_jsusecases.uppercase-a-string')
-    </div>
-
 </div>
 
 @endsection

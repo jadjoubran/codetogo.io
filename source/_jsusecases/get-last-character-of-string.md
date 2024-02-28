@@ -4,7 +4,7 @@ date: 2022-08-18
 link: https://blog.learnjavascript.online/posts/javascript-at-method/
 reference: String.at()
 reference_website: Learn JavaScript Blog
-related: get-first-character-of-string
+related: get-first-character-of-string,get-last-array-element
 category: strings
 ---
 

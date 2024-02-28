@@ -1,16 +1,16 @@
 ---
 extends: _layouts.usecase
-date: 2017-12-17
-link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#Creating_a_Promise
-reference: Promise
-related: match-text-against-regex
-category: syntax
+date: 2024-02-28
+link: https://learnjavascript.online/topics/promises.html?utm_source=codetogo.io
+reference: Promises
+reference_website: Learn JavaScript
+related: async-await
+category: promise
 ---
 
 ```javascript
 new Promise((resolve, reject) => {
-  // asynchronous operation
-
+  // Do some work
   // then in case of success
   resolve();
   // or

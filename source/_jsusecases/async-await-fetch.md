@@ -24,9 +24,9 @@ extra: https://learnjavascript.online/topics/fetch.html?utm_source=codetogo.io
 <pre class="output">
 [{
     id: 1,
-    name: "Jad"
+    name: "Sam"
 }, {
     id: 2,
-    name: "Sam"
+    name: "Alex"
 }]
 </pre>
