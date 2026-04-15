@@ -30,7 +30,7 @@
     "watch": "npm run local -- --watch",
     "sync": "node tasks/algolia-sync.js",
     "precommit": "lint-staged",
-    "netlify-build": "npm run prod && vendor/bin/jigsaw build production && npm run sync"
+    "netlify-build": "composer install && npm run prod && vendor/bin/jigsaw build production && npm run sync"
   },
   "lint-staged": {
     "source/_jsusecases/*.md": [
