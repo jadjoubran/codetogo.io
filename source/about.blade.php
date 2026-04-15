@@ -19,6 +19,7 @@
             <li><a href="https://learnprogramming.online/?utm_source=codetogo.io" target="_blank">Learn Programming</a></li>
             <li><a href="https://learnhtmlcss.online/?utm_source=codetogo.io" target="_blank">Learn HTML CSS</a></li>
             <li><a href="https://react-tutorial.app/?utm_source=codetogo.io" target="_blank">React Tutorial</a></li>
+            <li><a href="https://sql-tutorial.app/?utm_source=codetogo.io" target="_blank">SQL Tutorial</a></li>
 
         </ul>
     </div>
