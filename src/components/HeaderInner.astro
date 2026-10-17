@@ -1,16 +1,20 @@
+---
+import Logo from "./Logo.astro";
+import Menu from "./Menu.astro";
+---
 <nav>
     <div class="container">
         <div class="nav-container">
             <a href="/" class="nav-spacer">
                 <div id="logo">
-                    @include('_partials/logosvg')
+                    <Logo />
                 </div>
             </a>
             <div class="autocomplete-header hide-mobile">
                 <input type="text" id="autocomplete" class="hide-till-ready" placeholder="How to loop through array in JavaScript">
             </div>
             <div id="menu" class="nav-spacer">
-                @include('_partials.menu')
+                <Menu />
             </div>
         </div>
     </div>

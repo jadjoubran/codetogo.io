@@ -1,0 +1,93 @@
+---
+import { render } from "astro:content";
+import Master from "../layouts/Master.astro";
+import Share from "../components/Share.astro";
+import Related from "../components/Related.astro";
+import {
+    getUsecases,
+    question,
+    url,
+    types,
+    formatDate,
+    isoDate,
+    type CollectionName,
+    type Usecase
+} from "../lib/usecases";
+
+export async function getStaticPaths() {
+    const collections: CollectionName[] = ["jsusecases", "reactusecases"];
+    const paths = [];
+    for (const collection of collections) {
+        for (const entry of await getUsecases(collection)) {
+            paths.push({
+                params: { usecase: url(entry.id, collection) },
+                props: { entry, collection }
+            });
+        }
+    }
+    return paths;
+}
+
+interface Props {
+    entry: Usecase;
+    collection: CollectionName;
+}
+
+const { entry, collection } = Astro.props;
+const { Content } = await render(entry);
+const data = entry.data;
+
+const pageQuestion = question(entry.id, collection);
+const path = `/${url(entry.id, collection)}`;
+const pageUrl = `https://codetogo.io${path}/`;
+const author = data.author ? data.author : "Jad Joubran";
+---
+<Master title={pageQuestion} question={pageQuestion} reference={data.reference}>
+    <div class="container usecase">
+
+        <div class="card usecase-card" itemprop="mainEntity" itemscope itemtype="http://schema.org/Question">
+            <h1 id="usecase-question" itemprop="text name">{pageQuestion}</h1>
+            <div class="usecase-subtitle">
+                {data.category && (
+                    <div class="category">{data.category.charAt(0).toUpperCase() + data.category.slice(1)}</div>
+                )}
+                <h5>By {author} &middot;&nbsp;</h5>
+                <h5 itemprop="dateModified dateCreated" datetime={isoDate(data.date)}>
+                    Last updated {formatDate(data.date)}
+                </h5>
+            </div>
+
+            <div itemprop="suggestedAnswer acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
+                <div itemprop="text">
+                    <Content />
+                </div>
+                <div class="hidden" itemprop="dateCreated" datetime={isoDate(data.date)}>
+                    {formatDate(data.date)}
+                    <div itemprop="upvoteCount">1</div>
+                    <h3>{author}</h3>
+                    <a href={pageUrl} itemprop="url">See answer</a>
+                </div>
+            </div>
+
+            <div class="hidden">
+                <span itemprop="answerCount">1</span>
+                <h3>{author}</h3>
+            </div>
+
+            {data.link && (
+            <div class="mdn-container">
+                {data.reference ? (
+                    <><a href={data.link} target="_blank" rel="noopener" itemprop="citation">{data.reference}</a> on {data.reference_website ?? "MDN"}</>
+                ) : (
+                    <a href={data.link} target="_blank" rel="noopener" itemprop="citation">MDN Docs</a>
+                )}
+            </div>
+            )}
+            <div class="learn-tech-container">
+                <Fragment set:html={types[collection].learnBtn} />
+            </div>
+        </div>
+        <Share pageUrl={`https://codetogo.io${path}`} />
+        <Related related={data.related} collection={collection} />
+    </div>
+</Master>

@@ -1,4 +1,4 @@
-<script>
+<script is:inline>
     (function() {
         const questions = [
             "How to loop through array in JavaScript",
@@ -19,15 +19,18 @@
     })();
 </script>
 <script
-    defer
+    is:inline defer
     src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"
 ></script>
 <script
-defer
+is:inline defer
 src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"
 ></script>
-<script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 <script>
+    // Bundled by Vite; module scripts are deferred and run after the scripts above
+    import "../scripts/main.js";
+</script>
+<script is:inline>
     window.addEventListener("load", () => {
         window.ga =
         window.ga ||

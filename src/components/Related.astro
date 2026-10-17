@@ -1,0 +1,24 @@
+---
+import { question, url, type CollectionName } from "../lib/usecases";
+
+interface Props {
+    related?: string;
+    collection: CollectionName;
+}
+
+const { related, collection } = Astro.props;
+const usecases = related ? related.split(",").map(id => id.trim()) : [];
+---
+{usecases.length > 0 && (
+<div class="related">
+
+    <h4>Related use cases</h4>
+    {usecases.map(id => (
+    <a href={`/${url(id, collection)}/`}>
+        <div class="card card-compact">
+            <h3>{question(id, collection)}</h3>
+        </div>
+    </a>
+    ))}
+</div>
+)}

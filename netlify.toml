@@ -1,3 +1,10 @@
+[build]
+  command = "npm run netlify-build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
 [[headers]]
   for = "/*"
   [headers.values]

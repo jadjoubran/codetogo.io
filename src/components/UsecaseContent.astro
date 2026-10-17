@@ -1,0 +1,14 @@
+---
+import { getEntry, render } from "astro:content";
+
+interface Props {
+    id: string;
+}
+
+const entry = await getEntry("jsusecases", Astro.props.id);
+if (!entry) {
+    throw new Error(`Use case not found: ${Astro.props.id}`);
+}
+const { Content } = await render(entry);
+---
+<Content />

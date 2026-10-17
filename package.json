@@ -2,35 +2,22 @@
   "name": "codetogo",
   "private": false,
   "devDependencies": {
+    "@astrojs/markdown-satteri": "^0.4.3",
     "algoliasearch": "^3.35.1",
-    "browser-sync": "^3.0.2",
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "cross-env": "^3.2.3",
-    "extra-watch-webpack-plugin": "^1.0.3",
-    "hasbin": "^1.2.3",
+    "astro": "^7.3.8",
     "husky": "^0.14.3",
-    "laravel-mix": "^6.0.49",
     "lint-staged": "^15.2.7",
-    "node-cmd": "^3.0.0",
     "prettier": "^1.19.1",
-    "rrssb": "^1.14.0",
     "sass": "^1.26.10",
-    "sass-loader": "^16.0.1",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "5.75.0",
-    "yaml-front-matter": "^4.1.0",
-    "yargs": "^17.6.2"
+    "yaml-front-matter": "^4.1.0"
   },
   "scripts": {
-    "local": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --env=local --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --progress --env=staging --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --env=production --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "dev": "npm run local",
-    "prod": "npm run production",
-    "watch": "npm run local -- --watch",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "sync": "node tasks/algolia-sync.js",
     "precommit": "lint-staged",
-    "netlify-build": "composer install && npm run prod && vendor/bin/jigsaw build production && npm run sync"
+    "netlify-build": "npm run build && npm run sync"
   },
   "lint-staged": {
     "source/_jsusecases/*.md": [
@@ -41,5 +28,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "engines": {
+    "node": ">=22.22.0"
   }
 }

@@ -1,5 +1,7 @@
 /build_local/
 /build_production/
+/dist/
+/.astro/
 /node_modules/
 /vendor/
 /_tmp/

@@ -1,6 +1,8 @@
-@extends('_layouts.master', ['is_landing' => true])
-
-@section('body')
+---
+import Master from "../layouts/Master.astro";
+import UsecaseContent from "../components/UsecaseContent.astro";
+---
+<Master isLanding>
 <div class="container landing">
     <div class="banner">
         <h1>Find up to date snippets for <a href="https://learnjavascript.online?utm_source=codetogo.io" target="_blank" rel="noopener" style="color: inherit">JavaScript</a> &amp; <a href="https://react-tutorial.app?utm_source=codetogo.io" target="_blank" rel="noopener" style="color: inherit">React</a> use cases</h1>
@@ -14,7 +16,7 @@
         </a>
         <h5>Last updated Feb 26, 2024</h5>
 
-        @include('_jsusecases.check-if-element-has-class')
+        <UsecaseContent id="check-if-element-has-class" />
     </div>
     <div class="card">
         <a href="/how-to-get-last-array-element-in-javascript/">
@@ -22,7 +24,7 @@
         </a>
         <h5>Last updated Feb 28, 2024</h5>
 
-        @include('_jsusecases.get-last-array-element')
+        <UsecaseContent id="get-last-array-element" />
     </div>
     <div class="card">
         <a href="/how-to-add-multiple-classes-to-element-in-javascript/">
@@ -30,7 +32,7 @@
         </a>
         <h5>Last updated Sep 22, 2018</h5>
 
-        @include('_jsusecases.add-multiple-classes-to-element')
+        <UsecaseContent id="add-multiple-classes-to-element" />
     </div>
     <div class="card">
         <a href="/how-to-replace-spaces-with-dashes-in-javascript/">
@@ -38,7 +40,7 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_jsusecases.replace-spaces-with-dashes')
+        <UsecaseContent id="replace-spaces-with-dashes" />
     </div>
     <div class="card">
         <a href="/how-to-loop-through-array-in-javascript/">
@@ -46,7 +48,7 @@
         </a>
         <h5>Last updated Feb 22, 2020</h5>
 
-        @include('_jsusecases.loop-through-array')
+        <UsecaseContent id="loop-through-array" />
     </div>
     <div class="card">
         <a href="/how-to-listen-to-click-event-in-javascript/">
@@ -54,8 +56,8 @@
         </a>
         <h5>Last updated Nov 11, 2017</h5>
 
-        @include('_jsusecases.listen-to-click-event')
+        <UsecaseContent id="listen-to-click-event" />
     </div>
 </div>
 
-@endsection
+</Master>

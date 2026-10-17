@@ -1,0 +1,23 @@
+---
+import { getUsecases, question, url, formatDate, type CollectionName } from "../lib/usecases";
+
+interface Props {
+    collection: CollectionName;
+    title: string;
+}
+
+const { collection, title } = Astro.props;
+const usecases = await getUsecases(collection);
+---
+<div class="container all">
+    <h4 class="page-title">{title}</h4>
+
+    {usecases.map(usecase => (
+    <a href={`/${url(usecase.id, collection)}`}>
+        <div class="card card-compact">
+            <h3>{question(usecase.id, collection)}</h3>
+            <h5>Last updated {formatDate(usecase.data.date)}</h5>
+        </div>
+    </a>
+    ))}
+</div>

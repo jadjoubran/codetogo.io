@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import Master from "../layouts/Master.astro";
+
+const jsusecases = await getCollection("jsusecases");
+const reactusecases = await getCollection("reactusecases");
+---
+<Master title="Use Cases">
+<div class="container all">
+    <h4 class="page-title">All Use Cases</h4>
+
+    <a href="/javascript">
+        <div class="card card-compact">
+            <h3>JavaScript use cases</h3>
+            <h5>See all {jsusecases.length} use cases</h5>
+        </div>
+    </a>
+    <a href="/react">
+        <div class="card card-compact">
+            <h3>React use cases</h3>
+            <h5>See all {reactusecases.length} use cases</h5>
+        </div>
+    </a>
+</div>
+</Master>
