@@ -4,7 +4,7 @@
   "devDependencies": {
     "@astrojs/markdown-satteri": "^0.4.3",
     "algoliasearch": "^3.35.1",
-    "astro": "^7.3.8",
+    "astro": "^7.4.7",
     "husky": "^0.14.3",
     "lint-staged": "^15.2.7",
     "prettier": "^1.19.1",
